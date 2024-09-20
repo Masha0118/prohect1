@@ -1,0 +1,517 @@
+main {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    flex-direction: row;
+    box-sizing: border-box;
+
+
+}
+
+/*  */
+
+/* 제품 이미지 컨테이너 */
+.bigImg {
+    /* border: 1px solid red; */
+    width: 45%;
+    height: 100%;
+    /* object-fit: cover; */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(235, 225, 225);
+
+}
+
+.mainImg {
+    height: 10%;
+}
+
+div:nth-child(1) img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgb(235, 225, 225);
+}
+
+/* 제품정보 이미지 크기 */
+div:nth-child(2) img {
+    width: 65%;
+}
+
+
+/*======================================================================*/
+/* 제품이미지 밑 아이콘 정렬 */
+.icon {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.age,
+.pices,
+.legoPoint,
+.legoNumber {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 10%;
+    align-items: center;
+}
+
+.age,
+.pices,
+.legoPoint,
+.legoNumber span:nth-child(3) {
+    font-size: 0.9em;
+}
+
+.age,
+.pices,
+.legoPoint {
+    border-right: 1px solid rgb(235, 226, 226);
+}
+
+/* 트루퍼 장바구니 컨테이너 */
+.order {
+    /* border: 1px solid red; */
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(235, 226, 226);
+    border-right: 1px solid rgb(235, 226, 226);
+    border-bottom: 1px solid rgb(235, 226, 226);
+}
+
+.titleLogo {
+    /* border: 1px solid rgb(77, 12, 255); */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.titleLogo span {
+    /* border: 1px solid red; */
+    width: 50%;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* 스타워즈 로고이미지 */
+.order img {
+    /* border: 1px solid red; */
+    width: 40%;
+    max-width: 20%;
+
+}
+
+/* 44,900원 폰트 */
+.price {
+    display: flex;
+
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-left: 20%;
+}
+
+
+/*==================================================*/
+/* 구매 시 선물 색 */
+.buyGift {
+    background-color: rgb(0, 46, 65);
+    color: white;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shoppingCart {
+    /* width: 100%; */
+}
+
+/* 장바구니 담기 버튼 */
+.shoppingCart button {
+    width: 60%;
+    height: 180%;
+    background-color: rgb(235, 113, 20);
+    font-size: 1.1em;
+    border: none;
+    border-radius: 30px;
+}
+
+/* 경고 칸 */
+.warning {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    height: 10%;
+}
+
+/* 경고 글자 */
+.warning span {
+    font-size: 0.9em;
+}
+
+/*  */
+.warningdetail {
+    width: 50%;
+}
+
+.warningicon {
+    width: 5%;
+    height: 5%;
+}
+
+.deliveryAndManual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deliveryAndManual button:nth-child(1) {
+    width: 80%;
+    height: 4em;
+    border: none;
+    background-color: white;
+    border-top: 1px solid rgb(240, 224, 224);
+    border-bottom: 1px solid rgb(240, 224, 224);
+    font-size: 1.1em;
+}
+
+.deliveryAndManual button:nth-child(2) {
+    width: 80%;
+    height: 4em;
+    border: none;
+    background-color: white;
+    font-size: 1.1em;
+}
+
+.deliveryAndManual button:hover,
+.shoppingCart button:hover {
+    cursor: pointer;
+}
+
+
+
+/* 제품정보 */
+
+.productInfodetail {
+    width: 100%;
+    text-align: initial;
+}
+
+
+
+#check-btn1 {
+    display: none;
+}
+
+.menu1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 150%;
+    margin-left: 5%;
+}
+
+/* 이미지 크기 */
+.menu1 img {
+    width: 100%;
+    height: auto;
+}
+
+/* 첫번째 이미지 위에 글자 위치조정 */
+.menu1 div {
+    position: absolute;
+    padding: 30%;
+}
+
+.menu2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 150%;
+    margin-left: 5%;
+}
+
+/* 이미지 크기 */
+.menu2 img {
+    width: 100%;
+    height: auto;
+}
+
+/* 세번째 이미지 위에 글자 위치조정 */
+.menu2 div {
+    position: absolute;
+    padding: 29%;
+    left: -5%;
+}
+
+/* 세번째 이미지 재생버튼 */
+.playbtn {
+    border: none;
+    background: transparent;
+}
+
+/* ==================== */
+.clickMenu1 {
+    font-size: 1.5em;
+    background-color: rgb(248, 248, 248);
+    padding: 3%;
+    border-bottom: 0.5px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* =========================================== */
+
+/* 제품상세정보 */
+
+.productInfo {
+    width: 94.4%;
+    text-align: initial;
+}
+
+#check-btn:checked~.stuffinfo {
+    display: block;
+    overflow-y: auto;
+}
+
+#check-btn {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.menu img {
+    float: right;
+    margin-left: 5%;
+    width: 200%;
+    height: auto;
+
+}
+
+.clickMenu {
+    /* width: 100%; */
+    font-size: 1.5em;
+    background-color: rgb(248, 248, 248);
+    padding: 3%;
+    border-bottom: 0.5px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.clickMenu span img {
+    width: 10%;
+}
+
+ul li {
+    margin-bottom: 4%;
+}
+
+
+
+/* =========================================== */
+
+
+
+
+
+/* =========================================== */
+
+/* 메인 배너 스타일 */
+#mainSize {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+    /* background-color: rgb(214, 143, 155); */
+    border-top: .5em solid white;
+    border-bottom: .5em solid white;
+}
+
+
+
+
+
+
+/* 이번 주 최고 인기 배너 사이즈 확인*/
+.sectionWeekend {
+
+    width: 90%;
+    display: inline-block;
+    /* border: 4px solid rgb(155, 218, 40); */
+
+}
+
+/* 이번 주 최고 인기 문구 조절 */
+.thisWeekendPopular {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+
+
+/* 이번 주 최고 인기 텍스트 조절 */
+.thisWeekendPopular>span {
+    margin: 10px;
+    display: block;
+    font-size: 26px;
+}
+
+/* 사진 6개 사이즈 */
+.bannersList {
+    display: flex;
+    justify-content: space-evenly;
+    width: 110%;
+}
+/* 레고 배틀팩 p태그 글자구별용 색 */
+.textgreen {
+    color: green;
+}
+
+
+
+
+/* 슬라이드 배너와 상하 간격 조절*/
+section {
+    margin-bottom: 100px;
+}
+
+
+
+
+
+/*---------------------------------상품 슬라이드 배너-------------------------------------*/
+
+
+
+/* 전환 효과 */
+.container {
+    display: flex;
+    margin-top: 9%;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+
+}
+
+
+
+
+
+/* 하단쪽이미지 (조립식 선물) */
+.bottomimg {
+    width: 170%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* 하단쪽이미지 안 글자 */
+.textcenter {
+    position: absolute;
+    margin-left: 2%;
+    margin-top: -18%;
+}
+
+/* 쇼핑하기 버튼 글자크기 */
+.shopping {
+    width: auto;
+    height: 200px;
+    margin-top: 4%;
+}
+
+/* 쇼핑하기 버튼 색 */
+.shoppingbtn {
+    width: 25%;
+    height: 25%;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    border: none;
+}
+
+/* 쇼핑하기 버튼 색 호버 */
+.shoppingbtn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* 맨 밑 제품 상세정보 글자 위치 */
+.stuffinfo {
+    text-align: left;
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        width: 90%;
+    }
+    /* 장바구니 수직정렬 */
+    .container {
+        display: flex;
+        flex-flow: column;
+    }
+    /* 제품 이미지 사이즈 */
+    .bigImg{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    /* 장바구니 컨테이너 사이즈 */
+    .order {
+        width: 100%;
+        border-left: 1px solid rgb(235, 226, 226);
+    }
+    /* 제품 정보 아이템들 글자 축소 */
+    .firstimgtext h1,
+    .firstimgtext span,
+    .funfightText h1,
+    .funfightText span, 
+    .shoppingCart,p,h3{
+        font-size: .7em;
+    }
+    /* 제품정보 세번째 사진 텍스트 위치 조정  */
+    .funfightText {
+        margin-left: -10%;
+    }
+    /* 장바구니 담기 버튼 위치 조정 */
+    .shoppingCart {
+        width: 30%;
+        margin-top: 5%;
+        margin-left: 70%;
+        height: 30px;
+    }
+    /* 제품정보 첫번째 사진 텍스트 위치 조정 */
+    .firstimgtext {
+        left: 25%;
+        display: flex;
+        flex-flow: column;
+    }
+    /* 제품정보 맨 밑 사진 텍스트 위치 조정 */
+    .textcenter {
+        font-size: .5em;
+        margin-top: -20%;
+        margin-left: 5%;
+    }
+    /* 제품정보 맨 밑 사진 쇼핑하기 버튼 위치 조정 */
+    .shoppingbtn {
+        height: 13%;
+    }
+
+}

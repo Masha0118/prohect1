@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/productList.css">
+    <link rel="stylesheet" href="./css/headers.css">
+    <link rel="stylesheet" href="./css/newFooter.css">
+    <link rel="stylesheet" href="./css/modalCategory.css">
+    <link rel="stylesheet" href="./css/modalCategory2.css">
+    <link rel="stylesheet" href="./MainPage5.css">
+    <link rel="stylesheet" href="./css/caregory.css">
+
+</head>
+
+
+
+<body>
+
+    <div class="headerBackground">
+        <header class="header">
+
+            <div class="header_logo">
+                <button id="show2" class="img-button"><img src="./headerImg/lego.png" alt="legoLogo"
+                        onclick="location.href='../index.html'"></button>
+            </div>
+
+            <div class="header_menu">
+                <button class="shopping_button" id="show">레고 제품 쇼핑</button>
+                <ul>
+                    <li><a href="./aboutUs.html">레고 브랜드 소개</a></li>
+                    <li><a href="#">고객 지원</a></li>
+                </ul>
+            </div>
+
+            <div class="background">
+                <div class="window">
+                    <div class="popup">
+
+                        <h2 class="section_title"></h2>
+
+                        <div class="menu_lego">
+                            <a href="#">
+                                <img src="./image/lego-icon.svg" alt="lego">
+                            </a>
+                        </div>
+
+                        <div class="menu_list">
+                            <ul class="menu_list_1">
+                                <li><button>레고 제품 쇼핑</button></li>
+                                <li><button onclick="location.href='./aboutUs.html'">레고 브랜드 소개</button></li>
+                                <li><button>고객 지원</button></li>
+                            </ul>
+                        </div>
+
+                        <div class="close">
+                            <button class="close_button" id="close">
+                                <img src="./image/close.png" alt="close">
+                            </button>
+                        </div>
+
+                        <div class="menu_list2">
+                            <ul class="menu_list2_1">
+                                <li><button onclick='btnClick()'>시리즈별 세트</button></li>
+                                <li><button onclick="location.href='./teamProject/productList.html'">신상품</button></li>
+                                <li><button onclick="location.href='./teamProject/productList.html'">베스트 셀러</button></li>
+                                <li><button onclick="location.href='./pastSeries.html'">추억의 레고</button></li>
+                                <li><button onclick="location.href='./teamProject/productList.html'">할인 및 행사</button></li>
+                            </ul>
+                        </div>
+
+                        <div id="seriesSet">
+                            <ul>
+                                <li id="star_wars">스타워즈™
+                                    <div class="starWars">
+                                        <img src="./categoryImg/starWars_logo_black_stroke_300w_2.png" alt="starwars">
+                                    </div>
+                                </li>
+                                <li id="super_mario">레고 슈퍼 마리오
+                                    <div class="superMario">
+                                        <img src="./categoryImg/SuperMario-logo-pos_300w.png" alt="supermario">
+                                    </div>
+                                </li>
+                                <li id="disney_">디즈니
+                                    <div class="disNey">
+                                        <img src="./categoryImg/disney_logo_pos_300w_2.png" alt="disney">
+                                    </div>
+                                </li>
+                                <li id="marvel_">마블
+                                    <div class="marvel">
+                                        <img src="./categoryImg/Marvel2.png" alt="marvel">
+                                    </div>
+                                </li>
+                                <li id="marble_">해리포터™
+                                    <div class="harryPotter">
+                                        <img src="./categoryImg/harrypotter_logo_gold_divider-600w2_2.png" alt="harry">
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <div class="catecate">
+                            <button id="close" class="closeButton">
+                                <img src="./categoryImg/x-mark.svg" alt="">
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="legoland">
+                        <img src="./image/bricks.png" alt="legoland">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header_search">
+                <button type="submit" class="search_button" id="show3">
+                    <img src="./headerImg/search.png" alt="search">
+                </button>
+            </div>
+
+            <div class="modal_bg" id="modalBg"></div>
+
+            <div class="modal_box" id="modalWrap">
+                <div class="content">
+                    <h2>레고 &reg; 계정으로 로그인하기</h2>
+                    <input type="text" placeholder="id" class="modal_input">
+                    <input type="password" placeholder="password" class="modal_input">
+                    <a href="./mainlogin.html">로그인</a>
+                    <a href="./accountcreate.html">회원가입</a>
+                    <button class="close_btn" id="closeModalBtn">나가기</button>
+                </div>
+            </div>
+
+            <div class="background2">
+                <div class="window2">
+                    <div class="popup2">
+
+                        <input type="text" class="searchBox">
+                        <button class="closeX">X</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_login">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#"><img src="./image/shopping.png" alt="shopping"
+                                onclick="location.href='./marketbox.html'"></a></li>
+                </ul>
+            </div>
+
+        </header>
+    </div>
+
+
+    <div class="pageTopBanner">
+        <div>
+            <img src="./image/architecture-logo.png" alt="">
+            <a href="">제품</a>
+            <a href="">자세히 보기</a>
+        </div>
+    </div>
+
+
+
+    <div class="listPage">
+
+        <div class="productLeftList">
+
+            <div class="firstCol">
+                <h3>제품분류</h3>
+                <div class="leftCate">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="check1" class="chch">
+                            <label for="check1">세트</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check2" class="chch">
+                            <label for="check2">성인</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check3" class="chch">
+                            <label for="check3">부활절 선물</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="secondCol">
+                <h3>가격(원)</h3>
+                <div class="leftCate">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="check4" class="chch">
+                            <label for="check4">0 원 - 20,000 원</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check5" class="chch">
+                            <label for="check5">20,000 원 - 50,000 원</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check6" class="chch">
+                            <label for="check6">50,000 원 - 100,000 원</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check7" class="chch">
+                            <label for="check7">100,000 원 - 200,000 원</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check8" class="chch">
+                            <label for="check8">200,000 원+</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="thirdCol">
+                <h3>시리즈</h3>
+                <div class="leftCate">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="check9" class="chch">
+                            <label for="check9">DC</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check10" class="chch">
+                            <label for="check10">배트맨&trade;</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="check11" class="chch">
+                            <label for="check11">테크닉</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="check12" class="chch">
+                            <label for="check12">파워드업</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fourthCol">
+                <h3>관심사별</h3>
+                <div class="leftCate">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="check13" class="chch">
+                            <label for="check13">슈퍼히어로</label>
+
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check14" class="chch">
+                            <label for="check14">스포츠</label>
+
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check15" class="chch">
+                            <label for="check15">엔터테인먼트</label>
+
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check16" class="chch">
+                            <label for="check16">우주</label>
+
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check17" class="chch">
+                            <label for="check17">자동차</label>
+
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check18" class="chch">
+                            <label for="check18">차량</label>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="frame">
+            <div class="productImgList">
+
+                <div class="box">
+                    <div href="./productDetail/venom.html">
+                        <div class="listBox">
+                            <div class="hiddenBox">
+                                <div class="imgSizeBox">
+                                    <div class="imgBox">
+                                        <img src="./proListImg/batbat.png" alt="">
+                                        <img src="./proListImg/batbat2.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="leftButton">
+                                    <img src="./svgImg/Asset 1.svg" alt="">
+                                </button>
+                                <button class="rightButton">
+                                    <img src="./svgImg/Asset 2.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="infoBox">
+                                <span>배트맨&trade; 컬렉션</span>
+                                <span>79,950 원</span>
+                                <div>
+                                    <button onclick="location.href='./marketbox.html';">장바구니 담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div href="./productDetail/venom.html">
+                        <div class="listBox">
+                            <div class="hiddenBox">
+                                <div class="imgSizeBox">
+                                    <div class="imgBox">
+                                        <img src="./proListImg/upHouse.png" alt="">
+                                        <img src="./proListImg/uphouse2.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="leftButton">
+                                    <img src="./svgImg/Asset 1.svg" alt="">
+                                </button>
+                                <button class="rightButton">
+                                    <img src="./svgImg/Asset 2.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="infoBox">
+                                <span>'업' 하우스</span>
+                                <span>79,900 원</span>
+                                <div>
+                                    <button onclick="location.href='./marketbox.html';">장바구니 담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div href="./productDetail/venom.html">
+                        <div class="listBox">
+                            <div class="hiddenBox">
+                                <div class="imgSizeBox">
+                                    <div class="imgBox">
+                                        <img src="./proListImg/gabdol.webp" alt="">
+                                        <img src="./proListImg/gabdol.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="leftButton">
+                                    <img src="./svgImg/Asset 1.svg" alt="">
+                                </button>
+                                <button class="rightButton">
+                                    <img src="./svgImg/Asset 2.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="infoBox">
+                                <span>갑돌의 보트 투어</span>
+                                <span>79,950 원</span>
+                                <div>
+                                    <button onclick="location.href='./marketbox.html';">장바구니 담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div href="./productDetail/venom.html">
+                        <div class="listBox">
+                            <div class="hiddenBox">
+                                <div class="imgSizeBox">
+                                    <div class="imgBox">
+                                        <img src="./proListImg/peterpan.png" alt="">
+                                        <img src="./proListImg/peterpan2.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="leftButton">
+                                    <img src="./svgImg/Asset 1.svg" alt="">
+                                </button>
+                                <button class="rightButton">
+                                    <img src="./svgImg/Asset 2.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="infoBox">
+                                <span>피터팬과 웬디의 런던 비행</span>
+                                <span>96,900 원</span>
+                                <div>
+                                    <button onclick="location.href='./marketbox.html';">장바구니 담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div href="./productDetail/venom.html">
+                        <div class="listBox">
+                            <div class="hiddenBox">
+                                <div class="imgSizeBox">
+                                    <div class="imgBox">
+                                        <img src="./proListImg/roses.png" alt="">
+                                        <img src="./proListImg/roses2.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="leftButton">
+                                    <img src="./svgImg/Asset 1.svg" alt="">
+                                </button>
+                                <button class="rightButton">
+                                    <img src="./svgImg/Asset 2.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="infoBox">
+                                <span>장미 꽃다발</span>
+                                <span>89,900 원</span>
+                                <div>
+                                    <button onclick="location.href='./marketbox.html';">장바구니 담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div href="./productDetail/venom.html">
+                        <div class="listBox">
+                            <div class="hiddenBox">
+                                <div class="imgSizeBox">
+                                    <div class="imgBox">
+                                        <img src="./proListImg/flowers.png" alt="">
+                                        <img src="./proListImg/flowers.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="leftButton">
+                                    <img src="./svgImg/Asset 1.svg" alt="">
+                                </button>
+                                <button class="rightButton">
+                                    <img src="./svgImg/Asset 2.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="infoBox">
+                                <span>꽃다발</span>
+                                <span>89,900 원</span>
+                                <div>
+                                    <button onclick="location.href='./marketbox.html';">장바구니 담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div href="./productDetail/venom.html">
+                        <div class="listBox">
+                            <div class="hiddenBox">
+                                <div class="imgSizeBox">
+                                    <div class="imgBox">
+                                        <img src="./proListImg/cupa.png" alt="">
+                                        <img src="./proListImg/flowers.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="leftButton">
+                                    <img src="./svgImg/Asset 1.svg" alt="">
+                                </button>
+                                <button class="rightButton">
+                                    <img src="./svgImg/Asset 2.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="infoBox">
+                                <span>배트맨&trade; 컬렉션</span>
+                                <span>79,950 원</span>
+                                <div>
+                                    <button onclick="location.href='./marketbox.html';">장바구니 담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div href="./productDetail/venom.html">
+                        <div class="listBox">
+                            <div class="hiddenBox">
+                                <div class="imgSizeBox">
+                                    <div class="imgBox">
+                                        <img src="./proListImg/batbat.png" alt="">
+                                        <img src="./proListImg/flowers.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="leftButton">
+                                    <img src="./svgImg/Asset 1.svg" alt="">
+                                </button>
+                                <button class="rightButton">
+                                    <img src="./svgImg/Asset 2.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="infoBox">
+                                <span>배트맨&trade; 컬렉션</span>
+                                <span>79,950 원</span>
+                                <div>
+                                    <button onclick="location.href='./marketbox.html';">장바구니 담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div href="./productDetail/venom.html">
+                        <div class="listBox">
+                            <div class="hiddenBox">
+                                <div class="imgSizeBox">
+                                    <div class="imgBox">
+                                        <img src="./proListImg/batbat.png" alt="">
+                                        <img src="./proListImg/flowers.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="leftButton">
+                                    <img src="./svgImg/Asset 1.svg" alt="">
+                                </button>
+                                <button class="rightButton">
+                                    <img src="./svgImg/Asset 2.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="infoBox">
+                                <span>배트맨&trade; 컬렉션</span>
+                                <span>79,950 원</span>
+                                <div>
+                                    <button onclick="location.href='./marketbox.html';">장바구니 담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div href="./productDetail/venom.html">
+                        <div class="listBox">
+                            <div class="hiddenBox">
+                                <div class="imgSizeBox">
+                                    <div class="imgBox">
+                                        <img src="./proListImg/batbat.png" alt="">
+                                        <img src="./proListImg/flowers.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="leftButton">
+                                    <img src="./svgImg/Asset 1.svg" alt="">
+                                </button>
+                                <button class="rightButton">
+                                    <img src="./svgImg/Asset 2.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="infoBox">
+                                <span>배트맨&trade; 컬렉션</span>
+                                <span>79,950 원</span>
+                                <div>
+                                    <button onclick="location.href='./marketbox.html';">장바구니 담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div href="./productDetail/venom.html">
+                        <div class="listBox">
+                            <div class="hiddenBox">
+                                <div class="imgSizeBox">
+                                    <div class="imgBox">
+                                        <img src="./proListImg/batbat.png" alt="">
+                                        <img src="./proListImg/flowers.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="leftButton">
+                                    <img src="./svgImg/Asset 1.svg" alt="">
+                                </button>
+                                <button class="rightButton">
+                                    <img src="./svgImg/Asset 2.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="infoBox">
+                                <span>배트맨&trade; 컬렉션</span>
+                                <span>79,950 원</span>
+                                <div>
+                                    <button onclick="location.href='./marketbox.html';">장바구니 담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div href="./productDetail/venom.html">
+                        <div class="listBox">
+                            <div class="hiddenBox">
+                                <div class="imgSizeBox">
+                                    <div class="imgBox">
+                                        <img src="./proListImg/batbat.png" alt="">
+                                        <img src="./proListImg/flowers.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="leftButton">
+                                    <img src="./svgImg/Asset 1.svg" alt="">
+                                </button>
+                                <button class="rightButton">
+                                    <img src="./svgImg/Asset 2.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="infoBox">
+                                <span>배트맨&trade; 컬렉션</span>
+                                <span>79,950 원</span>
+                                <div>
+                                    <button onclick="location.href='./marketbox.html';">장바구니 담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div href="./productDetail/venom.html">
+                        <div class="listBox">
+                            <div class="hiddenBox">
+                                <div class="imgSizeBox">
+                                    <div class="imgBox">
+                                        <img src="./proListImg/batbat.png" alt="">
+                                        <img src="./proListImg/flowers.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="leftButton">
+                                    <img src="./svgImg/Asset 1.svg" alt="">
+                                </button>
+                                <button class="rightButton">
+                                    <img src="./svgImg/Asset 2.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="infoBox">
+                                <span>배트맨&trade; 컬렉션</span>
+                                <span>79,950 원</span>
+                                <div>
+                                    <button onclick="location.href='./marketbox.html';">장바구니 담기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="logoLine">
+                <div>
+                    <img src="./image/LEGO_logo.svg.png" alt="">
+                </div>
+            </div>
+
+            <div class="pageLine">
+
+                <div class="allBlock">
+                    <div class="blockPage1">
+                        <button>레고 그룹 소개</button>
+                        <button>레고 뉴스</button>
+                    </div>
+
+                    <div class="blockPage2">
+                        <button>연락처</button>
+                        <button>조립설명서 찾기</button>
+                    </div>
+
+                    <div class="blockPage3">
+                        <button>레고 하우스</button>
+                        <button>레고랜드 파크</button>
+                    </div>
+
+                    <div class="blockPage4">
+                        <button>레고 라이프</button>
+                        <button>레고 에듀케이션</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="iconLogo">
+                <a href="#"><img src="./footerImg/facebook.png" alt=""></a>
+                <a href="#"><img src="./footerImg/x.avif" alt=""></a>
+                <a href="#"><img src="./footerImg/instagram.png" alt=""></a>
+                <a href="#"><img src="./footerImg/youtube.avif" alt=""></a>
+
+            </div>
+
+            <div class="lastInfo">
+                <p>LEGO System A/S, DK-7190 Billund, Denmark. 만 18세 이상부터 온라인 구매가 가능합니다. 레고, 레고 로고, 미니피겨, 듀플로, 프렌즈 로고,
+                    미니피겨
+                    로고, 드림즈, 닌자고, 비디요 및 마인드스톰은 레고 그룹의 상표입니다. ©2024 The LEGO Group. All rights reserved. 이 사이트를 이용하면
+                    이용약관에
+                    동의하는 것으로 간주됩니다. 레고코리아㈜ 대표이사 : 에릭폴모젱, 정희영 | 주소 : 서울특별시 강남구 강남대로 298, 16층 (역삼동) 우편번호 06253
+                    사업자등록번호:126-81-25525 | 통신판매업신고 제 2010-서울강남-00549호 사업자등록확인고객센터 무료전화 : 080-880-0166 | 팩스 : 02-511-6412
+                    |
+                    업무시간 : 월요일-금요일 오전9시-오후6시</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+
+    const imgbox = document.querySelectorAll('.imgBox'),
+        leftBtn = document.querySelectorAll('.leftButton'),
+        rightBtn = document.querySelectorAll('.rightButton');
+
+    for (let i = 0; i < imgbox.length; i++) {
+        leftBtn[i].addEventListener('click', function () {
+            imgbox[i].style.transform = `translate(0%)`;
+        });
+        rightBtn[i].addEventListener('click', function () {
+            imgbox[i].style.transform = `translate(-100%)`;
+        });
+    }
+
+</script>

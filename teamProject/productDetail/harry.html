@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./harry.css">
+    <link rel="stylesheet" href="../css/mainBanner.css">
+    <link rel="stylesheet" href="../css/headers.css">
+    <link rel="stylesheet" href="../css/footers.css">
+    <link rel="stylesheet" href="../css/modalCategory.css">
+    <link rel="stylesheet" href="../css/modalCategory2.css">
+</head>
+
+<body>
+<header class="header">
+
+    <div class="header_logo">
+        <button id="show" class="img-button"><img src="../headerImg/lego.png" alt="legoLogo"></button>
+    </div>
+
+    <div class="header_menu">
+        <button class="shopping_button" id="show2">레고 제품 쇼핑</button>
+        <ul>
+            <li><a href="./aboutUs.html">레고 브랜드 소개</a></li>
+            <li><a href="#">고객 지원</a></li>
+        </ul>
+    </div>
+
+    <div class="header_search">
+        <button type="submit" class="search_button" id="show3">
+            <img src="../headerImg/search.png" alt="search">
+        </button>
+    </div>
+
+    <div class="modal_bg" id="modalBg"></div>
+
+    <div class="modal_box" id="modalWrap">
+        <div class="content">
+            <h2>레고 &reg; 계정으로 로그인하기</h2>
+            <input type="text" placeholder="id" class="modal_input">
+            <input type="password" placeholder="password" class="modal_input">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+            <button class="close_btn" id="closeModalBtn">나가기</button>
+        </div>
+    </div>
+
+    <div class="background2">
+        <div class="window2">
+            <div class="popup2">
+
+                <input type="text" class="searchBox">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="header_login">
+        <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#"><img src="../image/shopping.png" alt="shopping"></a></li>
+        </ul>
+    </div>
+
+</header>
+
+
+    <main>
+        <div class="container">
+            <div class="bigImg">
+                <div class="mainImg">
+                    <img src="https://www.lego.com/cdn/cs/set/assets/blt2c21720f08500f45/76428.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+                        alt="">
+                </div>
+                <div class="icon">
+                    <div class="age">
+                        <img src="../svgImg/SVG/age.svg" alt="ageIcon">
+                        <span>18+</span>
+                        <span>연령</span>
+                    </div>
+                    <div class="pices">
+                        <img src="../svgImg/SVG/picies.svg" alt="">
+                        <span>2228</span>
+                        <span>부품수</span>
+                    </div>
+                    <div class="legoPoint">
+                        <img src="../svgImg/SVG/point.svg" alt="">
+                        <span>1594</span>
+                        <span>레고&reg; Insiders 포인트</span>
+                    </div>
+                    <div class="legoNumber">
+                        <img src="../svgImg/SVG/number.svg" alt="">
+                        <span>43242</span>
+                        <span>제품명</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order">
+
+                <div class="new">
+                    <span>신제품</span>
+                </div>
+
+                <div class="titleLogo">
+                    <span>해그리드의 오두막: 뜻밖의 창문</span>
+                    <img src="https://www.lego.com/cdn/cs/set/assets/bltd049ed56939d8ac2/harrypotter_logo_gold_divider-600w.png?format=png&height=40&dpr=1"
+                        alt="disneyLogo">
+                </div>
+
+                <div class="price">
+                    <span>109,900 원</span>
+                </div>
+                <!-- 
+                    <div class="buyGift">
+                        <span>구매 시 선물 증정!</span>
+                    </div> -->
+
+                <div class="shoppingCart">
+                    <button onclick="location.href='#';">장바구니 담기</button>
+                </div>
+
+                <div class="warning">
+                    <span>경고!
+                        <br>질식 위험. 작은 부품 포함</span>
+                    <img src="../image/warning.png" alt="warning1">
+                    <div class="warningdetail">
+                        <img src="./detailProimg/safety-08ff1b3398344608cf1508144b3c2d0f.svg" alt="">
+                        <img class="warningicon" src="./image/6479550.png" alt="">
+                    </div>
+                </div>
+
+                <div class="deliveryAndManual">
+                    <button onclick="location.href='#';">배송 및 반품 ></button>
+                    <button onclick="location.href='#';">조립 설명서 ></button>
+                    <!-- <a href="">배송 및 반품 ></a> -->
+                    <!-- <a href="">조립 설명서 ></a> -->
+                </div>
+
+            </div>
+        </div>
+        <!-- 제품정보 -->
+        <div class="productInfo">
+
+            <div class="productInfodetail">
+                <input id="check-btn1" type="checkbox" />
+                <label for="check-btn1">
+
+                    <div class="clickMenu1">
+                        <span>제품 정보</span>
+                        <span class="b">
+                        </span>
+                    </div>
+                </label>
+
+                <div class="menu1">
+                    <img class="hagrid"
+                        src="https://www.lego.com/cdn/cs/set/assets/blt3ad7a6531b3839e3/76428_Hero1_Standard_Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=1"
+                        alt="해그리드 이야기">
+                    <div>
+                        <h1>해그리드의 오두막에서 벌어지
+                            <br>는 재미있는 마법이야기
+                        </h1>
+                        <span>
+                            해리포터™와 친구들이 마법 세계의 유명한 장소를 예기치 않게
+                            <br>방문하는 장면을 흥미진진한 어린이용 장난감 플레이 세트로 재현해보아요.
+                        </span>
+                    </div>
+                </div>
+                <!-- <div class="menu1">
+                        <img src="https://www.lego.com/cdn/cs/set/assets/blt3ad7a6531b3839e3/76428_Hero1_Standard_Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=1"
+                            alt="해그리드 이야기">
+                            <div>
+                        <h2>해그리드의 오두막에서 벌어지
+                            <br>는 재미있는 마법이야기</h2>
+                        <span>해리포터™와 친구들이 마법 세계의 유명한 장소를 예기치 않게
+                            <br>방문하는 장면을 흥미진진한 어린이용 장난감 플레이 세트로 재현해보아요.</span>
+                        </div> -->
+                <!-- <img class="woodhouse"
+                            src="https://www.lego.com/cdn/cs/set/assets/bltf5db115eafb90e72/43242-Exclusive-202403-PDP-Hero-Tall-Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=700&dpr=1"
+                            alt="상품이미지"> -->
+            </div>
+            <div class="menu1-1">
+                <img src="https://www.lego.com/cdn/cs/set/assets/blt2c21720f08500f45/76428.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+                    alt="">
+                <div>
+                    <h1>무한한 창의적 놀이의 가능성</h1>
+                    <span>세트에 들어 있는 정교한 조립 모델, 인기 캐릭터, 각종 액세서리만
+                        <br> 봐도 독창적인 마법의 이야기가 절로 나올 것 같지 않나요?</span>
+                </div>
+                <!-- <img src="https://www.lego.com/cdn/cs/set/assets/blt2c21720f08500f45/76428.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+                            alt=""> -->
+            </div>
+
+            <section id="mainSize">
+
+                <div class="sectionWeekend">
+                    <div class="mainBanner">
+                        <div class="thisWeekendPopular">
+                            <span>
+                                레고®해리포터™ 해그리드의 오두막: 뜻밖의 방문 </span>
+                        </div>
+
+                        <div class="bannersList">
+
+                            <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                <div>
+                                    <img src="https://www.lego.com/cdn/cs/set/assets/blt2bdebaead0934ec4/76428_Block_Standard_1.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                        alt="오두막">
+                                </div>
+
+                                <div>
+                                    <h3>레고® 브릭 조립식 해그리드의 오두막</h3>
+                                    <p>
+                                        <span>오두막의 착탈식 지붕을 열고 편하게 놀이를 즐길 수 있습니다.</span>
+                                    </p>
+                                </div>
+
+                                <!-- <a class="shoppingButton" href="#">
+                                            쇼핑하기
+                                        </a> -->
+                            </div>
+
+                            <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                <div>
+                                    <img src="https://www.lego.com/cdn/cs/set/assets/blt6582548437b38fe4/76428_Block_Standard_2.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                        alt="드래곤 알">
+                                </div>
+
+                                <div>
+                                    <h3>드래곤 알</h3>
+                                    <p>
+                                        <span>오두막 안쪽을 들여다보세요. 노버트가 알에서 깨어나고 있어요!</span>
+                                    </p>
+                                </div>
+
+                                <!-- <a class="shoppingButton" href="#">
+                                            쇼핑하기
+                                        </a> -->
+                            </div>
+
+                            <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                <div>
+                                    <img src="https://www.lego.com/cdn/cs/set/assets/bltfeaf1cdad2dc1780/76428_Block_Standard_3.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                        alt="해리포터 캐릭터">
+                                </div>
+
+                                <div>
+                                    <h3>레고® 해리포터™ 캐릭터</h3>
+                                </div>
+
+                                <div>
+                                    <p>
+                                        <span class="prince">루베우스 해그리드™, 헤르미온느 그레인저™, 론 위즐리™ 등의 캐릭터가
+                                            등장합니다.</span>
+                                    </p>
+                                </div>
+
+                                <!-- <a class="shoppingButton" href="#">
+                                            쇼핑하기
+                                        </a> -->
+                            </div>
+
+                            <!-- <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                        <div>
+                                            <img src="https://www.lego.com/cdn/cs/set/assets/blt5df8ae5afb19f89e/43222-202306-PDP-Block-Standard-4.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                                alt="디즈니의 역사">
+                                        </div>
+
+                                        <div>
+                                            <h3>디즈니 미녀와 야수</h3>
+                                        </div>
+
+                                        <div>
+                                            <p>
+                                                <span>다른 수많은 전설적인 디즈니 영화 속 기억에 남는 순간들을 만나보세요.</span>
+                                            </p>
+                                        </div> -->
+
+
+                        </div>
+
+                        <div class="bannersList">
+
+                            <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                <div>
+                                    <img src="https://www.lego.com/cdn/cs/set/assets/blt09f8b290cc032c7f/76428_Block_Standard_4.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                        alt="개집">
+                                </div>
+
+                                <div>
+                                    <h3>개집</h3>
+                                    <p>
+                                        <span>해그리드의 반려동물 팽… 바깥의 개집에서 쉬고 있네요.</span>
+                                    </p>
+                                </div>
+
+                                <!-- <a class="shoppingButton" href="#">
+                                            쇼핑하기
+                                        </a> -->
+                            </div>
+
+                            <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                <div>
+                                    <img src="https://www.lego.com/cdn/cs/set/assets/bltd7325a09f0ac71b4/76428_Block_Standard_5.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                        alt="드래곤 알">
+                                </div>
+
+                                <div>
+                                    <h3>드레이코 말포이™의 염탐…</h3>
+                                    <p>
+                                        <span>드레이코가 창문을 통해 염탐을 하는 장면을 재현해보세요.</span>
+                                    </p>
+                                </div>
+
+                                <!-- <a class="shoppingButton" href="#">
+                                            쇼핑하기
+                                        </a> -->
+                            </div>
+
+                            <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                <div>
+                                    <img src="https://www.lego.com/cdn/cs/set/assets/bltd43b0c291f319b16/76428_Block_Standard_6.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                        alt="해리포터 캐릭터">
+                                </div>
+
+                                <div>
+                                    <h3>소장용 초상화</h3>
+                                </div>
+
+                                <div>
+                                    <p>
+                                        <span class="prince">호그와트™ 초상화 14가지 중 2개가 세트에 무작위로 들어 있습니다.</span>
+                                    </p>
+                                </div>
+
+                                <!-- <a class="shoppingButton" href="#">
+                                            쇼핑하기
+                                        </a> -->
+                            </div>
+
+
+
+                            <!-- <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                        <div>
+                                            <img src="https://www.lego.com/cdn/cs/set/assets/blt5df8ae5afb19f89e/43222-202306-PDP-Block-Standard-4.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                                alt="디즈니의 역사">
+                                        </div>
+
+                                        <div>
+                                            <h3>디즈니 미녀와 야수</h3>
+                                        </div>
+
+                                        <div>
+                                            <p>
+                                                <span>다른 수많은 전설적인 디즈니 영화 속 기억에 남는 순간들을 만나보세요.</span>
+                                            </p>
+                                        </div> -->
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </div>
+
+        <div class="menu2">
+            <img class="hagrid"
+                src="https://www.lego.com/cdn/cs/set/assets/blt4d1568bd4a684a2f/76428_Hero4_Standard_Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=1"
+                alt="해그리드 이야기">
+            <div>
+                <h1>레고® 해리포터™ 마법 세계
+                    <br>장난감
+                </h1>
+                <span>
+                    아이들을 위한 생일 선물로 너무 재미있으며, 다른 레고® 해리포터™
+                    <br>세트(별매품)에 자유로이 합쳐 사용할 수 있습니다.
+                </span>
+            </div>
+        </div>
+
+
+        <div></div>
+        <!-- <h2>주요 세트</h2>
+
+                        <div class="please">
+                            <div class="container con1">
+
+                                <div class="slideSectionName">신제품</div> 
+
+                                <div class="mainBox box1">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./banner500.jpeg" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">공전하는 지구와 달</a>
+
+                                        <span>114,900 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mainBox box1">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./banner600.jpeg" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">벚꽃</a>
+
+                                        <span>20,900 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mainBox box1">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./banner700.jpeg" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">미니 디즈니 에리얼 궁전</a>
+
+                                        <span>55,900 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div> -->
+
+        <!-- <div class="mainBox box1">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./slideImage/japanPost.png" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">일본 엽서</a>
+
+                                        <span>129,000 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="container con2"> -->
+
+        <!-- <div class="slideSectionName">신제품</div> -->
+
+        <!-- <div class="mainBox box2">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./slideImage/agraba.png" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">공전하는 지구와 달</a>
+
+                                        <span>114,900 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mainBox box2">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./slideImage/cherryBlossoms.png" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">벚꽃</a>
+
+                                        <span>20,900 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mainBox box2">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./slideImage/arialCastle.png" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">미니 디즈니 에리얼 궁전</a>
+
+                                        <span>55,900 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mainBox box2">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./slideImage/japanPost.png" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">일본 엽서</a>
+
+                                        <span>129,000 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div> -->
+
+        <!-- <div class="container con3"> -->
+
+        <!-- <div class="slideSectionName">신제품</div> -->
+
+        <!-- <div class="mainBox box3">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./slideImage/agraba.png" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">공전하는 지구와 달</a>
+
+                                        <span>114,900 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mainBox box3">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./slideImage/cherryBlossoms.png" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">벚꽃</a>
+
+                                        <span>20,900 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mainBox box3">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./slideImage/arialCastle.png" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">미니 디즈니 에리얼 궁전</a>
+
+                                        <span>55,900 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mainBox box3">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./slideImage/japanPost.png" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">일본 엽서</a>
+
+                                        <span>129,000 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="container con4"> -->
+
+        <!-- <div class="slideSectionName">신제품</div> -->
+
+        <!-- <div class="mainBox box4">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./slideImage/agraba.png" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">공전하는 지구와 달</a>
+
+                                        <span>114,900 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mainBox box4">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./slideImage/cherryBlossoms.png" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">벚꽃</a>
+
+                                        <span>20,900 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mainBox box4">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./slideImage/arialCastle.png" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">미니 디즈니 에리얼 궁전</a>
+
+                                        <span>55,900 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mainBox box4">
+                                    <div class="firstBox">
+                                        <a href="#"><img src="./slideImage/japanPost.png" alt=""></a>
+                                    </div>
+
+                                    <div class="secondBox">
+
+                                        <a href="#">일본 엽서</a>
+
+                                        <span>129,000 원</span>
+
+                                        <button onclick="location.href='#';">
+                                            장바구니 담기
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                </div>  -->
+        <!-- <div class="buttons">
+                    <button class="bt1">ㅡ</button>
+                    <button class="bt2">ㅡ</button>
+                    <button class="bt3">ㅡ</button>
+                    <button class="bt4">ㅡ</button>
+                </div>
+
+
+                <script>
+
+                    document.querySelector('.bt2').addEventListener('click', function () {
+                        document.querySelector('.please').style.transform = 'translate(-125%)';
+                    });
+
+                    document.querySelector('.bt3').addEventListener('click', function () {
+                        document.querySelector('.please').style.transform = 'translate(-250%)';
+                    });
+
+                    document.querySelector('.bt4').addEventListener('click', function () {
+                        document.querySelector('.please').style.transform = 'translate(-375%)';
+                    });
+
+                    document.querySelector('.bt1').addEventListener('click', function () {
+                        document.querySelector('.please').style.transform = 'translate(0%)';
+                    });
+
+                </script> -->
+        </article>
+
+        </section>
+
+        <!-- 제품상세정보 -->
+        <input id="check-btn" type="checkbox" />
+        <label for="check-btn">
+            <div class="clickMenu">
+                <span>제품 상세 정보</span>
+                <span class="a">
+                </span>
+            </div>
+        </label>
+        <div class="menu">
+            <img src="https://www.lego.com/cdn/cs/set/assets/blt80d4d33d08c9b798/76428_boxprod_v39.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                alt="제품 상세 정보 이미지">
+            <p>
+                아이들을 위한 레고® 해리포터 판타지 장난감 플레이 세트(76428)로 해리포터™와 친구들의 갑작스러운 루베우스 해그리드의 오두막에 방문을 재현하고 다른 마법의 세계 모험
+                역할 놀이를 즐겨보세요. 분리가능한 지붕과 함께 정교한 내부 모습을 볼 수 있도록 여닫이식 해그리드 오두막의 조립식 모델이 들어 있습니다. 해그리드™가 앉을 수 있는 접이식
+                의자, 드래곤 알, 소장용 호그와트™ 초상화 14개 중 2개와 더불어 이 밖에 더 많은 장식품을 확인하세요. 해그리드의 애완견인 팽이 밖에서 지낼 수 있는 조립식 강아지집이
+                있어 더욱 다채로운 놀이를 즐길 수 있습니다.
+            </p>
+            <p>
+                해리포터 속 유명한 장소를 재현한 이 조립식 기숙사 키트에는 레고 미니피겨 5개(해리포터, 헤르미온느 그레인저™, 론 위즐리™, 드레이코 말포이™, 루베우스 해그리드)와
+                노버트, 팽 장난감 피겨가 들어 있습니다.
+            </p>
+            <p>
+                8세 이상 어린이를 위한 최고의 해리포터 생일 선물 아이디어를 찾고 있다면, 이 마법의 세계 조립 장난감은 독립 놀이에
+                <br>영감을 주거나 친구들과 그룹으로 조립하고 재미있는
+                놀이를 함께 즐기기에 좋습니다.
+            </p>
+            <ul>
+                <li>
+                    아이들의 조립을 통한 모험을 위한 레고® 해리포터™ 판타지 장난감 플레이 세트 - 해리포터와 친구들이 마법의세계에서 아이코닉한 장소라 할 수 있는 루베우스
+                    해그리드의 오두막에 뜻밖의 방문을 재현해 보세요
+                </li>
+                <li>
+                    레고® 해리포터™ 캐릭터 7개 – 해리포터, 헤르미온느 그레인저™, 론 위즐리™, 드레이코 말포이™, 루베우스 해그리드™ 미니피겨와 드래곤 노버트와 해그리드의 애완견
+                    팽 레고 피겨
+                </li>
+                <li>
+                    조립식 오두막과 강아지집 – 오두막 달려있는 분리 가능 지붕으로 쉽게 열 수 있어 재미있는 놀이를 즐길 수 있습니다. 해그리드의 접이식 의자, 우산꽂이, 드래곤 알과
+                    같은 정교한 내부 구성품이 들어 있습니다
+                </li>
+                <li>
+                    소장용 호그와트™ 초상화 14개 중 2개 – 이 조립 장난감에는 해그리드의 오두막에 전시할 수 있는 호그와트 초상화 14개 중 2개의 초상화가 인쇄된 금색 구성품이
+                    포함되어 있습니다
+                </li>
+                <li>
+                    아이들을 위한 선물 아이디어 – 이 세트는 8세 이상의 남녀 어린이를 위한 재미있는 일상적인선물이나 생일 선물이 될 수 있습니다
+                </li>
+                <li>
+                    첨단 도우미 – LEGO® Builder 앱을 통해 제공되는 간편하게 이해할 수 있는 설명서를 확인하세요. 3D 환경에서 모델을 확대, 회전하고 조립 진도를 추적하고
+                    레고 세트를 저장할 수 있습니다
+                </li>
+                <li>
+                    조립식 마법의 세계 장난감 – 레고® 해리포터™ 세트는 좋아하는 장면들이 펼쳐지는 놀이의 세계로 꼬마 마녀, 마법사, 머글™을 이끌어 줍니다. 나만의 모험 이야기로
+                    풀어 나가거나, 모델을 완성하여 멋지게 전시해 보세요
+                </li>
+                <li>
+                    조립, 놀이, 그리고 멋진 전시 - 세트의 부품 수는 896개이며, 레고® 세트에 포함된 조립식 해그리드의 오두막의 크기는 높이 17cm, 폭 19cm, 깊이
+                    15cm입니다
+                </li>
+            </ul>
+            <p>상품정보 제공고시</p>
+            <p>품명 및 모델명 : 76426 호그와트™ 성 보트하우스/</p>
+            <ul>
+                <li>KC 인증정보 : CB061R2195-3001</li>
+                <li>크기 및 중량 : 19.1x26.2x7.2cm/453g</li>
+                <li>색상 : 이미지참조</li>
+                <li>재질 : ABS수지</li>
+                <li>사용연령 또는 권장사용연령 : 만 8세 이상</li>
+                <li>크기·체중의 한계 : 해당없음</li>
+                <li>동일 모델의 출시년월 : 2024.03</li>
+                <li>제조자(사) : LEGO System A/S 레고코리아㈜</li>
+                <li>제조국 : 중국</li>
+                <li>취급방법 및 취급시 주의사항, 안전표시(주의, 경고 등) : 경고! 3세 미만의 어린이는 사용할 수 없음. 작은 부품을 포함하고 있음.</li>
+                <li>품질보증기준 : 본 제품은 공정거래위원회 고시 소비자 분쟁 해결 기준에 의거 교환 또는 보상 받을 수 있습니다.</li>
+                <li>A/S 책임자와 전화번호 :소비자상담실 전화 080-880-0166</li>
+            </ul>
+        </div>
+
+        <!-- 상품평
+                    <input id="check-btn2" type="checkbox" />
+                    <label for="check-btn2">
+                        <div class="review">
+                            <span>상품평</span>
+                            <span class="C">
+                            </span>
+                        </div>
+                    </label>
+
+                    <div class="d">
+                        <span>최초 상품자 되기</span>
+                    </div> -->
+
+
+
+
+
+
+        </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <img src="./headerImg/lego.png" alt="lego" class="footerimg">
+        </div>
+        <div class="footer">
+            <ul>
+                <li>회사소개
+                    <ul>
+                        <li>
+                            <a href="./aboutUs.html">레고 그룹 소개</a>
+                        </li>
+                        <li><a href="#">레고 뉴스</a></li>
+                    </ul>
+                </li>
+                <li>지원
+                    <ul>
+                        <li><a href="#">연락처</a></li>
+                        <li><a href="#">조립설명서 찾기</a></li>
+                    </ul>
+                </li>
+                <li>명소
+                    <ul>
+                        <li><a href="#">레고 하우스</a></li>
+                        <li><a href="#">레고랜드 파크</a></li>
+                    </ul>
+                </li>
+                <li>기타 정보
+                    <ul>
+                        <li><a href="#">레고 라이프</a></li>
+                        <li><a href="#">레고 에듀케이션</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="brandLogo" id="brandLogo">
+                <a href="#">
+                    <img src="../footerImg/facebook.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="../footerImg/x.avif" alt="">
+                </a>
+                <a href="#">
+                    <img src="../footerImg/instagram.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="../footerImg/youtube.avif" alt="">
+                </a>
+
+            </div>
+            <p>LEGO System A/S, DK-7190 Billund, Denmark. 만 18세 이상부터 온라인 구매가 가능합니다. 레고, 레고 로고, 미니피겨, 듀플로, 프렌즈 로고, 미니피겨
+                로고, 드림즈, 닌자고, 비디요 및 마인드스톰은 레고 그룹의 상표입니다. ©2024 The LEGO Group. All rights reserved. 이 사이트를 이용하면 이용약관에
+                동의하는 것으로 간주됩니다. 레고코리아㈜ 대표이사 : 에릭폴모젱, 정희영 | 주소 : 서울특별시 강남구 강남대로 298, 16층 (역삼동) 우편번호 06253
+                사업자등록번호:126-81-25525 | 통신판매업신고 제 2010-서울강남-00549호 사업자등록확인고객센터 무료전화 : 080-880-0166 | 팩스 : 02-511-6412 |
+                업무시간 : 월요일-금요일 오전9시-오후6시</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+
+    function showSearch() {
+        document.querySelector(".background2").className = "background2 show3";
+    }
+
+    document.querySelector("#show3").addEventListener("click", showSearch);
+
+    const headerLoginLink = document.querySelector('.header_login a');
+    const modalWrap = document.getElementById('modalWrap');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modalBg = document.getElementById('modalBg');
+
+    // 모달 열기 함수
+    function openModal() {
+        modalWrap.style.display = 'block';
+        modalBg.style.display = 'block';
+        setTimeout(() => {
+            modalWrap.style.opacity = '1';
+            modalBg.style.opacity = '0.7';
+        }, 10);
+    }
+
+    // 모달 닫기 함수
+    function closeModal() {
+        modalWrap.style.opacity = '0';
+        modalBg.style.opacity = '0';
+        setTimeout(() => {
+            modalWrap.style.display = 'none';
+            modalBg.style.display = 'none';
+        }, 300);
+    }
+
+    headerLoginLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        openModal();
+    });
+
+    closeModalBtn.addEventListener('click', function () {
+        closeModal();
+    });
+
+    modalBg.addEventListener('click', function () {
+        closeModal();
+    });
+</script>

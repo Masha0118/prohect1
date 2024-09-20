@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./productList.css">
+    <link rel="stylesheet" href="./css/headers.css">
+    <link rel="stylesheet" href="./css/modalCategory.css">
+    <link rel="stylesheet" href="./MainPage5.css">
+    <link rel="stylesheet" href="./css/category.css">
+    <link rel="stylesheet" href="./css/footers.css">
+
+</head>
+
+
+
+<body>
+
+    <header class="header">
+
+        <div class="header_logo">
+            <button id="show" class="img-button"><img src="./image/lego-icon.svg" alt="legoLogo"></button>
+        </div>
+
+        <div class="header_menu">
+            <button class="shopping_button" id="show2">레고 제품 쇼핑</button>
+            <ul>
+                <li><a href="./aboutUs.html">레고 브랜드 소개</a></li>
+                <li><a href="#">고객 지원</a></li>
+            </ul>
+        </div>
+
+        <div class="background">
+            <div class="window">
+                <div class="popup">
+
+                    <h2 id="close" class="section_title"></h2>
+
+                    <nav class="menu_lego">
+
+                        <!-- 카테고리 -->
+                        <ul class="menu_list">
+
+                            <li class="menu_item">
+                                <!-- <div class="menu_item"> -->
+                                <button class="menu_link">레고 제품</button>
+                            </li>
+                            <li class="menu_item">
+                                <button class="menu_link">레고 브랜드 소개</button>
+                            </li>
+                            <li class="menu_item">
+                                <button class="menu_link">고객 지원</button>
+                            </li>
+                            <!-- </div> -->
+
+                        </ul>
+
+                        <ul class="menu_list2">
+                            <div class="menu_item2">
+                                <button class="menu_link2">시리즈별 세트</button>
+                                <ul>
+                                    <li><a href="star_wars">스타워즈™</a>
+                                        <img src="./categoryImg/star_wars.jpg" alt="starwarz">
+                                    </li>
+                                    <li><a href="super_mario">슈퍼 마리오™</a>
+                                        <img src="./categoryImg/Super_mario1.jpg" alt="mario">
+                                    </li>
+                                    <li><a href="#">디즈니</a>
+                                        <img src="./categoryImg/disney_castle.jpg" alt="disney">
+                                    </li>
+                                    <li><a href="#">마블</a>
+                                        <img src="./categoryImg/marble_avengers.jpg" alt="marble">
+                                    </li>
+                                    <li><a href="#">해리포터™</a>
+                                        <img src="./categoryImg/harry_potter.jpg" alt="harry">
+                                    </li>
+                                </ul>
+                                <button class="menu_link2">신상품</button>
+
+                                <button class="menu_link2">베스트 셀러</button>
+
+                                <button class="menu_link2">추억의 레고</button>
+                                <ul>
+                                    <li><a href="#">1970~1980</a>
+                                        <img src="./categoryImg/1979_lego.jpeg" alt="1980">
+                                    </li>
+                                    <li><a href="#">1981~1990</a>
+                                        <img src="./categoryImg/1984_lego.jpeg" alt="1990">
+                                    </li>
+                                    <li><a href="#">1991~2000</a>
+                                        <img src="./categoryImg/1992_lego.jpg" alt="2000">
+                                    </li>
+                                    <li><a href="#">2000~2010</a>
+                                        <img src="./categoryImg/2004_lego.jpeg" alt="2010">
+                                    </li>
+                                    <li><a href="#">2011~2020</a>
+                                        <img src="./categoryImg/2017_lego.jpeg" alt="2020">
+                                    </li>
+                                </ul>
+                                <button class="menu_link2">할인 및 행사</button>
+
+                            </div>
+                        </ul>
+
+
+
+                    </nav>
+                    <div class="catecate">
+                        <button id="close2" class="closeButton2">
+                            <img src="./categoryImg/x-mark.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header_search">
+            <input type="text" placeholder="search" class="search_input">
+            <button type="submit" class="search_button">
+                <img src="./headerImg/search.png" alt="search">
+            </button>
+        </div>
+
+        <div class="header_login">
+            <ul>
+                <li><a href="#">로그인</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+
+    <div class="pageTopBanner">
+        <div>
+            <img src="./image/architecture-logo.png" alt="">
+            <a href="">제품</a>
+            <a href="">자세히 보기</a>
+        </div>
+    </div>
+
+
+
+    <div class="listPage">
+
+        <div class="productLeftList">
+
+            <div class="firstCol">
+                <h3>제품분류</h3>
+                <div class="leftCate">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="check1" class="chch">
+                            <label for="check1">세트</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check2" class="chch">
+                            <label for="check2">성인</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check3" class="chch">
+                            <label for="check3">부활절 선물</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="secondCol">
+                <h3>가격(원)</h3>
+                <div class="leftCate">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="check4" class="chch">
+                            <label for="check4">0 원 - 20,000 원</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check5" class="chch">
+                            <label for="check5">20,000 원 - 50,000 원</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check6" class="chch">
+                            <label for="check6">50,000 원 - 100,000 원</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check7" class="chch">
+                            <label for="check7">100,000 원 - 200,000 원</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check8" class="chch">
+                            <label for="check8">200,000 원+</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="thirdCol">
+                <h3>시리즈</h3>
+                <div class="leftCate">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="check9" class="chch">
+                            <label for="check9">DC</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check10" class="chch">
+                            <label for="check10">배트맨&trade;</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="check11" class="chch">
+                            <label for="check11">테크닉</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="check12" class="chch">
+                            <label for="check12">파워드업</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fourthCol">
+                <h3>관심사별</h3>
+                <div class="leftCate">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="check13" class="chch">
+                            <label for="check13">슈퍼히어로</label>
+
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check14" class="chch">
+                            <label for="check14">스포츠</label>
+
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check15" class="chch">
+                            <label for="check15">엔터테인먼트</label>
+
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check16" class="chch">
+                            <label for="check16">우주</label>
+
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check17" class="chch">
+                            <label for="check17">자동차</label>
+
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="check18" class="chch">
+                            <label for="check18">차량</label>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="frame">
+            <div class="productImgList">
+                <div class="box">
+                    <div class="listBox">
+                        <div class="imgBox">
+                            <img src="./proListImg/batbat.png" alt="">
+                        </div>
+
+                        <div class="infoBox">
+                            <span>배트맨&trade; 컬렉션</span>
+                            <span>79,950 원</span>
+                            <div>
+                                <button onclick="location.href='#';">장바구니 담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="listBox">
+                        <div class="imgBox">
+                            <img src="./proListImg/upHouse.png" alt="">
+                        </div>
+
+                        <div class="infoBox">
+                            <span>'업' 하우스</span>
+                            <span>79,900 원</span>
+                            <div>
+                                <button onclick="location.href='#';">장바구니 담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="listBox">
+                        <div class="imgBox">
+                            <img src="./proListImg/gabdol.png" alt="">
+                        </div>
+
+                        <div class="infoBox">
+                            <span>갑돌의 보트 투어</span>
+                            <span>44,900 원</span>
+                            <div>
+                                <button onclick="location.href='#';">장바구니 담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="listBox">
+                        <div class="imgBox">
+                            <img src="./proListImg/peterpan.png" alt="">
+                        </div>
+
+                        <div class="infoBox">
+                            <span>피터 팬과 웬디의 런던 비행</span>
+                            <span>96,900 원</span>
+                            <div>
+                                <button onclick="location.href='#';">장바구니 담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="listBox">
+                        <div class="imgBox">
+                            <img src="./proListImg/roses.png" alt="">
+                        </div>
+
+                        <div class="infoBox">
+                            <span>장미 꽃다발</span>
+                            <span>89,900 원</span>
+                            <div>
+                                <button onclick="location.href='#';">장바구니 담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="listBox">
+                        <div class="imgBox">
+                            <img src="./proListImg/flowers.png" alt="">
+                        </div>
+
+                        <div class="infoBox">
+                            <span>꽃다발</span>
+                            <span>89,900 원</span>
+                            <div>
+                                <button onclick="location.href='#';">장바구니 담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">7</div>
+                <div class="box">8</div>
+                <div class="box">9</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <img src="./headerImg/lego.png" alt="lego" class="footerimg">
+        </div>
+        <div class="footer">
+            <ul>
+                <li>회사소개
+                    <ul>
+                        <li>
+                            <a href="./aboutUs.html">레고 그룹 소개</a>
+                        </li>
+                        <li><a href="#">레고 뉴스</a></li>
+                    </ul>
+                </li>
+                <li>지원
+                    <ul>
+                        <li><a href="#">연락처</a></li>
+                        <li><a href="#">조립설명서 찾기</a></li>
+                    </ul>
+                </li>
+                <li>명소
+                    <ul>
+                        <li><a href="#">레고 하우스</a></li>
+                        <li><a href="#">레고랜드 파크</a></li>
+                    </ul>
+                </li>
+                <li>기타 정보
+                    <ul>
+                        <li><a href="#">레고 라이프</a></li>
+                        <li><a href="#">레고 에듀케이션</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="brandLogo">
+                <a href="#"><img src="./footerImg/facebook.png" alt=""></a>
+                <a href="#"><img src="./footerImg/x.avif" alt=""></a>
+                <a href="#"><img src="./footerImg/instagram.png" alt=""></a>
+                <a href="#"><img src="./footerImg/youtube.avif" alt=""></a>
+
+            </div>
+            <p>LEGO System A/S, DK-7190 Billund, Denmark. 만 18세 이상부터 온라인 구매가 가능합니다. 레고, 레고 로고, 미니피겨, 듀플로, 프렌즈 로고, 미니피겨
+                로고, 드림즈, 닌자고, 비디요 및 마인드스톰은 레고 그룹의 상표입니다. ©2024 The LEGO Group. All rights reserved. 이 사이트를 이용하면 이용약관에
+                동의하는 것으로 간주됩니다. 레고코리아㈜ 대표이사 : 에릭폴모젱, 정희영 | 주소 : 서울특별시 강남구 강남대로 298, 16층 (역삼동) 우편번호 06253
+                사업자등록번호:126-81-25525 | 통신판매업신고 제 2010-서울강남-00549호 사업자등록확인고객센터 무료전화 : 080-880-0166 | 팩스 : 02-511-6412 |
+                업무시간 : 월요일-금요일 오전9시-오후6시</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+
+    const headerLoginLink = document.querySelector('.header_login a');
+    const modalWrap = document.getElementById('modalWrap');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modalBg = document.getElementById('modalBg');
+
+    // 모달 열기 함수
+    function openModal() {
+        modalWrap.style.display = 'block';
+        modalBg.style.display = 'block';
+        setTimeout(() => {
+            modalWrap.style.opacity = '1';
+            modalBg.style.opacity = '0.7';
+        }, 10);
+    }
+
+    // 모달 닫기 함수
+    function closeModal() {
+        modalWrap.style.opacity = '0';
+        modalBg.style.opacity = '0';
+        setTimeout(() => {
+            modalWrap.style.display = 'none';
+            modalBg.style.display = 'none';
+        }, 300);
+    }
+
+    headerLoginLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        openModal();
+    });
+
+    closeModalBtn.addEventListener('click', function () {
+        closeModal();
+    });
+
+    modalBg.addEventListener('click', function () {
+        closeModal();
+    });
+
+
+
+    function show() {
+        document.querySelector(".background").className = "background show";
+    }
+
+    function close() {
+        document.querySelector(".background").className = "background";
+    }
+
+    document.querySelector("#show").addEventListener("click", show);
+    document.querySelector("#show2").addEventListener("click", show);
+    document.querySelector("#close").addEventListener("click", close);
+    document.querySelector("#close2").addEventListener("click", close);
+</script>

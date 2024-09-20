@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGO Group</title>
+
+    <link rel="stylesheet" href="./css/aboutUs.css">
+    <link rel="stylesheet" href="./css/headers.css">
+    <link rel="stylesheet" href="./css/newFooter.css">
+    <link rel="stylesheet" href="./css/modalCategory.css">
+    <link rel="stylesheet" href="./css/modalCategory2.css">
+    <link rel="stylesheet" href="./css/caregory.css">
+
+    <script defer src="./css/aboutUs.js"></script>
+    <script defer src="./css/scripts.js"></script>
+
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <div class="headerBackground">
+        <header class="header">
+
+            <div class="header_logo">
+                <button id="show2" class="img-button"><img src="./headerImg/lego.png" alt="legoLogo"
+                        onclick="location.href='../index.html'"></button>
+            </div>
+
+            <div class="header_menu">
+                <button class="shopping_button" id="show">레고 제품 쇼핑</button>
+                <ul>
+                    <li><a href="./aboutUs.html">레고 브랜드 소개</a></li>
+                    <li><a href="#">고객 지원</a></li>
+                </ul>
+            </div>
+
+            <div class="background">
+                <div class="window">
+                    <div class="popup">
+
+                        <h2 class="section_title"></h2>
+
+                        <div class="menu_lego">
+                            <a href="#">
+                                <img src="./image/lego-icon.svg" alt="lego">
+                            </a>
+                        </div>
+
+                        <div class="menu_list">
+                            <ul class="menu_list_1">
+                                <li><button>레고 제품 쇼핑</button></li>
+                                <li><button onclick="location.href='./aboutUs.html'">레고 브랜드 소개</button></li>
+                                <li><button>고객 지원</button></li>
+                            </ul>
+                        </div>
+
+                        <div class="close">
+                            <button class="close_button" id="close">
+                                <img src="./image/close.png" alt="close">
+                            </button>
+                        </div>
+
+                        <div class="menu_list2">
+                            <ul class="menu_list2_1">
+                                <li><button onclick='btnClick()'>시리즈별 세트</button></li>
+                                <li><button onclick="location.href='./teamProject/productList.html'">신상품</button></li>
+                                <li><button onclick="location.href='./teamProject/productList.html'">베스트 셀러</button></li>
+                                <li><button onclick="location.href='./pastSeries.html'">추억의 레고</button></li>
+                                <li><button onclick="location.href='./teamProject/productList.html'">할인 및 행사</button></li>
+                            </ul>
+                        </div>
+
+                        <div id="seriesSet">
+                            <ul>
+                                <li id="star_wars">스타워즈™
+                                    <div class="starWars">
+                                        <img src="./categoryImg/starWars_logo_black_stroke_300w_2.png"
+                                            alt="starwars">
+                                    </div>
+                                </li>
+                                <li id="super_mario">레고 슈퍼 마리오
+                                    <div class="superMario">
+                                        <img src="./categoryImg/SuperMario-logo-pos_300w.png"
+                                            alt="supermario">
+                                    </div>
+                                </li>
+                                <li id="disney_">디즈니
+                                    <div class="disNey">
+                                        <img src="./categoryImg/disney_logo_pos_300w_2.png" alt="disney">
+                                    </div>
+                                </li>
+                                <li id="marvel_">마블
+                                    <div class="marvel">
+                                        <img src="./categoryImg/Marvel2.png" alt="marvel">
+                                    </div>
+                                </li>
+                                <li id="marble_">해리포터™
+                                    <div class="harryPotter">
+                                        <img src="./categoryImg/harrypotter_logo_gold_divider-600w2_2.png"
+                                            alt="harry">
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <div class="catecate">
+                            <button id="close" class="closeButton">
+                                <img src="./categoryImg/x-mark.svg" alt="">
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="legoland">
+                        <img src="./image/bricks.png" alt="legoland">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header_search">
+                <button type="submit" class="search_button" id="show3">
+                    <img src="./headerImg/search.png" alt="search">
+                </button>
+            </div>
+
+            <div class="modal_bg" id="modalBg"></div>
+
+            <div class="modal_box" id="modalWrap">
+                <div class="content">
+                    <h2>레고 &reg; 계정으로 로그인하기</h2>
+                    <input type="text" placeholder="id" class="modal_input">
+                    <input type="password" placeholder="password" class="modal_input">
+                    <a href="./mainlogin.html">로그인</a>
+                    <a href="./accountcreate.html">회원가입</a>
+                    <button class="close_btn" id="closeModalBtn">나가기</button>
+                </div>
+            </div>
+
+            <div class="background2">
+                <div class="window2">
+                    <div class="popup2">
+
+                        <input type="text" class="searchBox">
+                        <button class="closeX">X</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_login">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#"><img src="../img/shopping.png" alt="shopping"
+                                onclick="location.href='./marketbox.html'"></a></li>
+                </ul>
+            </div>
+
+        </header>
+    </div>
+
+
+    <!-- 메인 -->
+    <main class="mBottom">
+
+        <!-- 상단바 -->
+        <div class="top_ul">
+            <ul>
+                <li>
+                    <a href="./aboutUs.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./legoGroup.html">
+                        <strong>THE LEGO GROUP</strong>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./legoGroupHistory.html">
+                        THE LEGO GROUP HISTORY
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./legoBrand.html">
+                        THE LEGO BRAND
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./owership.html">
+                        OWNERSHIP
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- lego Group 페이지 -->
+
+        <h1 class="text">The LEGO Group</h1>
+
+
+        <div class="group">
+            <div>
+                <img src="https://www.lego.com/cdn/cs/aboutus/assets/blt52bef8ca4166d877/the-lego-group.jpg?disable=upscale&width=3840&quality=55&crop=15:4"
+                    alt="legoGroupImg">
+            </div>
+
+
+            <div>
+                <h2 class="h2_text">
+                    레고 그룹은 덴마크 빌룬트에 본사를 둔 비공개 회사입니다.
+                    이 회사는 1932년에 설립한 Kirk Kristiansen 가족에 의해 여전히 소유되고 있습니다.
+                </h2>
+
+                <!-- 레고 히스토리 페이지로 연결 -->
+                <a href="./legoGroupHistory.html">레고 그룹 역사에 대해 더 알아보기 &gt;</a>
+            </div>
+
+
+
+
+            <!-- 레고 브랜드 페이지로 연결 -->
+
+            <div class="br hv">
+                <ul>
+                    <li>
+                        <div>
+                            <a href="./legoBrand.html">
+                                <img class="tr"
+                                    src="https://www.lego.com/cdn/cs/aboutus/assets/blta13f90a4c5205ad0/HighRes_LEGOClassic.jpg?disable=upscale&width=1280&quality=55&crop=16:9"
+                                    alt="grImg1">
+
+                                <h3>레고 브랜드</h3>
+                                <p>
+                                    우리는 재창조의 대가입니다. 오늘날 문화적으로 관련이 있는 첫 번째 벽돌은 언제나 그랬듯이 (그리고 여전히 그것도 잘 어울립니다!). 나머지 절반은
+                                    아이입니다. 레고 놀이는 항상 새로운 것을 창조할 수 있는 지속적인 발견의 기회를 제공합니다.
+                                </p>
+
+                                <p>레고 브랜드에 대해 더 알아보기 &gt;</p>
+
+                            </a>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div>
+                            <a href="./legoBrand.html">
+                                <img src="https://www.lego.com/cdn/cs/aboutus/assets/blta1f8f49617218fe6/hero-overlay--tall-promise2.jpg?disable=upscale&width=1280&quality=55&crop=16:9"
+                                    alt="grImg2">
+
+                                <h3>우리의 약속들</h3>
+                                <p>
+                                    끊임없이 혁신하고 절대 타협하지 않습니다.
+                                    최고를 위해 건설하고, 재건하고, 노력합니다.
+                                    우리를 앞으로 나아가게 하는 것은 바로 이러한 회복력과 영구적인 리뉴얼 감각입니다.
+                                    우리는 결코 가만히 있지 않습니다. 우리는 항상 창조하고, 발명하고, 즐길 것입니다.
+                                </p>
+
+                                <p>약속에 대해 더 알아보기 &gt;</p>
+
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <a href="./owership.html">
+                                <img src="https://www.lego.com/cdn/cs/aboutus/assets/blta65701eba50f0117/Ownership_tall.jpg?disable=upscale&width=1920&quality=55&crop=16:9"
+                                    alt="grImg3">
+
+                                <h2>LEGO Group은 KIRKBI A/S(75%)와 LEGO Foundation(25%)이 소유하고 있습니다</h2>
+                                <p>레고 그룹 오너쉽에 대해 더 알아보기 &gt;</p>
+                            </a>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer">
+            <div class="logoLine">
+                <div>
+                    <img src="./image/LEGO_logo.svg.png" alt="">
+                </div>
+            </div>
+
+            <div class="pageLine">
+
+                <div class="allBlock">
+                    <div class="blockPage1">
+                        <button>레고 그룹 소개</button>
+                        <button>레고 뉴스</button>
+                    </div>
+
+                    <div class="blockPage2">
+                        <button>연락처</button>
+                        <button>조립설명서 찾기</button>
+                    </div>
+
+                    <div class="blockPage3">
+                        <button>레고 하우스</button>
+                        <button>레고랜드 파크</button>
+                    </div>
+
+                    <div class="blockPage4">
+                        <button>레고 라이프</button>
+                        <button>레고 에듀케이션</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="iconLogo">
+                <a href="#"><img src="./footerImg/facebook.png" alt=""></a>
+                <a href="#"><img src="./footerImg/x.avif" alt=""></a>
+                <a href="#"><img src="./footerImg/instagram.png" alt=""></a>
+                <a href="#"><img src="./footerImg/youtube.avif" alt=""></a>
+
+            </div>
+
+            <div class="lastInfo">
+                <p>LEGO System A/S, DK-7190 Billund, Denmark. 만 18세 이상부터 온라인 구매가 가능합니다. 레고, 레고 로고, 미니피겨, 듀플로, 프렌즈 로고,
+                    미니피겨
+                    로고, 드림즈, 닌자고, 비디요 및 마인드스톰은 레고 그룹의 상표입니다. ©2024 The LEGO Group. All rights reserved. 이 사이트를 이용하면
+                    이용약관에
+                    동의하는 것으로 간주됩니다. 레고코리아㈜ 대표이사 : 에릭폴모젱, 정희영 | 주소 : 서울특별시 강남구 강남대로 298, 16층 (역삼동) 우편번호 06253
+                    사업자등록번호:126-81-25525 | 통신판매업신고 제 2010-서울강남-00549호 사업자등록확인고객센터 무료전화 : 080-880-0166 | 팩스 : 02-511-6412
+                    |
+                    업무시간 : 월요일-금요일 오전9시-오후6시</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

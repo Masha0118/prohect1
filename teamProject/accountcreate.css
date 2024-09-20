@@ -1,0 +1,269 @@
+body {
+    width: 40vw;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #e1e8ec;
+}
+
+/* 뒤로가기 버튼 크기 */
+.backarrow {
+    width: 30px;
+    height: 30px;
+}
+
+/* 뒤로가기 버튼 색 호버 */
+.backarrow:hover {
+    background-color: gray;
+}
+
+/* 폼 컨테이너 하얀색 배경 */
+.createCard {
+    background-color: white;
+}
+
+/* 레고 이미지 크기 */
+.legoimg {
+    width: 45px;
+    height: 45px;
+    transition: .8s;
+}
+
+.legoimg:hover {
+    transform: rotate(45deg);
+}
+/* 기능 버튼들 커서표시 */
+.topFouricon:hover,
+.legoimg:hover,
+.backarrow:hover,
+.Pointer:hover,
+.createbtn:hover,
+.Pointer:hover {
+    cursor: pointer;
+}
+
+/* 레고 이미지 센터 */
+.legoimgCenter {
+    text-align: center;
+}
+
+/* 헤더 가운데 정렬 */
+.textCenter {
+    text-align: center;
+}
+
+/* 성인레고 계정만들기 */
+h1 {
+    font-size: 30px;
+}
+
+/* 페이스북,구글 가운데정렬 */
+.buttoncenter {
+    text-align: center;
+}
+
+/* 계정이 이미 있나요? */
+h6 {
+    margin: 10px;
+}
+
+
+/* 페이스북 ,구글 크기 */
+.topFouricon {
+    width: 45px;
+    height: 45px;
+    transition: .6s;
+}
+
+.topFouricon:hover {
+    transform: scale(1.2);
+
+}
+
+/* 로그인 버튼 */
+button {
+    border: none;
+    background-color: #e1e8ec;
+    color: #006cb7;
+}
+
+/* 로그인 버튼 언더라인 호버 */
+button:hover {
+    text-decoration: underline;
+}
+
+/* =====================================================================================
+메인 */
+.inputsize,
+.birthtop {
+    margin: 1%;
+}
+
+/* 출생 날짜 위치 조정 */
+.birthtop {
+    margin-left: 1%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+/* 이름 인풋 사이즈 */
+#name {
+    width: 97%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* 성 인풋 사이즈 */
+#firstname {
+    width: 97%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* 이메일 인풋 사이즈 */
+#email {
+    width: 97%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/*  비밀번호 인풋 사이즈 */
+#password {
+    width: 97%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* 국가 인풋 사이즈 */
+#country {
+    width: 97%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* 줄 맞추기 */
+.pswleft {
+    margin-left: -1%;
+}
+
+/* 생년월일 3 분할 */
+.divide {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* 일 인풋 사이즈 */
+#day {
+    width: 97%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* 달 인풋 사이즈 */
+#months {
+    width: 97%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* 년 인풋 사이즈 */
+#years {
+    width: 97%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* 줄 맞추기 */
+input {
+    margin: 1%;
+}
+
+/* 줄 맞추기 */
+#country {
+    margin: 1%;
+}
+
+/* 개인정보 수집 사용과 동의 글 색깔  */
+.PrivacyAgreeColor {
+    color: #006cb6;
+}
+
+/* 개인정보 수집 사용과 동의 글 언더라인 호버 */
+.PrivacyAgreeColor:hover {
+    text-decoration: underline;
+}
+
+/* p태그 글자 사이즈 */
+.pFontsize {
+    font-size: 13px;
+}
+
+/* 컨테이너 맨 밑 버튼 크기 */
+.createbtnCard {
+    text-align: center;
+    height: 100px;
+}
+
+/* 컨테이너 맨 밑 버튼 꾸미기 */
+.createbtn {
+    background-color: steelblue;
+    width: 30%;
+    height: 50%;
+    margin-top: 4%;
+    border-radius: 99px;
+    font-size: 50px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+.createbtn:hover {
+    background-color: rgb(115, 115, 148);
+}
+
+/* ============================================================================ */
+/* 푸터 글 가운데 정렬 */
+footer {
+    height: 10%;
+    text-align: center;
+}
+
+/* 개인정보 취급 방침 |쿠키 글사이즈 */
+.footersize {
+    height: 40px;
+    margin-top: 25px;
+}
+
+/* 개인정보 취급 방침 |쿠키 언더라인 호버 */
+footer button:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+
+    /* 글자랑 버튼 글자 작게 */
+    p,
+    .createbtn {
+        font-size: .7em;
+    }
+
+    /* 일 인풋 작게 */
+    #day {
+        width: 80%;
+    }
+
+    /* 달 인풋 작게 */
+    #months {
+        width: 80%;
+    }
+
+    /* 년 인풋 작게 */
+    #years {
+        width: 80%;
+    }
+
+    /* 개인정보 동의 글자 작게 */
+    .PrivacyAgreeColor {
+        font-size: .8em;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forgotid</title>
+    <link rel="stylesheet" href="./forgotid.css">
+
+</head>
+
+<body>
+    <div>
+        <div>
+            <header>
+                <div>
+                    <div>
+                        <button class="backarrowBtn" type="button" onclick="location.href='mainlogin.html'">
+                            <span>
+                                <img class="backarrow" src="./image/backarrow.png" alt="backarrow">
+                            </span>
+                        </button>
+                    </div>
+                    <div class="legoimgCenter">
+                        <img onclick="location.href='../index.html'" class="legoimg" src="./image/LEGO_logo.svg.png"
+                            alt="legoimg">
+                    </div>
+                </div>
+            </header>
+            <main>
+                <h1>사용자 아이디를 잊으셨나요?</h1>
+                <p>여기에 이메일 주소를 입력해주시면 사용자 아이디가 포함된 이메일을 보내드릴 것입니다.</p>
+                <form action="#">
+                    <div class="cardContainer">
+                        <img class="legoDetectiveimg" src="./image/legodetectiv.png" alt="legoDetectivImg">
+                    </div>
+                    <div class="emailBox">
+                        <div>
+                            <label>이메일 주소</label>
+                        </div>
+                        <div>
+                            <input type="email" id="email" name="email" placeholder="이메일 주소" minlength="16"
+                                maxlength="30" required>
+                        </div>
+                        <div class="submitBtnCenter">
+                            <button class="submitBtn" type="submit">
+                                <span>전송</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <div class="footersize">
+                    <button type="button" class="footerbtn">
+                        <span>개인정보 취급방침</span>
+                    </button>
+                    |
+                    <button type="button" class="footerbtn">
+                        <span>쿠키</span>
+                    </button>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

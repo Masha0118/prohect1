@@ -1,0 +1,86 @@
+/* 메인 배너 스타일 */
+#mainSize {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+    /* background-color: rgb(214, 143, 155); */
+    border-top: .5em solid white;
+    border-bottom: .5em solid white;
+}
+
+
+.bannersList {
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .bannersList {
+        flex-direction: column;
+    }
+}
+
+/* 이번 주 최고 인기 배너 사이즈 확인*/
+.sectionWeekend {
+
+    width: 90%;
+    display: inline-block;
+    /* border: 4px solid rgb(155, 218, 40); */
+
+}
+
+/* 이번 주 최고 인기 문구 조절 */
+.thisWeekendPopular {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+/* 이번 주 최고 인기 텍스트 조절 */
+.thisWeekendPopular>span {
+    margin: 10px;
+    display: block;
+    font-size: 26px;
+    text-align: left;
+
+}
+
+/* .bannersList {
+    border: 4px solid blue;
+} */
+
+
+
+/* 최고 인기 상품 사이즈 및 간격 조절 */
+.weekendProduct {
+    display: inline-block;
+    margin: 4px;
+    width: 32%;
+}
+
+@media (max-width:768px) {
+    .weekendProduct {
+        width: 100%;
+    }
+}
+
+/* 최고 인기 상품 이미지 사이즈 조절*/
+.weekendProduct img {
+    width: 100%;
+}
+
+/* 슬라이드 배너와 상하 간격 조절*/
+section {
+    margin-bottom: 100px;
+}
+
+/* 쇼핑하기 글자 사이즈 */
+.weekendProduct a {
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* 커서 올릴 시 언더라인*/
+.weekendProduct:hover a {
+    text-decoration: underline;
+}

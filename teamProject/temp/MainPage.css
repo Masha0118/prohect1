@@ -1,0 +1,907 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+/* header,
+footer {
+    width: 1024px
+} */
+
+/* 메인 크기 조절 및 가운데 정렬 */
+main {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    background-color: #FFEFCA
+    /* width: calc(1024px * .8); */
+}
+
+
+
+/*-----------------------헤더-----------------------------*/
+
+/* 헤더 레고 아이콘 크기 및 정렬 */
+.header_logo img {
+    width: 150px;
+    height: 85px;
+    float: left;
+}
+
+
+
+/* 서치 아이콘 크기 */
+.search_button img {
+    width: 35px;
+    height: 20px;
+}
+
+/* 헤더 영역 색상 지정과 영역 크기 지정 */
+.header {
+    height: 100px;
+    background-color: #ffcf00;
+    border-bottom: 1px solid black;
+    letter-spacing: 2px;
+    padding-top: 10px;
+}
+
+/* 검색창과 검색 로고 위치 헤더의 정렬 */
+.header_menu {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 헤더 카테고리 글 위치 조정 */
+.header_menu ul {
+    margin-top: 40px;
+}
+
+/* 헤더 카테고리 글 가로 정렬 */
+.header_menu ul li {
+    display: inline-block;
+}
+
+/* 메뉴 글꼴 조정 */
+.header_menu ul li a {
+    display: block;
+    font: bold 14px 'arial';
+    margin: 0px 16px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.header_menu ul li a:hover {
+    color: #007bff;
+}
+
+/* 서치 버튼 크기 및 정렬 */
+.header_search {
+    float: right;
+    margin-right: 20px;
+    margin-top: 22px;
+}
+
+/* 검색 버튼 디자인 */
+.search_button {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 보류 */
+/* .search_button img {
+    width: 35px;
+    height: 20px;
+} */
+
+/* 검색 버튼 호버하면 색상 변경 */
+.search_button:hover {
+    background-color: red;
+}
+
+
+/* 검색창 꾸미기 */
+.search_input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 150px;
+}
+
+/* 검색창 크기와 디자인 조정 */
+.search_input {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid red;
+    width: 200px;
+    outline: none;
+}
+
+/* 검색 이미지 크기 조정 */
+.search_button img {
+    width: 33px;
+    height: 22px;
+    border-radius: 50px;
+    margin-top: 2px;
+}
+
+/* 검색 버튼 호버하면 색상 변경 */
+.search_button:hover {
+    background-color: red;
+}
+
+/* 검색창 크기와 디자인 조정 */
+.search_input:focus {
+    border-radius: rgba(111, 13, 13, 0.998);
+}
+
+.header_login {
+    text-align: right;
+    margin-right: 340px;
+    margin-top: -20px;
+}
+
+.header_login ul {
+    padding: 0;
+}
+
+.header_login ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.header_login ul li:first-child {
+    margin-left: 0;
+}
+
+.header_login ul li a {
+    font: bold 14px 'arial';
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header_login ul li a:hover {
+    color: #007bff;
+}
+
+/* 모달 백그라운드 스타일 */
+.modal_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* 모달 박스 스타일 */
+.modal_box {
+    width: 50%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+/* 모달 닫기 버튼 스타일 */
+.close_btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.close_btn:hover {
+    background-color: #d32f2f;
+}
+
+.content a {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.content a:hover {
+    background-color: #0056b3;
+}
+
+.content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/*============================큰 배너=================================*/
+
+
+/* 큰 배너 간격 및 구분 */
+.mainAd {
+    /* border: 1px rgb(223, 130, 68) solid; */
+    /* margin: 3%; */
+    /* background-color: bisque; */
+    position: relative;
+}
+
+
+
+/* .movingAd {
+    display: inline-block;
+    position: absolute;
+    bottom: 50%;
+} */
+
+.mainAd img {
+    width: 100%;
+}
+
+/* 이번 주 최고 인기 텍스트 조절*/
+.mainAd span {
+    font-size: 2em;
+    display: block;
+}
+
+/* 구매하기 버튼 스타일*/
+.buyButton {
+    display: flex;
+    background-color: black;
+    width: 130px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 쇼핑하기 글자 색상*/
+.buyButton a {
+    color: white;
+}
+
+/* 쇼핑하기 > 글자 스타일*/
+.buyButton b {
+    color: white;
+
+}
+
+
+
+/* 큰 배너 위 문자 및 버튼 고정*/
+/* .gogogo {
+    position: relative;
+} */
+
+
+.goShopping span {
+    font-size: 1.7em;
+}
+
+.movingAd {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    right: 23%;
+    top: 35%;
+}
+
+@media (max-width: 700px) {
+    .mainAd span {
+        font-size: 0.7em;
+    }
+}
+
+/*-----------------------------아이콘--------------------------------------*/
+
+
+
+
+/* 아이콘 영역 사이즈 조절 및 아래 섹션과 구분 */
+nav {
+    display: inline-block;
+    /* border: 3px solid; */
+    margin-bottom: 200px;
+    width: 100%;
+    /* background-color: rgb(214, 143, 155); */
+    ;
+
+}
+
+
+/* 교보 버전 리스트 스타일 삭제 및 인라인 블럭 */
+nav>div>div>ul {
+    /* text-align: center; */
+    display: inline-block
+}
+
+/* 리스트 병렬 처리 */
+.kyoboStyleBanner li {
+    float: left;
+    margin: 7px;
+}
+
+li a {
+    display: block;
+}
+
+
+/* 교보 리스트 가운데 정렬 */
+/* nav {
+    text-align: center;
+} */
+
+/* 교보 리스트 이미지 사이즈 조절 */
+nav img {
+    width: 120px;
+}
+
+/* 교보 리스트 커서 시 밑줄 */
+nav li:hover {
+    text-decoration: underline;
+}
+
+.kyoboStyleBanner li {
+    font-size: .8em;
+}
+
+
+/*----------------------------------메인배너--------------------------------------*/
+
+
+/* 메인 배너 스타일 */
+#mainSize {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+    /* background-color: rgb(214, 143, 155); */
+    border-top: .5em solid white;
+    border-bottom: .5em solid white;
+}
+
+/* 이번 주 최고 인기 배너 사이즈 확인*/
+.sectionWeekend {
+
+    width: 90%;
+    display: inline-block;
+    /* border: 4px solid rgb(155, 218, 40); */
+
+}
+
+/* 이번 주 최고 인기 문구 조절 */
+.thisWeekendPopular {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+/* 이번 주 최고 인기 텍스트 조절 */
+.thisWeekendPopular>span {
+    margin: 10px;
+    display: block;
+    font-size: 26px;
+    text-align: left;
+
+}
+
+/* .bannersList {
+    border: 4px solid blue;
+} */
+
+
+
+/* 최고 인기 상품 사이즈 및 간격 조절 */
+.weekendProduct {
+    display: inline-block;
+    margin: 4px;
+    width: 32%;
+    /* border: 1px solid black; */
+}
+
+/* 최고 인기 상품 이미지 사이즈 조절*/
+.weekendProduct img {
+    width: 100%;
+}
+
+/* 슬라이드 배너와 상하 간격 조절*/
+section {
+    margin-bottom: 100px;
+}
+
+/* 쇼핑하기 글자 사이즈 */
+.weekendProduct a {
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* 커서 올릴 시 언더라인*/
+.weekendProduct:hover a {
+    text-decoration: underline;
+}
+
+
+
+
+
+/*---------------------------------상품 슬라이드 배너-------------------------------------*/
+
+article {
+    margin-bottom: 10%;
+    margin: auto;
+    width: 70%;
+    overflow: hidden;
+
+}
+
+.please {
+    /* width: 100%; */
+    display: flex;
+    /* flex-wrap: nowrap;  */
+    transition: transform 0.9s;
+    /* position: relative; */
+    
+}
+
+/* .con2 {
+    position: relative;
+    left: 100%;
+}
+
+.con3 {
+    position: relative;
+    left: 400%;
+}
+
+.con4 {
+    position: relative;
+    left: 800%;
+} */
+
+/* 전환 효과 */
+.container {
+    /* width: 100%; */
+    /* transform: translate(-100vw); */
+    /* transition: transform 0.5s; */
+    /* width: 90%; */
+    display: flex;
+    /* margin: auto; */
+    margin-top: 9%;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+
+}
+
+
+.slideSectionName {
+    font-size: 2em;
+    text-align: left;
+    
+}
+
+
+.mainBox {
+    width: 17.5%;
+    display: flex;
+    flex-direction: column;
+    /* display: inline-block; */
+    border: 1px solid rgb(202, 202, 202); 
+    text-align: center;
+    margin: 1%;
+    
+}
+
+.firstBox img {
+    width: 100%;
+    /* object-fit: contain; */
+    background-color: white;
+}
+
+.firstBox a {
+    width: 100%;
+    height: 10%;
+    /* display: inline-block; */
+    background-color: white;
+}
+
+
+
+
+.secondBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    background-color: #bfd4d0;
+    position: relative;
+    align-items: center;
+}
+
+.secondBox a {
+    text-align: left;
+    /* display: inline-block; */
+    width: 100%;
+    height: 3vh;
+    color: white;
+    margin-top: 7%;
+    margin-left: 6%;
+}
+
+.secondBox span {
+    /* display: block; */
+    height: 3vh;
+    color: white;
+    margin-right: 60%;
+}
+
+
+.secondBox button {
+    width: 90%;
+    height: 50px;
+    background-color: rgb(255, 212, 0);
+    border: 0px;
+    margin-bottom: 5%;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid rgb(255, 212, 0);
+    background-color: #A2BAB5;
+    
+}
+
+/* 주요 세트 이미지 호버 시 확대 */
+.firstBox:hover {
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.5s;
+}
+
+/* 주요 세트 이미지 호버 해제 애니메이션 */
+.firstBox {
+    transition-duration: 0.3s;
+}
+
+.buttons .bt1,
+.buttons .bt2,
+.buttons .bt3,
+.buttons .bt4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 6%;
+    border-radius: 10px;
+    background-color: white;
+    border: 0;
+}
+
+.buttons img {
+
+}
+
+/*============================================================================*/
+
+/* 메인 배너 스타일 */
+#mainSize2 {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+    background-color: rgb(48,12,84);
+    border-top: .5em solid white;
+    /* border-bottom: .5em solid white; */
+}
+
+/* 이번 주 최고 인기 배너 사이즈 확인*/
+.sectionWeekend2 {
+
+    width: 90%;
+    display: inline-block;
+    /* border: 4px solid rgb(155, 218, 40); */
+
+}
+
+/* 이번 주 최고 인기 문구 조절 */
+.thisWeekendPopular2 span {
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* 이번 주 최고 인기 텍스트 조절 */
+.thisWeekendPopular2>span {
+    margin: 10px;
+    display: block;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.text p span {
+    color: white;
+    font-weight: 200;
+} 
+
+/* .bannersList {
+    border: 4px solid blue;
+} */
+
+
+
+/* 최고 인기 상품 사이즈 및 간격 조절 */
+.weekendProduct2 {
+    display: inline-block;
+    margin: 4px;
+    width: 32%;
+    /* border: 1px solid black; */
+}
+
+.text h3 {
+    color: white;
+}
+
+/* 최고 인기 상품 이미지 사이즈 조절*/
+.weekendProduct2 img {
+    width: 100%;
+}
+
+/* 슬라이드 배너와 상하 간격 조절*/
+.section2 {
+    margin-bottom: 100px;
+}
+
+/* 쇼핑하기 글자 사이즈 */
+.weekendProduct2 a {
+    font-size: larger;
+    font-weight: lighter;
+    color: white;
+}
+
+/* 커서 올릴 시 언더라인*/
+.weekendProduct2:hover a {
+    text-decoration: underline;
+}
+
+.coolBanner img {
+    width: 90%;
+}
+
+
+/*===============================궁금했던 이야기====================================*/
+
+/* 궁금한 이야기 전체 크기 */
+.curiosTab {
+    margin: auto;
+    /* border: 1px solid blue; */
+    width: 70%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.curios {
+    
+}
+
+/* 궁금했던 이야기 글자 크기 */
+.curiosTab>div>span {
+    font-size: 1.7em;
+}
+
+/* 4개를 싸고 있는 박스 및 정렬 */
+.curiosThing {
+    /* border: 1px solid rgb(98, 0, 255); */
+    text-align: center;
+    display: flex;
+}
+
+/* a태그에 밑줄 삭제 */
+.curiosThing a {
+    text-decoration: none;
+}
+
+/* 탭 하나 세로 정렬 */
+.tab1 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 이미지가 들어있는 박스 크기 */
+.curiTabImage {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+}
+
+/* 이미지의 사이즈 */
+.tab1 img {
+    width: 100%;
+}
+
+/* 사진 아래 문자 박스 크기 및 색상 없애기 */
+.wordWidth {
+    /* border: 1px solid red; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: initial;
+}
+
+/* 글자 자동 개행 */
+.wordWidth .curiSpan1 {
+    /* white-space: pre-wrap; */
+    /* word-break: break-all; */
+    font-size: 0.8em;
+}
+
+/* 탭에 호버시 더보기에 밑줄*/
+.curiosThing a:hover span:nth-child(3) {
+    text-decoration: underline;
+}
+
+
+/*==============================마지막 문구=========================================*/
+
+.finalText {
+    background-color: rgb(242, 242, 242);
+    width: 70%;
+    font-size: 0.85em;
+    padding: 20px;
+    margin: auto;
+    white-space: pre-wrap;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+
+/*---------------------------풋터----------------------------*/
+
+/* 푸터의 크기와 영역 지정 */
+footer {
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: blue;
+}
+
+
+/* 푸터 레고 이미지 왼쪽 정렬 */
+
+/* 푸터 스타일 */
+.footer {
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #10abe8;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* 푸터 이미지 스타일 */
+.footer img {
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.footer a img {
+    transition: transform 0.3 ease;
+}
+
+.footer a:hover img {
+    transform: scale(1.1);
+}
+
+.footer li {
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+
+.footer p {
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+/* 큰 분류 스타일 */
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+.footer ul li {
+    font-weight: bold;
+    margin-right: 20px;
+    padding: 15px 20px;
+    background-color: red;
+    border-radius: 5px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.footer ul li:hover {
+    opacity: 1;
+}
+
+/* 작은 분류 스타일 */
+.footer ul ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer ul ul li {
+    margin-bottom: 5px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+footer ul ul li:hover {
+    background-color: #f5f5f5;
+}
+
+
+.footerimg {
+    width: 140px;
+
+    /* float: left; */
+}

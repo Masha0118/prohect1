@@ -1,0 +1,825 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.cupaMain {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.container {
+    /* display: inline-block; */
+    display: flex;
+    /* border: 1px solid red; */
+    /* height: 50vh; */
+
+    /* justify-content: space-between; */
+    /* align-items: stretch; */
+    /* margin-right: 5%; */
+}
+
+.bigImg {
+    /* border: 1px solid red; */
+    width: 45%;
+    height: 100%;
+    /* object-fit: cover; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* flex: 0 0 55%; */
+    border: 1px solid rgb(235, 225, 225);
+    /* margin-left: 5%; */
+
+}
+
+.mainImg img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgb(235, 225, 225);
+}
+
+.productInfo .menu1 img {
+    width: 65%;
+}
+
+.buyGift span {
+    color: white;
+}
+/*======================================================================*/
+
+.icon {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.age,
+.pices,
+.legoPoint,
+.legoNumber {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 10%;
+    align-items: center;
+}
+
+.age,
+.pices,
+.legoPoint,
+.legoNumber span:nth-child(3) {
+    font-size: 0.9em;
+}
+
+.age,
+.pices,
+.legoPoint {
+    border-right: 1px solid rgb(235, 226, 226);
+}
+
+
+.order {
+    /* border: 1px solid red; */
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(235, 226, 226);
+    border-right: 1px solid rgb(235, 226, 226);
+    border-bottom: 1px solid rgb(235, 226, 226);
+}
+
+.titleLogo {
+    /* border: 1px solid rgb(77, 12, 255); */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.titleLogo span {
+    /* border: 1px solid red; */
+    width: 50%;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 20px;
+    /* box-sizing: inherit; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .titleLogo img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.order img {
+    /* border: 1px solid red; */
+    width: 40%;
+    max-width: 20%;
+
+}
+
+.price {
+    /* border: 1px solid blue; */
+    display: flex;
+
+    font-size: 1.6em;
+    font-weight: bold;
+    /* position: relative; */
+}
+
+
+/*==================================================*/
+
+.buyGift {
+    background-color: rgb(0, 46, 65);
+    color: white;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shoppingCart button {
+    width: 60%;
+    height: 180%;
+    background-color: rgb(235, 113, 20);
+    font-size: 1.1em;
+    border: none;
+    border-radius: 30px;
+}
+
+
+.warning {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    height: 10%;
+}
+
+.warning span {
+    font-size: 0.9em;
+}
+
+.warningdetail {
+    width: 50%;
+}
+
+.warningicon {
+    width: 5%;
+    height: 5%;
+}
+
+.deliveryAndManual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deliveryAndManual button:nth-child(1) {
+    width: 80%;
+    height: 4em;
+    border: none;
+    background-color: white;
+    border-top: 1px solid rgb(240, 224, 224);
+    border-bottom: 1px solid rgb(240, 224, 224);
+    font-size: 1.1em;
+}
+
+.deliveryAndManual button:nth-child(2) {
+    width: 80%;
+    height: 4em;
+    border: none;
+    background-color: white;
+    font-size: 1.1em;
+}
+
+.deliveryAndManual button:hover,
+.shoppingCart button:hover {
+    cursor: pointer;
+}
+
+
+
+/* 제품정보 */
+
+.productInfodetail {
+    width: 100%;
+    /* text-align: initial; */
+}
+
+
+.menu1 {
+    /* display: flex; */
+    /* justify-content: start; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    width: 150%;
+    margin-left: 5%;
+    position: relative;
+}
+
+.menu1 img {
+    width: 100%;
+
+}
+
+.menu1 div {
+    position: absolute;
+    /* padding: 1%; */
+    top: 105px;
+
+}
+
+.menu2 {
+    /* display: none; */
+    /* display: flex; */
+    /* justify-content: start; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    width: 100%;
+    /* margin-left: 5%; */
+    position: relative;
+}
+
+.menu2 img {
+    width: 100%;
+    /* height: auto; */
+
+}
+
+.menu2 div {
+    position: absolute;
+    /* padding: 33%; */
+    width: 40%;
+    top: 120px;
+    right: 50px;
+
+}
+
+
+
+.menu3 {
+    /* display: flex; */
+    /* justify-content: start; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    width: 100%;
+    /* margin-left: 5%; */
+    position: relative;
+}
+
+.menu3 img {
+    width: 100%;
+    /* height: auto; */
+}
+
+.menu3 div {
+    position: absolute;
+    /* padding: 5%; */
+    top: 100px;
+    left: 60px;
+}
+
+.menu3 a {
+    display: block;
+}
+
+.menu3:hover a {
+    text-decoration: underline;
+}
+
+.clickMenu1 {
+    font-size: 1.5em;
+    background-color: rgb(248, 248, 248);
+    padding: 3%;
+    border-bottom: 0.5px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* =========================================== */
+
+.menu1 {
+    position: relative;
+}
+
+.firstBanner {
+    width: 25%;
+    position: absolute;
+    left: 35%;
+}
+
+.firstBanner span:nth-child(1) {
+    font-size: 1.5em;
+}
+
+.secondBanner {
+    width: 30%;
+    position: absolute;
+    bottom: 500px;
+}
+
+.secondBanner span:nth-child(1) {
+    font-size: 1.5em;
+}
+
+/* 제품상세정보 */
+
+.productInfo {
+    width: 94.4%;
+    text-align: initial;
+
+}
+
+#check-btn:checked~.menu {
+    display: block;
+    overflow-y: auto;
+}
+
+#check-btn {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.menu img {
+    float: right;
+    margin-left: 5%;
+    width: 200%;
+    height: auto;
+
+}
+
+.clickMenu {
+    /* width: 100%; */
+    font-size: 1.5em;
+    background-color: rgb(248, 248, 248);
+    padding: 3%;
+    border-bottom: 0.5px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.clickMenu span img {
+    width: 10%;
+}
+
+ul li {
+    margin-bottom: 4%;
+}
+
+/* ============================= */
+
+
+
+
+
+/* 메인 배너 스타일 */
+#mainSize {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+    /* background-color: rgb(214, 143, 155); */
+    border-top: .5em solid white;
+    border-bottom: .5em solid white;
+}
+
+.mainBanner {
+    width: 130%;
+}
+
+.prince {
+    text-align: justify;
+    word-break: break-all;
+}
+
+
+.weekendProduct {
+    /* width: 50%; */
+}
+
+/* 이번 주 최고 인기 배너 사이즈 확인*/
+.sectionWeekend {
+
+    width: 100%;
+    /* display: inline-block; */
+    /* border: 4px solid rgb(155, 218, 40); */
+
+}
+
+/* 이번 주 최고 인기 문구 조절 */
+.thisWeekendPopular {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+/* 이번 주 최고 인기 텍스트 조절 */
+.thisWeekendPopular>span {
+    margin: 10px;
+    display: block;
+    font-size: 26px;
+    text-align: left;
+
+}
+
+.bannersList {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    
+}
+
+
+
+/* 최고 인기 상품 사이즈 및 간격 조절 */
+.weekendProduct {
+    display: inline-block;
+    margin: 4px;
+    width: 32%;
+    /* border: 1px solid black; */
+}
+
+/* 최고 인기 상품 이미지 사이즈 조절*/
+.weekendProduct img {
+    width: 100%;
+}
+
+/* 슬라이드 배너와 상하 간격 조절*/
+section {
+    margin-bottom: 100px;
+}
+
+/* 쇼핑하기 글자 사이즈 */
+.weekendProduct a {
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* 커서 올릴 시 언더라인*/
+.weekendProduct:hover a {
+    text-decoration: underline;
+}
+
+.santa,
+.woodhouse {
+    width: 706px;
+}
+
+.menu img {
+    width: 50%;
+}
+.menu {
+    word-break: break-all;
+    text-align: justify;
+}
+
+
+/* ================================헤더,푸터====================================== */
+
+
+.header_logo a img {
+    width: 150px;
+    height: 85px;
+    float: left;
+}
+
+.header {
+    height: 6em;
+    background-color: rgb(255, 232, 0);
+    border-bottom: 1px solid black;
+    letter-spacing: 0.1em;
+    padding-top: 0.5em;
+}
+
+.header_menu {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 2em;
+}
+
+.header_menu ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.shopping_button {
+    font: bold 14px 'arial';
+    margin: 0em 1em;
+    letter-spacing: 1px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.shopping_button:hover {
+    color: #007bff;
+}
+
+.header_menu ul li {
+    display: inline-block;
+}
+
+.header_menu ul li a {
+    display: block;
+    font: bold 14px 'arial';
+    margin: 0px 16px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.header_menu ul li a:hover {
+    color: #007bff;
+}
+
+.header_search {
+    float: right;
+    margin-right: 2em;
+    margin-top: 1.5em;
+}
+
+.search_button {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    padding: 0.3em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search_button:hover {
+    background-color: red;
+}
+
+.search_button img {
+    width: 2em;
+    height: 1.4em;
+    border-radius: 2em;
+    margin-top: 0.2em;
+}
+
+.search_input {
+    padding: 0.7em 0.8em;
+    border-radius: 20px;
+    border: 2px solid red;
+    width: 16em;
+    outline: none;
+}
+
+.search_input:focus {
+    border-radius: rgba(111, 13, 13, 0.998);
+}
+
+.header_login {
+    text-align: right;
+    margin-right: 20.5em;
+    margin-top: -1.3em;
+}
+
+.header_login ul {
+    padding: 0;
+}
+
+.header_login ul li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.header_login ul li:first-child {
+    margin-left: 0;
+}
+
+.header_login ul li a {
+    font: bold 14px 'arial';
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header_login ul li a:hover {
+    color: #007bff;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: blue;
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #10abe8;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.footer img {
+    width: 2.8em;
+    height: 2.8em;
+    margin-top: 1em;
+    border-radius: 50%;
+}
+
+.footer a img {
+    transition: transform 0.3 ease;
+}
+
+.footer a:hover img {
+    transform: scale(1.1);
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8em;
+
+}
+
+.footer ul li {
+    font-weight: bold;
+    margin-right: 1em;
+    padding: 1em;
+    background-color: red;
+    border-radius: 2em;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    border: 2px solid black;
+    border-radius: 2em;
+}
+
+.footer ul li:hover {
+    opacity: 1;
+}
+
+.footer ul ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer ul ul li {
+    margin-bottom: 0.3em;
+    padding: 0.3em 1.3em;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    border: 2px solid black;
+    border-radius: 2em;
+}
+
+footer ul ul li:hover {
+    background-color: #f5f5f5;
+}
+
+.footer p {
+    margin-top: 1em;
+    color: white;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.content button {
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 80%;
+    height: 150px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.modal_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal_box {
+    width: 50%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.close_btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.close_btn:hover {
+    background-color: #d32f2f;
+}
+
+.content a {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.content a:hover {
+    background-color: #0056b3;
+}
+
+.content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}

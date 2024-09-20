@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베놈 맥 로봇 대 마일스 모랄레스</title>
+    <link rel="stylesheet" href="venom.css">
+    <link rel="stylesheet" href="../css/caregory.css">
+    <link rel="stylesheet" href="../css/headers.css">
+    <link rel="stylesheet" href="../css/newFooter.css">
+    <link rel="stylesheet" href="../css/modalCategory.css">
+    <link rel="stylesheet" href="../css/modalCategory2.css">
+
+    <script defer src="../css/scripts.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="headerBackground">
+        <header class="header">
+
+            <div class="header_logo">
+                <button id="show2" class="img-button"><img src="../image/lego-icon.svg" alt="legoLogo"></button>
+            </div>
+
+            <div class="header_menu">
+                <button class="shopping_button" id="show">레고 제품 쇼핑</button>
+                <ul>
+                    <li><a href="./aboutUs.html">레고 브랜드 소개</a></li>
+                    <li><a href="#">고객 지원</a></li>
+                </ul>
+            </div>
+
+            <div class="background">
+                <div class="window">
+                    <div class="popup">
+
+                        <h2 id="close" class="section_title"></h2>
+
+                        <!-- <div class="menu_lego">
+                        <a href="#">
+                            <img src="./image/lego-icon.svg" alt="lego">
+                        </a>
+                    </div> -->
+
+                        <div class="menu_list">
+                            <ul class="menu_list_1">
+                                <li><button>레고 제품 쇼핑</button></li>
+                                <li><button onclick="location.href='./aboutUs.html';">레고 브랜드 소개</button></li>
+                                <li><button>고객 지원</button></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <button class="closeCate">X</button>
+                        </div>
+
+                        <div class="menu_list2">
+                            <ul class="menu_list2_1">
+                                <li><button onclick='btnClick()'>시리즈별 세트</button></li>
+                                <li><button>신상품</button></li>
+                                <li><button>베스트 셀러</button></li>
+                                <li><button onclick="btnClick2()">추억의 레고</button></li>
+                                <li><button>할인 및 행사</button></li>
+                            </ul>
+                        </div>
+
+                        <div id="seriesSet">
+                            <ul>
+                                <li id="star_wars">스타워즈™
+                                    <div class="starWars">
+                                        <img src="/img/starWars_logo_black_stroke_300w_2.png" alt="starwars">
+                                    </div>
+                                </li>
+                                <li id="super_mario">레고 슈퍼 마리오™
+                                    <div class="superMario">
+                                        <img src="/img/SuperMario-logo-pos_300w.png" alt="supermario">
+                                    </div>
+                                </li>
+                                <li id="disney_">디즈니
+                                    <div class="disNey">
+                                        <img src="/img/disney_logo_pos_300w_2.png" alt="disney">
+                                    </div>
+                                </li>
+                                <li id="marvel_">마블
+                                    <div class="marvel">
+                                        <img src="/img/Marvel2.png" alt="marvel">
+                                    </div>
+                                </li>
+                                <li id="marble_">해리포터™
+                                    <div class="harryPotter">
+                                        <img src="/img/harrypotter_logo_gold_divider-600w2_2.png" alt="harry">
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <div class="catecate">
+                            <button id="close" class="closeButton">
+                                <img src="./categoryImg/x-mark.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header_search">
+                <button type="submit" class="search_button" id="show3">
+                    <img src="../headerImg/search.png" alt="search">
+                </button>
+            </div>
+
+            <div class="modal_bg" id="modalBg"></div>
+
+            <div class="modal_box" id="modalWrap">
+                <div class="content">
+                    <h2>레고 &reg; 계정으로 로그인하기</h2>
+                    <input type="text" placeholder="id" class="modal_input">
+                    <input type="password" placeholder="password" class="modal_input">
+                    <a href="./mainlogin.html">로그인</a>
+                    <a href="./accountcreate.html">회원가입</a>
+                    <button class="close_btn" id="closeModalBtn">나가기</button>
+                </div>
+            </div>
+
+            <div class="background2">
+                <div class="window2">
+                    <div class="popup2">
+
+                        <button class="closeX">X</button>
+                        <input type="text" class="searchBox">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_login">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#"><img src="../image/shopping.png" alt="shopping"></a></li>
+                </ul>
+            </div>
+
+        </header>
+    </div>
+
+    <div class="marvelbanner">
+        <img src="../image/Marvel.png" alt="마블">
+        <button>제품</button>
+        <button>자세히 보기</button>
+    </div>
+
+    <main class="cupaMain">
+
+        <div class="container">
+            <div class="bigImg">
+                
+                    <div class="mainImg">
+                        <div class="imgBox">
+                            <img src="https://www.lego.com/cdn/cs/set/assets/blt48e82eedeaa88cb5/76276.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2"
+                                alt="베놈 맥 로봇 대 마일스 모랄레스 이미지">
+                            <img src="https://www.lego.com/cdn/cs/set/assets/blt38ea8d916a5f7408/76276_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+                                alt="">
+                        </div>
+
+                        <div>
+                            <button class="leftButton">
+                                <img src="../svgImg/Asset 1.svg" alt="">
+    
+                            </button>
+                            
+                            <button class="rightButton">
+                                <img src="../svgImg/Asset 2.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    
+                
+
+
+
+                <div class="icon">
+                    <div class="age">
+                        <img src="../svgImg/SVG/age.svg" alt="ageIcon">
+                        <span>6+</span>
+                        <span>연령</span>
+                    </div>
+                    <div class="pices">
+                        <img src="../svgImg/SVG/picies.svg" alt="piciesIcon">
+                        <span>134</span>
+                        <span>부품수</span>
+                    </div>
+                    <div class="legoPoint">
+                        <img src="../svgImg/SVG/point.svg" alt="point">
+                        <span>109</span>
+                        <span>레고&reg; Insiders 포인트</span>
+                    </div>
+                    <div class="legoNumber">
+                        <img src="../svgImg/SVG/number.svg" alt="numberIcon">
+                        <span>76276</span>
+                        <span>제품명</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order">
+
+                <div class="titleLogo">
+                    <span>베놈 맥 로봇 VS 마일스 모랄레스</span>
+                    <img src="https://www.lego.com/cdn/cs/set/assets/bltacd5c533cb901be7/spiderman_logo_pos_300w.png?format=png&height=40&dpr=1"
+                        alt="spidermanLogo">
+                </div>
+
+                <div class="price">
+                    <span>19,900 원</span>
+                </div>
+
+                <div class="buyGift">
+                    <span>구매 시 선물 증정!</span>
+                </div>
+
+                <div class="backOrder">
+                    <span>백오더 가능, 2024년 3월 24일 출고 예정</span>
+                </div>
+
+                <div class="shoppingCart">
+                    <button class="cart" onclick="location.href='../marketbox.html'">장바구니 담기</button>
+                </div>
+
+                <div class="warning">
+                    <span>경고! 질식 위험. 작은 부품 포함</span>
+                    <div class="warningdetail">
+                        <!-- <img src="./image/childwarning.webp" alt="경고이미지"> -->
+                        <img src="../image/warnigNewImg.png" alt="경고이미지2">
+                        <img src="../image/childwarning.webp" alt="경고이미지">
+                    </div>
+                </div>
+
+                <div class="deliveryAndManual">
+                    <button onclick="location.href='#';">배송 및 반품 ></button>
+                    <button onclick="location.href='#';">조립 설명서 ></button>
+                    <!-- <a href="">배송 및 반품 ></a> -->
+                    <!-- <a href="">조립 설명서 ></a> -->
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+
+            document.querySelector('.leftButton').addEventListener('click', function () {
+                document.querySelector('.imgBox').style.transform = `translate(0%)`;
+            });
+
+            document.querySelector('.rightButton').addEventListener('click', function () {
+                document.querySelector('.imgBox').style.transform = `translate(-100%)`;
+            });
+
+        </script>
+
+        <!-- 제품정보 -->
+        <div class="productInfo">
+
+            <div class="productInfodetail">
+                <div class="clickMenu1">
+                    <span>제품 정보</span>
+                    <span class="b">
+                    </span>
+                </div>
+                </label>
+
+                <div class="menu1">
+                    <img class="santa"
+                        src="https://www.lego.com/cdn/cs/set/assets/blt1586d7eac117649a/76276_Hero1_Standard_Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=1.5"
+                        alt="소개이미지">
+                    <div>
+                        <h1>마일스 모랄레스와 베놈 로봇의 대결</h1>
+                        <span>
+                            자유관절 조립식 베놈 로봇과 미니피겨 2개를 흥미진진한
+                            <br>액션 놀이를 시작해보아요!
+                        </span>
+                    </div>
+
+                </div>
+                <div class="menu1sub">
+                    <img class="woodhouse"
+                        src="https://www.lego.com/cdn/cs/set/assets/blt655f807b008d16a1/76276_Hero2_Standard_Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=1.5"
+                        alt="상품이미지">
+                    <div>
+                        <h1>장대한 규모의 모험</h1>
+                        <span>베놈을 로봇의 조종석에 태우고,
+                            <br>놀이와 전시의 즐거움에 빠져볼까요?
+                        </span>
+                    </div>
+                </div>
+
+                <section id="mainSize">
+
+                    <div class="sectionWeekend">
+                        <div class="mainBanner">
+                            <div class="thisWeekendPopular">
+                                <span>
+                                    레고® 마블 베놈 맥 로봇 대 마일스 모랄레스
+                                </span>
+                            </div>
+
+                            <div class="bannersList">
+
+                                <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                    <div>
+                                        <img src="https://www.lego.com/cdn/cs/set/assets/blt35225b2f6cc10a18/76276_Block_Standard_1.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1.5"
+                                            alt="여닫이식 조종석">
+                                    </div>
+
+                                    <div>
+                                        <h3>여닫이식 조종석</h3>
+                                        <p>
+                                            <span>미니피겨를 강력한 로봇의 조종석에 앉히세요.</span> <!-- 설명 적어주세요 -->
+                                        </p>
+                                    </div>
+
+                                    <a class="shoppingButton" href="#">
+                                        쇼핑하기
+                                    </a>
+                                </div>
+
+                                <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                    <div>
+                                        <img src="https://www.lego.com/cdn/cs/set/assets/blt39831dcc2687b139/76276_Block_Standard_2.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1.5"
+                                            alt="자유관절 로봇">
+                                    </div>
+
+                                    <div>
+                                        <h3>자유관절 로봇</h3>
+                                        <p>
+                                            <span>조립식 로봇의 팔다리와 손가락 관절이 자유로이 움직입니다.</span> <!-- 설명 적어주세요 -->
+                                        </p>
+                                    </div>
+
+                                    <a class="shoppingButton" href="#">
+                                        쇼핑하기
+                                    </a>
+                                </div>
+
+                                <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                    <div>
+                                        <img src="https://www.lego.com/cdn/cs/set/assets/blt4ecf35c832f5a9f6/76276_Block_Standard_3.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1.5"
+                                            alt="거미줄 액세서리">
+                                    </div>
+
+                                    <div>
+                                        <h3>거미줄 액세서리</h3>
+                                    </div>
+
+                                    <div>
+                                        <p>
+                                            <span class="prince">마일스 모랄레스의 웹 슈터 2개와 연질 거미줄 ‘로프’가 어떤 위력을
+                                                보여줄까요?</span>
+                                        </p>
+                                    </div>
+
+                                    <a class="shoppingButton" href="#">
+                                        쇼핑하기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="menu2">
+
+                <img class="legokid"
+                    src="https://www.lego.com/cdn/cs/set/assets/bltfe34b8e87455541c/76276_Hero4_Standard_Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=1">
+
+
+                <div>
+                    <h1>디지털 조립의 세계로 들어가보아요</h1> <!-- 설명 적어주세요 -->
+                    <span>
+                        재미있고 직관적인 LEGO® Builder 앱을 이용해 3D 환경에서 세트를 확대, 축소,
+                        <br>회전하고 조립 과정을 추적할 수 있습니다.
+                    </span>
+                    <button>자세히 보기 &gt;</button>
+                </div>
+            </div>
+
+            <div class="menu3">
+                <img class="legoset"
+                    src="https://www.lego.com/cdn/cs/set/assets/blt5d09907e46c21ca9/76276_Hero5_Standard_Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=1">
+
+                <div>
+                    <h1>어린이 액션 히어로를 위한 멋진 선물</h1>
+                    <span>
+                        어린이를
+                        위한 선물로 이 조립식 로봇과 미니피겨 장난감을 추천드려요!
+                    </span>
+
+                    <a class="shoppingButton" href="#">
+                        쇼핑하기
+                    </a>
+                </div>
+            </div>
+
+
+
+            </section>
+            <!-- 제품상세정보 -->
+            <input id="check-btn" type="checkbox">
+            <label for="check-btn">
+                <div class="clickMenu">
+                    <span>제품 상세 정보</span>
+                    <span class="a">
+                    </span>
+                </div>
+            </label>
+            <div class="menu">
+                <img src="https://www.lego.com/cdn/cs/set/assets/blt8321617880b08f2c/76276_alt1.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                    alt="제품 상세 정보 이미지"> <!-- 소스 적어주세요 -->
+                <p>
+                    레고® 마블 베놈 맥 로봇 대 마일스 모랄레스(76276) 세트를 통해 6세 이상 남녀 어린이 모두를 위한 수퍼 히어로 모험 세상을 열어주세요. 거미줄이 난무하고 자유관절
+                    베놈 로봇, 인기 미니피겨 2개, 멋진 거미줄 액세서리가 등장하는 수퍼 히어로 전투 액션 조립 장난감… 아이들이 좋아할 수밖에 없겠죠!<br>
+                <p>
+                    팔다리가 움직이고 미니피겨를 움켜쥘 만큼 커다란 집게 손을 가진 조립식 자유관절 베놈 장난감 로봇이 등장합니다. 로봇의 가슴 부분을 열고 조종석에 베놈 미니피겨를 태우세요.
+                    휴대용 웹 슈터 2개와 연질 거미줄 ‘로프’를 지닌 마일스 모랄레스 미니피겨도 세트에 함께 들어 있네요. 조립식 베놈 로봇 장난감의 이곳저곳에 로프를 바꿔 연결할 수 있어
+                    얼마든지 다채롭게 놀이 상황을 펼칠 수 있습니다. 어디 그뿐인가요? 다른 레고 마블 로봇 테마의 조립식 플레이 세트(별매품)와 합쳐 놀이의 영역을 한층 확장해보세요. 새로운
+                    디지털 놀이의 즐거움도 빠뜨리지 말아야죠! 3D 모드에서 모델을 확대, 축소, 회전하고 진행 경과를 추적하고… 재미있고 직관적인 LEGO Builder 앱을 통해 조립의
+                    새로운 세계를 체험해보세요.<br>
+                </p>
+                <ul>
+                    <li>용감한 어린이를 위한 조립식 수퍼 히어로 장난감 - 6세 이상의 모든 남녀 어린이를 위한 레고® 마블 베놈 맥 로봇 대 마일스 모랄레스 세트를 통해 흥미진진한 마블
+                        모험의 세계를 열어주세요</li>
+                    <li>자유관절 로봇과 미니피겨 - 자유관절 팔다리와 손가락을 가진 조립식 로봇에 더하여 마일스 모랄레스와 베놈 레고® 미니피겨가 들어 있습니다
+                    </li>
+                    <li>다양한 놀이 방식 – 베놈 레고® 미니피겨를 로봇의 조종석에 태우고 자유관절 사지를 움직여 자세를 바꿔가며 놀이와 전시의 가능성을 무한히 확장해보아요
+                    </li>
+                    <li>사실적인 액세서리 – 조립식 레고® 마블 장난감을 좋아하나요? 휴대용 웹 슈터 2개와 연질 거미줄 ’로프’를 이용해 재미있는 역할 놀이를 즐겨보아요. 로프를 베놈
+                        로봇의 이곳저곳에 바꿔 연결하고 어떤 상황극을 펼쳐볼까요?</li>
+                    <li>어린이를 위한 선물 – 베놈, 마일스 모랄레스, 수퍼 히어로 이야기를 좋아하는 모든 이를 위한 선물로 이 체험식 로봇과 미니피겨 조립 플레이 세트를 추천드려요
+                    </li>
+                    <li>놀이의 확장 – 이 레고® 마블 장난감을 다른 수많은 레고 마블 키트(별매품)와 합쳐 놀이의 영역을 마음껏 넓혀보세요</li>
+                    <li>조립식 레고® 마블 장난감 – 레고 마블 조립 장난감은 다양한 구성을 자랑하며 상상력과 조립/놀이의 가능성을 무한 영역으로 확장해줍니다
+                    </li>
+                    <li>어디서나 놀이를 – 자유관절 베놈 로봇의 부품 수는 134개이고 크기는 높이를 기준으로 13cm이며, 어디든 가지고 다니며 모험 놀이를 즐기기에 크기가 딱 알맞습니다
+                    </li>
+                </ul>
+                <p>상품정보 제공고시</p>
+                <p>품명 및 모델명 : 76276 베놈 맥 로봇 대 마일스 모랄레스/</p>
+                <ul>
+                    <li>KC 인증정보 : CB061R2195-0017</li>
+                    <li>크기 및 중량 : 14.1x19.1x4.6cm/154g</li>
+                    <li>색상 : 이미지참조</li>
+                    <li>재질 : ABS수지</li>
+                    <li>사용연령 또는 권장사용연령 : 만 6세 이상</li>
+                    <li>크기·체중의 한계 : 해당없음</li>
+                    <li>동일 모델의 출시년월 : 2024.01</li>
+                    <li>제조자(사) : LEGO System A/S 레고코리아㈜</li>
+                    <li>제조국 : 중국</li>
+                    <li>취급방법 및 취급시 주의사항, 안전표시(주의, 경고 등) : 경고! 3세 미만의 어린이는 사용할 수 없음. 작은 부품을 포함하고 있음.경고! 눈이나 얼굴 쪽으로
+                        겨누지 말 것.</li>
+                    <li>품질보증기준 : 본 제품은 공정거래위원회 고시 소비자 분쟁 해결 기준에 의거 교환 또는 보상 받을 수 있습니다.</li>
+                    <li>A/S 책임자와 전화번호 :소비자상담실 전화 080-880-0166</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="logoLine">
+                <div>
+                    <img src="./image/LEGO_logo.svg.png" alt="">
+                </div>
+            </div>
+
+            <div class="pageLine">
+
+                <div class="allBlock">
+                    <div class="blockPage1">
+                        <button>레고 그룹 소개</button>
+                        <button>레고 뉴스</button>
+                    </div>
+
+                    <div class="blockPage2">
+                        <button>연락처</button>
+                        <button>조립설명서 찾기</button>
+                    </div>
+
+                    <div class="blockPage3">
+                        <button>레고 하우스</button>
+                        <button>레고랜드 파크</button>
+                    </div>
+
+                    <div class="blockPage4">
+                        <button>레고 라이프</button>
+                        <button>레고 에듀케이션</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="iconLogo">
+                <a href="#"><img src="../footerImg/facebook.png" alt=""></a>
+                <a href="#"><img src="../footerImg/x.avif" alt=""></a>
+                <a href="#"><img src="../footerImg/instagram.png" alt=""></a>
+                <a href="#"><img src="../footerImg/youtube.avif" alt=""></a>
+
+            </div>
+
+            <div class="lastInfo">
+                <p>LEGO System A/S, DK-7190 Billund, Denmark. 만 18세 이상부터 온라인 구매가 가능합니다. 레고, 레고 로고, 미니피겨, 듀플로, 프렌즈 로고,
+                    미니피겨
+                    로고, 드림즈, 닌자고, 비디요 및 마인드스톰은 레고 그룹의 상표입니다. ©2024 The LEGO Group. All rights reserved. 이 사이트를 이용하면
+                    이용약관에
+                    동의하는 것으로 간주됩니다. 레고코리아㈜ 대표이사 : 에릭폴모젱, 정희영 | 주소 : 서울특별시 강남구 강남대로 298, 16층 (역삼동) 우편번호 06253
+                    사업자등록번호:126-81-25525 | 통신판매업신고 제 2010-서울강남-00549호 사업자등록확인고객센터 무료전화 : 080-880-0166 | 팩스 : 02-511-6412
+                    |
+                    업무시간 : 월요일-금요일 오전9시-오후6시</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

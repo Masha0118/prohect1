@@ -1,0 +1,480 @@
+	body {
+		width: 44vw;
+		margin: 0 auto;
+		padding: 0;
+		background-color: #e1e8ec;
+	}
+
+
+	/* 레고 헤드 이미지 */
+	.legoimg {
+		height: 45px;
+		width: 45px;
+		cursor: pointer;
+		transition: .8s;
+	}
+
+	.legoimg:hover {
+		transform: rotate(45deg);
+	}
+
+
+	/* 레고 사진 중앙으로*/
+	.legoinlineBlock {
+		width: 100%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		text-align: center;
+
+	}
+
+	.btninVisible {
+		background: transparent;
+		border: none;
+	}
+
+	/*  닫는 아이콘 오른쪽으로 */
+	.closeiconRight {
+		text-align: right;
+		width: 50vw;
+	}
+
+	/*  아이콘 크기 */
+	.closeicon {
+		height: 30px;
+		width: 30px;
+	}
+
+	.closeicon:hover {
+		cursor: pointer;
+	}
+
+	/* 레고 사진 아래 로그인 글자*/
+	.loginHeadText {
+		text-align: center;
+		width: 100%;
+	}
+
+	/* 메인이랑 공간 만들기 */
+	h1 {
+		margin-bottom: 20px;
+	}
+
+	/* ===================================================================================
+	메인 */
+
+	/* 사용자 아이디를 잊었나요? 버튼  */
+	.forgotBtn {
+		background: transparent;
+		border: none;
+		color: #006cb7;
+	}
+
+	/* 위에 버튼 언더라인 호버 */
+	.forgotBtn:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	/* 로그인 버튼 중앙에 놓기 */
+	.btncenter {
+		text-align: center;
+		height: 100px;
+	}
+
+	/* 신규 사용자 컨테이너 */
+	.secondBox {
+		height: 150px;
+	}
+
+
+
+	/* 로그인, 계정 만들기 버튼 색 호버 */
+	.btnStyle:hover {
+		background-color: #006cb7;
+		cursor: pointer;
+	}
+
+	/* 신규 사용자 컨테이너 하얀색 */
+	.secondBox {
+		background-color: white;
+	}
+
+	/* 사용자 아이디 ,비밀번호 길이맞추기 */
+	label {
+		margin-left: 1%;
+	}
+
+	/* 페이스북, 구글 칸 리스트 점 제거 */
+	li {
+		list-style-type: none;
+	}
+
+	/* 페이스북 , 구글 칸 색 호버 */
+	li:hover {
+		background-color: #ece4ea;
+		cursor: pointer;
+		border-top: 1px solid;
+	}
+
+	/* 구글 , 페이스북 칸 나누기 위한 바텀 줄 */
+	.liBottomline {
+		border-bottom: 1px solid;
+	}
+
+
+	/* 버튼 흰색, 줄 맞추기 */
+	li {
+		/* margin-left: -5%; */
+		padding: 3%;
+		background-color: white;
+	}	body {
+		width: 44vw;
+		margin: 0 auto;
+		padding: 0;
+		background-color: #e1e8ec;
+		
+	}
+
+
+	/* 레고 헤드 이미지 */
+	.legoimg {
+		height: 45px;
+		width: 45px;
+		cursor: pointer;
+		transition: .8s;
+	}
+	
+	.legoimg:hover{
+		transform: rotate(45deg);
+	}
+
+	/* 레고 사진 중앙으로*/
+	.legoinlineBlock {
+		width: 100%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		text-align: center;
+
+	}
+
+	.btninVisible {
+		background: transparent;
+		border: none;
+	}
+
+	/*  닫는 아이콘 오른쪽으로 */
+	.closeiconRight {
+		text-align: right;
+		width: 50vw;
+	}
+
+	/*  아이콘 크기 */
+	.closeicon {
+		height: 30px;
+		width: 30px;
+	}
+
+	.closeicon:hover {
+		cursor: pointer;
+	}
+
+	/* 레고 사진 아래 로그인 글자*/
+	.loginHeadText {
+		text-align: center;
+		width: 100%;
+	}
+
+	/* 메인이랑 공간 만들기 */
+	h1 {
+		margin-bottom: 20px;
+	}
+
+	/* ===================================================================================
+	메인 */
+
+	/* 사용자 아이디를 잊었나요? 버튼  */
+	.forgotBtn {
+		background: transparent;
+		border: none;
+		color: #006cb7;
+	}
+
+	/* 위에 버튼 언더라인 호버 */
+	.forgotBtn:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	/* 로그인 버튼 중앙에 놓기 */
+	.btncenter {
+		text-align: center;
+		height: 100px;
+	}
+
+	/* 신규 사용자 컨테이너 */
+	.secondBox {
+		height: 150px;
+	}
+
+
+
+	/* 로그인, 계정 만들기 버튼 색 호버 */
+	.btnStyle:hover {
+		background-color: #006cb7;
+		cursor: pointer;
+	}
+
+	/* 신규 사용자 컨테이너 하얀색 */
+	.secondBox {
+		background-color: white;
+	}
+
+	/* 사용자 아이디 ,비밀번호 길이맞추기 */
+	label {
+		margin-left: 1%;
+	}
+
+	/* 페이스북, 구글 칸 리스트 점 제거 */
+	li {
+		list-style-type: none;
+	}
+
+	/* 페이스북 , 구글 칸 색 호버 */
+	li:hover {
+		background-color: #e4eaec;
+		cursor: pointer;
+	}
+
+	/* 구글 , 페이스북 칸 나누기 위한 바텀 줄 */
+	.liBottomline {
+		border-bottom: 1px solid;
+	}
+
+
+	/* 버튼 흰색, 줄 맞추기 */
+	li {
+		/* margin-left: -5%; */
+		padding: 3%;
+		width: 94%;
+		background-color: white;
+	}
+	ul{
+		padding: 0;
+	}
+
+	/* 페이스북 ,구글 이미지 및 글자 */
+	.liimg {
+		width: 30px;
+		height: 30px;
+	}
+
+	/* li 버튼 숨기기 */
+	.libtn {
+		border: none;
+		font-size: 1.8em;
+		background: transparent;
+	}
+
+
+	/* 에픽 이미지 크기 */
+	.liimgEpic {
+		width: 35px;
+		margin-left: -5px;
+		height: 35px
+	}
+
+	/* 하단 버튼들 커서 표시 */
+	.liimg:hover,
+	.liimgEpic:hover,
+	.Pointer {
+		cursor: pointer;
+	}
+
+	/* 아이디 , 비밀번호 칸 높이 */
+	.idinput,
+	.pswinput {
+		padding: 1%;
+		height: 30px;
+	}
+
+	/* 아이디 칸 넓이 및 둥글게*/
+	#userId {
+		width: 98%;
+		height: 30px;
+		border-radius: 10px;
+	}
+
+	/* 비밀번호 칸 넓이 및 둥글게 */
+	#password {
+		width: 98%;
+		height: 30px;
+		border-radius: 10px;
+	}
+
+	/* 로그인 컨테이너 패딩으로 여백만듦 */
+	.loginbox {
+		background-color: white;
+		padding: 24px;
+	}
+
+	/* 신규 사용자 컨테이너 및 맨 밑 개인정보 취급방침 | 쿠키 정렬 */
+	.secondBox,
+	footer {
+		text-align: center;
+	}
+
+	/* 로그인, 계정만들기 파란색으로 버튼 꾸미기 */
+	.btnStyle {
+		background-color: steelblue;
+		width: 30%;
+		height: 5vh;
+		border-radius: 99px;
+		border: none;
+		color: white;
+		font-size: 15px;
+	}
+
+	/* =======================================푸터================================ */
+	.footerbttn {
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+
+	/* 개인정보 취급방침 | 쿠키 색 변경 */
+	.footerbtn,
+	.footerbtn2 {
+		border: none;
+		color: #006cb7;
+		background: transparent;
+	}
+
+	/* 개인정보 취급방침 언더라인 호버 */
+	footer button:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	/* ======================반응형===================== */
+	@media screen and (max-width:768px) {
+		.libtn {
+			font-size: 1em;
+		}
+
+		ul {
+			padding: 0;
+		}
+
+		.btnStyle {
+			font-size: .6em;
+		}
+	}
+
+	/* 페이스북 ,구글 이미지 및 글자 */
+	.liimg {
+		padding: 0;
+		width: 30px;
+		height: 30px;
+	}
+
+	/* li 버튼 숨기기 */
+	.libtn {
+		border: none;
+		font-size: 30px;
+		background: transparent;
+	}
+
+
+	/* 에픽 이미지 크기 */
+	.liimgEpic {
+		width: 35px;
+		margin-left: -5px;
+		height: 35px
+	}
+
+	/* 하단 버튼들 커서 표시 */
+	.liimg:hover,
+	.liimgEpic:hover,
+	.Pointer {
+		cursor: pointer;
+	}
+
+	/* 아이디 , 비밀번호 칸 높이 */
+	.idinput,
+	.pswinput {
+		padding: 1%;
+		height: 30px;
+	}
+
+	/* 아이디 칸 넓이 및 둥글게*/
+	#userId {
+		width: 98%;
+		height: 30px;
+		border-radius: 10px;
+	}
+
+	/* 비밀번호 칸 넓이 및 둥글게 */
+	#password {
+		width: 98%;
+		height: 30px;
+		border-radius: 10px;
+	}
+
+	/* 로그인 컨테이너 패딩으로 여백만듦 */
+	.loginbox {
+		background-color: white;
+		padding: 24px;
+	}
+
+	/* 신규 사용자 컨테이너 및 맨 밑 개인정보 취급방침 | 쿠키 정렬 */
+	.secondBox,
+	footer {
+		text-align: center;
+	}
+
+	/* 로그인, 계정만들기 파란색으로 버튼 꾸미기 */
+	.btnStyle {
+		background-color: steelblue;
+		width: 30%;
+		height: 5vh;
+		border-radius: 99px;
+		border: none;
+		color: white;
+		font-size: 15px;
+	}
+
+	/* =======================================푸터================================ */
+	.footerbttn {
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+
+	/* 개인정보 취급방침 | 쿠키 색 변경 */
+	.footerbtn,
+	.footerbtn2 {
+		border: none;
+		color: #006cb7;
+		background: transparent;
+	}
+
+	/* 개인정보 취급방침 언더라인 호버 */
+	footer button:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	/* ======================반응형===================== */
+	@media screen and (max-width:768px) {
+		.libtn {
+			font-size: 1em;
+		}
+
+		ul {
+			padding: 0;
+			margin-left: 4%;
+		}
+
+		.btnStyle {
+			font-size: .6em;
+		}
+	}

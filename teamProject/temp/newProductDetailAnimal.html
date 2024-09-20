@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./newProductDetail.css"> -->
+    <link rel="stylesheet" href="./newProductDetailAnimal.css">
+    <!-- <link rel="stylesheet" href="../css/header.css"> -->
+    <link rel="stylesheet" href="../css/modalCategory.css">
+    <link rel="stylesheet" href="../css/category.css">
+    <!-- <link rel="stylesheet" href="../css/footer.css"> -->
+    <!-- <link rel="stylesheet" href="../MainPage5.css"> -->
+</head>
+
+
+
+
+<body>
+
+    <header class="header">
+
+        <div class="header_logo">
+            <button id="show" class="img-button">
+                <img src="../image/lego-icon.svg" alt="legoLogo">
+            </button>
+        </div>
+
+        <div class="header_menu">
+            <button class="shopping_button" id="show2">레고 제품 쇼핑</button>
+            <ul>
+                <li>
+                    <a href="./aboutUs.html">레고 브랜드 소개</a>
+                </li>
+                <li>
+                    <a href="#">고객 지원</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="background">
+            <div class="window">
+                <div class="popup">
+
+                    <h2 id="close" class="section_title"></h2>
+
+                    <nav class="menu_lego">
+
+                        <!-- 카테고리 -->
+                        <ul class="menu_list">
+
+                            <li class="menu_item">
+                                <!-- <div class="menu_item"> -->
+                                <button class="menu_link">레고 제품</button>
+                            </li>
+                            <li class="menu_item">
+                                <button class="menu_link">레고 브랜드 소개</button>
+                            </li>
+                            <li class="menu_item">
+                                <button class="menu_link">고객 지원</button>
+                            </li>
+                            <!-- </div> -->
+
+                        </ul>
+
+                        <ul class="menu_list2">
+                            <div class="menu_item2">
+                                <button class="menu_link2">시리즈별 세트</button>
+                                <ul>
+                                    <li><a href="star_wars">스타워즈™</a>
+                                        <img src="./categoryImg/star_wars.jpg" alt="starwarz">
+                                    </li>
+                                    <li><a href="super_mario">슈퍼 마리오™</a>
+                                        <img src="./categoryImg/Super_mario1.jpg" alt="mario">
+                                    </li>
+                                    <li><a href="#">디즈니</a>
+                                        <img src="./categoryImg/disney_castle.jpg" alt="disney">
+                                    </li>
+                                    <li><a href="#">마블</a>
+                                        <img src="./categoryImg/marble_avengers.jpg" alt="marble">
+                                    </li>
+                                    <li><a href="#">해리포터™</a>
+                                        <img src="./categoryImg/harry_potter.jpg" alt="harry">
+                                    </li>
+                                </ul>
+                                <button class="menu_link2">신상품</button>
+
+                                <button class="menu_link2">베스트 셀러</button>
+
+                                <button class="menu_link2">추억의 레고</button>
+                                <ul>
+                                    <li><a href="#">1970~1980</a>
+                                        <img src="./categoryImg/1979_lego.jpeg" alt="1980">
+                                    </li>
+                                    <li><a href="#">1981~1990</a>
+                                        <img src="./categoryImg/1984_lego.jpeg" alt="1990">
+                                    </li>
+                                    <li><a href="#">1991~2000</a>
+                                        <img src="./categoryImg/1992_lego.jpg" alt="2000">
+                                    </li>
+                                    <li><a href="#">2000~2010</a>
+                                        <img src="./categoryImg/2004_lego.jpeg" alt="2010">
+                                    </li>
+                                    <li><a href="#">2011~2020</a>
+                                        <img src="./categoryImg/2017_lego.jpeg" alt="2020">
+                                    </li>
+                                </ul>
+                                <button class="menu_link2">할인 및 행사</button>
+
+                            </div>
+                        </ul>
+
+                    </nav>
+
+
+                    <div class="catecate">
+                        <button id="close2" class="closeButton2">
+                            <img src="./categoryImg/x-mark.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header_search">
+            <input type="text" placeholder="search" class="search_input">
+            <button type="submit" class="search_button">
+                <img src="./headerImg/search.png" alt="search">
+            </button>
+        </div>
+
+        <div class="header_login">
+            <ul>
+                <li><a href="#">로그인</a></li>
+            </ul>
+        </div>
+
+        <script>
+
+            const headerLoginLink = document.querySelector('.header_login a');
+            const modalWrap = document.getElementById('modalWrap');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+            const modalBg = document.getElementById('modalBg');
+
+            // 모달 열기 함수
+            function openModal() {
+                modalWrap.style.display = 'block';
+                modalBg.style.display = 'block';
+                setTimeout(() => {
+                    modalWrap.style.opacity = '1';
+                    modalBg.style.opacity = '0.7';
+                }, 10);
+            }
+
+            // 모달 닫기 함수
+            function closeModal() {
+                modalWrap.style.opacity = '0';
+                modalBg.style.opacity = '0';
+                setTimeout(() => {
+                    modalWrap.style.display = 'none';
+                    modalBg.style.display = 'none';
+                }, 300);
+            }
+
+            headerLoginLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                openModal();
+            });
+
+            closeModalBtn.addEventListener('click', function () {
+                closeModal();
+            });
+
+            modalBg.addEventListener('click', function () {
+                closeModal();
+            });
+
+            function show() {
+                document.querySelector(".background").className = "background show";
+            }
+
+            function close() {
+                document.querySelector(".background").className = "background";
+            }
+
+            document.querySelector("#show").addEventListener("click", show);
+            document.querySelector("#show2").addEventListener("click", show);
+            document.querySelector("#close").addEventListener("click", close);
+            document.querySelector("#close2").addEventListener("click", close);
+        </script>
+
+    </header>
+
+
+
+    <main>
+        <div class="container">
+            <div class="bigImg">
+                <div class="mainImg">
+                    <img src="../AnimalDetail/animalMain.webp" alt="">
+                </div>
+                <div class="icon">
+                    <div class="age">
+                        <img src="./teamProject/svgImg/SVG/age.svg" alt="ageIcon">
+                        <span>18+</span>
+                        <span>연령</span>
+                    </div>
+                    <div class="pices">
+                        <img src="./teamProject/svgImg/SVG/picies.svg" alt="">
+                        <span>2228</span>
+                        <span>부품수</span>
+                    </div>
+                    <div class="legoPoint">
+                        <img src="./teamProject/svgImg/SVG/point.svg" alt="">
+                        <span>1594</span>
+                        <span>레고&reg; Insiders 포인트</span>
+                    </div>
+                    <div class="legoNumber">
+                        <img src="./teamProject/svgImg/SVG/number.svg" alt="">
+                        <span>43242</span>
+                        <span>제품명</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order">
+
+                <div class="titleLogo">
+                    <span>갑돌의 보트 투어</span>
+                    <img src="https://www.lego.com/cdn/cs/set/assets/blt26c7cef86a1b134d/disney_logo_pos_300w.png?format=png&height=40&dpr=1"
+                        alt="disneyLogo">
+                </div>
+
+                <div class="price">
+                    <span>44,900 원</span>
+                </div>
+
+                <div class="buyGift">
+                    <span>구매 시 선물 증정!</span>
+                </div>
+
+                <div class="shoppingCart">
+                    <button onclick="location.href='#';">장바구니 담기</button>
+                </div>
+
+                <div class="warning">
+                    <span>경고! 질식 위험. 작은 부품 포함</span>
+                    <div class="warningdetail">
+                        <img src="./detailProimg/safety-08ff1b3398344608cf1508144b3c2d0f.svg" alt="">
+                        <img class="warningicon" src="./image/6479550.png" alt="">
+                    </div>
+                </div>
+
+                <div class="deliveryAndManual">
+                    <button onclick="location.href='#';">배송 및 반품 ></button>
+                    <button onclick="location.href='#';">조립 설명서 ></button>
+                    <!-- <a href="">배송 및 반품 ></a> -->
+                    <!-- <a href="">조립 설명서 ></a> -->
+                </div>
+
+            </div>
+        </div>
+        <!-- 제품정보 -->
+        <div class="productInfo">
+
+            <div class="productInfodetail">
+                <input id="check-btn1" type="checkbox" />
+                <label for="check-btn1">
+                    <div class="clickMenu1">
+                        <span>제품 정보</span>
+                        <span class="b">
+                        </span>
+                    </div>
+                </label>
+
+                <div class="menu1">
+                    <img class="santa" src="../AnimalDetail/animalBanner1.jpeg" alt="산타이미지">
+                    <div class="firstBanner">
+                        <span>온갖 기능으로 가득한 창의적 장난감</span>
+                        <span>동물의 숲™ 비디오 게임 시리즈의 재미있는 캐릭터들과 함께 액션이 넘치는 섬 투어 항해 모험 이야기를 시작해봐요.</span>
+                    </div>
+
+                    <img class="woodhouse" src="../AnimalDetail/animalBanner2.jpeg" alt="상품이미지">
+                    <div class="secondBanner">
+                        <span>화면에서 벗어나 현실로 즐기는 직접적 놀이 체험</span>
+                        <span>전자기기의 화면이 꺼진 후로도 놀이는 계속됩니다. 친근한 캐릭터와 정교한 소품들을 벗삼아 동물의 숲™ 세계 탐험을 계속해봐요.</span>
+                    </div>
+                </div>
+
+                <section id="mainSize">
+
+                    <div class="sectionWeekend">
+                        <div class="mainBanner">
+                            <div class="thisWeekendPopular">
+                                <span>
+                                    레고® 동물의 숲™ 갑돌의 보트 투어
+                                </span>
+                            </div>
+
+                            <div class="bannersList">
+
+                                <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                    <div>
+                                        <img src="../AnimalDetail/mini1.jpeg" alt="소중한 소원">
+                                    </div>
+
+                                    <div>
+                                        <h3>비디오 게임 속의 캐릭터들</h3>
+                                        <p>
+                                            <span>갑돌과 쭈니 미니피겨가 들어 있습니다.</span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                    <div>
+                                        <img src="../AnimalDetail/mini2.jpeg" alt="아늑한 오두막">
+                                    </div>
+
+                                    <div>
+                                        <h3>재미있는 활동거리가 하나가득</h3>
+                                        <p>
+                                            <span>대나무를 모으고, 낚시를 하고, 소라게를 잡으세요.</span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                    <div>
+                                        <img src="../AnimalDetail/mini3.jpeg" alt="곤히 잠든 모습 그대로">
+                                    </div>
+
+                                    <div>
+                                        <h3>숨겨진 보물 찾기</h3>
+                                    </div>
+
+                                    <div>
+                                        <p>
+                                            <span class="prince">삽을 들고 벨을 캐러 가보아요.</span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+
+                                <!-- <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                        <div>
+                                            <img src="https://www.lego.com/cdn/cs/set/assets/blt5df8ae5afb19f89e/43222-202306-PDP-Block-Standard-4.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1"
+                                                alt="디즈니의 역사">
+                                        </div>
+
+                                        <div>
+                                            <h3>디즈니 미녀와 야수</h3>
+                                        </div>
+
+                                        <div>
+                                            <p>
+                                                <span>다른 수많은 전설적인 디즈니 영화 속 기억에 남는 순간들을 만나보세요.</span>
+                                            </p>
+                                        </div> -->
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sectionWeekend">
+                        <div class="mainBanner">
+                            <div class="thisWeekendPopular">
+
+                            </div>
+
+                            <div class="bannersList">
+
+                                <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                    <div>
+                                        <img src="../AnimalDetail/mini4.jpeg" alt="소중한 소원">
+                                    </div>
+
+                                    <div>
+                                        <h3>흘러 넘치는 창의력</h3>
+                                        <p>
+                                            <span>아이들이 마음 내키는 대로 구성 요소를 재조합하여 원하는 모습으로 섬을 만들 수 있습니다.</span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                    <div>
+                                        <img src="../AnimalDetail/mini5.jpeg" alt="아늑한 오두막">
+                                    </div>
+
+                                    <div>
+                                        <h3>즐거운 섬 생활</h3>
+                                        <p>
+                                            <span>라운지 의자에 앉아 코코넛 워터를 마시며 휴식을 취해 보아요.</span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                                    <div>
+                                        <img src="../AnimalDetail/mini6.jpeg" alt="곤히 잠든 모습 그대로">
+                                    </div>
+
+                                    <div>
+                                        <h3>상상력의 돛을 올리세요</h3>
+                                    </div>
+
+                                    <div>
+                                        <p>
+                                            <span class="prince">쭈니와 함께 갑돌의 보트에 올라타세요.</span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="thirdBanner">
+                        <div class="bigBanner">
+                            <img src="../AnimalDetail/77048_Hero4_Standard_Large.jpeg" alt="">
+                        </div>
+                        <div class="thirdBannerSpan">
+                            <span>브릭 조립 커뮤니티의 확장</span>
+                            <span>모듈식 베이스플레이트를 이용해 마음 내키는 대로 다른 조립식 레고® 동물의 숲™ 장난감(별매품)과 자유로이 조합할 수 있습니다.</span>
+                            <div class="thirdBannerShoppingButton">
+                                <a href="" class="goText">쇼핑하기 <b>></b></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            </section>
+
+            <!-- 제품상세정보 -->
+            <input id="check-btn" type="checkbox" />
+            <label for="check-btn">
+                <div class="clickMenu">
+                    <span>제품 상세 정보</span>
+                    <span class="a">
+                    </span>
+                </div>
+            </label>
+            <div class="menu">
+                <img src="https://www.lego.com/cdn/cs/set/assets/blt005ca974bdc02532/43242_alt1.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                    alt="제품 상세 정보 이미지">
+                <p>맞춤형 레고® 동물의 숲™ 갑돌의 보트 투어(77048) 세트로 6세 이상의 남녀 어린이들에게 영감을 불어넣어주세요. 조립된 무인도의 모습이 비디오 게임 시리즈에서 보았던
+                    것과 꼭 닮았죠! 그런데 이게 끝이 아니랍니다. 얼마든지 바꿔 조립하며 내키는 대로 새롭고 재미있는 역할 놀이를 즐길 수 있다니까요.
+
+                    어린이 특유의 상상력을 발휘해봐요. 거북이 갑돌이 보트를 타고 다람쥐 쭈니와 함께 동물의 숲 무인도로 떠날 참이라네요. 섬을 탐험하고, 비디오 게임에 나오는 대나무를
+                    모으고, 땅을 파서 벨을 찾아내고, 낚싯대를 이용해 물고기를 잡아서 내다 팔고… 액션 역할 놀이거리가 끊일 일이 없답니다. 그런데 이게 전부가 아니거든요. 놀이가 한 판
+                    끝나는 대로 베이스플레이트를 창의적으로 재배치하고 조립 장난감의 레이아웃을 바꿔보세요. 모든 부품이 이동 가능하다는 것… 바로 맞춤형 놀이에 한계가 없다는 뜻 아니겠어요!
+
+                    동물의 숲 비디오 게임 시리즈의 온갖 재미있는 요소들이 한데 모여 있습니다. 생일 선물로 더할 나위 없겠죠. 나아가 이 조립식 장난감을 다른 여러 레고 동물의 숲 세트와
+                    합쳐 무한한 놀이의 가능성을 펼쳐보세요.</p>
+                <p>
+                    이 프리미엄 성인용 레고 ǀ 디즈니 세트는 영화 애호가를 위한 특별한 디스플레이 또는 테마 선물이 될 수 있습니다. 또한, 3D 환경에서 모델을 확대 및 회전하고,
+                    조립
+                    진도를
+                    확인하면서 세트를 저장하는 등 이 모든 기능을 한 곳에서 경험할 수 있는 LEGO Builder 앱을 통해 직관적인 조립 체험을 즐겨보세요.
+                </p>
+                <ul>
+                    <li>
+                        비디오 게임 테마의 장난감 - 6세 이상의 남녀 어린이를 위한 신나는 세상이 열립니다. 레고® 동물의 숲™ 갑돌의 보트 투어 장난감 세트를 풀어놓고, 쭈니와 함께하는
+                        섬 탐험 여행을 테마 삼아 비디오 게임 시리즈에서 보았던 장면들을 역할 놀이로 즐겨보아요
+
+                    </li>
+
+                    <li>
+                        친근한 환경과 장난감 캐릭터 - 장면을 자유로이 맞춤 구성할 수 있고, 다양한 기능이 들어 있으며, 사랑스러운 캐릭터 2개(다람쥐 쭈니 미니피겨와 거북이 갑돌
+                        미니피겨)가 등장합니다
+                    </li>
+
+                    <li>
+                        온갖 활동거리로 가득한 무인도 장난감 - 비디오 게임 시리즈에서 보았던 것처럼 땅을 파서 벨을 찾고, 코코넛을 따고, 대나무를 모으고, 갑돌의 보트를 타고, 낚싯대로
+                        고기를 낚고, 소라게를 잡으세요
+                    </li>
+
+                    <li>
+                        조립식 장면과 무한한 맞춤화 - 어린이다운 창의력을 최고조로 발휘하여 모듈식 베이스플레이트와 장난감 액세서리를 재배치하고, 귀여운 동물의 숲™ 캐릭터들이 등장하는
+                        새로운 이야기를 만들어보아요
+                    </li>
+
+                    <li>
+                        동물의 숲™ 테마의 생일 선물 아이디어 - 동물의 숲 비디오 게임 시리즈와 상상력 놀이를 좋아하는 창의적인 아이들을 위한 재미있는 생일 또는 명절 선물로 이 레고®
+                        조립 세트를 추천드려요
+                    </li>
+
+                    <li>
+                        창의적인 조립 장난감 - 레고® 동물의 숲™ 세트를 통해 아이들에게 자유로운 창의력의 세계를 열어주세요. 장면을 조립하고, 이야기를 만들고… 내키는 대로 뭘 하든
+                        상관없어요
+                    </li>
+
+                    <li>
+                        즐거운 조립 - 다른 레고® 동물의 숲™ 세트(별매품)와 합쳐 브릭으로 조립된 섬 마을을 마음껏 확장해봐요
+                    </li>
+
+                    <li>
+                        치수 – 모두 233개의 부품으로 동물의 숲™ 무인도 세트가 구성되어 있으며, 모델의 크기는 표준 구성 상태에서 높이 9cm, 폭 28cm, 깊이 17cm입니다
+                    </li>
+                </ul>
+                <p>상품정보 제공고시</p>
+                <ul>
+                    <li>KC 인증정보 : CB061R2195-4001</li>
+                    <li>크기 및 중량 : 35.4x19.1x5.9cm/427g</li>
+                    <li>색상 : 이미지참조</li>
+                    <li>재질 : ABS수지</li>
+                    <li>사용연령 또는 권장사용연령 : 만 6세 이상</li>
+                    <li>크기·체중의 한계 : 해당없음</li>
+                    <li>동일 모델의 출시년월 : 2024.03</li>
+                    <li>제조자(사) : LEGO System A/S 레고코리아㈜</li>
+                    <li>제조국 : 중국</li>
+                    <li>취급방법 및 취급시 주의사항, 안전표시(주의, 경고 등) : 경고! 3세 미만의 어린이는 사용할 수 없음. 작은 부품을 포함하고 있음.</li>
+                    <li>품질보증기준 : 본 제품은 공정거래위원회 고시 소비자 분쟁 해결 기준에 의거 교환 또는 보상 받을 수 있습니다.</li>
+                    <li>A/S 책임자와 전화번호 :소비자상담실 전화 080-880-0166</li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

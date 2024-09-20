@@ -1,0 +1,1088 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+/* * {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+} */
+
+
+/* 메인 크기 조절 및 가운데 정렬 */
+main {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    /* background-color: #FFEFCA */
+    /* width: calc(1024px * .8); */
+}
+
+@media (max-width:768px) {
+    main {
+        width: 100%;
+    }
+}
+
+/*============================큰 배너=================================*/
+
+
+
+/* .header_logo {
+    display: inline-block;
+} */
+
+
+/* 큰 배너 간격 및 구분 */
+.mainAd {
+    /* border: 1px rgb(223, 130, 68) solid; */
+    /* margin: 3%; */
+    /* background-color: bisque; */
+    position: relative;
+    margin-bottom: -.3%;
+}
+
+
+
+.mainAd3 {
+    position: relative;
+    margin-bottom: -4px;
+}
+
+.mainAd3 img {
+    width: 100%;
+}
+
+/* @media (max-width:768px) {
+    .mainAd3 img{
+        width: 150%;
+    }
+} */
+
+
+/* .movingAd {
+    display: inline-block;
+    position: absolute;
+    bottom: 50%;
+} */
+
+.mainAd img {
+    width: 100%;
+}
+
+
+
+@media (max-width:768px) {
+    .mainAd>img {
+
+        width: 100%;
+    }
+}
+
+/* @media (max-width:768px) {
+    .mainAd {
+        width: 200%;
+    }
+} */
+
+/* 이번 주 최고 인기 텍스트 조절*/
+.mainAd span {
+    font-size: 2em;
+    display: block;
+}
+
+.movingAd2 span {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 5%;
+}
+
+
+
+.movingAd3 span {
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    .promotion span {
+        font-size: 2em;
+    }
+}
+
+
+
+.promotion {
+    font-size: 0.6em;
+}
+
+/* 구매하기 버튼 스타일*/
+.buyButton {
+    display: flex;
+    background-color: black;
+    width: 130px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* 쇼핑하기 호버시 배경색 바꾸고 테두리 추가*/
+.buyButton:hover {
+    background-color: white;
+    border: 3px solid black;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+/* 쇼핑하기 호버시 폰트 컬러 변경 */
+.buyButton:hover .goText,
+.buyButton:hover .goText b {
+    color: black;
+}
+
+/* 쇼핑하기 글자 크기 및 색상*/
+.buyButton a {
+    font-size: 1em;
+    color: white;
+}
+
+
+/* 쇼핑하기 > 글자 스타일*/
+.buyButton b {
+    color: white;
+}
+
+
+/* 큰 배너 위 문자 및 버튼 고정*/
+/* .gogogo {
+    position: relative;
+} */
+
+
+/* .goShopping span {
+    font-size: 1.9em;
+} */
+
+.movingAd {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    right: 12%;
+    top: 40%;
+}
+
+.movingAd2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    left: 13%;
+    top: 40%;
+}
+
+
+
+.movingAd3 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 80%;
+    left: 5%;
+    top: 40%;
+}
+
+
+@media (max-width: 768px) {
+
+    /* 두번째 큰 배너 위치 */
+    .movingAd2 {
+        left: 6%;
+        top: 20%;
+    }
+
+    /* 첫번째 큰 배너 폰트 크기 */
+    .mainAd span {
+        font-size: 1em;
+    }
+
+    /* 큰 배너 버튼 사이즈 */
+    .buyButton {
+        width: 97px;
+        height: 36px;
+    }
+
+    /* 큰 배너 문구 위치 */
+    .movingAd {
+        right: 10%;
+        top: 50%;
+    }
+
+    /* 큰 배너 버튼 내부 글자 조절 */
+    .buyButton a {
+        font-size: .7em;
+        color: white;
+    }
+
+    /* 두번째 큰 배너 폰트 사이즈 */
+    .goShopping2 span {
+        font-size: 2em;
+    }
+}
+
+
+/* 1200px 일때 */
+@media (max-width:1200px) {
+
+    /* 큰 배너 문구 위치*/
+    .movingAd {
+        right: 5%;
+        top: 50%;
+    }
+}
+
+/*=============중간 카피라이터===========================*/
+
+.copyWriter {
+    background-color: rgb(48, 12, 84);
+    /* margin-top: 10%; */
+    height: 75px;
+}
+
+.copyWriter a:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+@media (max-width:768px) {
+    .movingAd3 {
+        width: 35%;
+        position: absolute;
+        top: 10%;
+        text-align: left;
+    }
+}
+
+.copyWriter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.copyWriter span,
+.copyWriter a {
+    color: white;
+    line-height: 75px;
+}
+
+.copyWriter span {
+    display: flex;
+    align-items: center;
+    font-size: 1.7em;
+    font-weight: bold;
+
+}
+
+
+@media (max-width:768px) {
+    .copyWriter span {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width:768px) {
+    .goShopping3 span {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+}
+
+@media (max-width:768px) {
+    .promotion {
+        font-size: 0.5em;
+    }
+}
+
+.copyWriter a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4em;
+    height: 2em;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+
+/*-----------------------------아이콘--------------------------------------*/
+
+
+
+
+/* 아이콘 영역 사이즈 조절 및 아래 섹션과 구분 */
+nav {
+    /* display: inline-block; */
+    /* border: 3px solid; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    /* background-color: rgb(214, 143, 155); */
+}
+
+@media (max-width:768px) {
+    nav {
+        /* display: inline-block; */
+        margin-bottom: 5%;
+        width: 100%;
+    }
+}
+
+.kyoboStyleBanner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* 교보 버전 리스트 스타일 삭제 및 인라인 블럭 */
+nav>div>div>ul {
+    /* text-align: center; */
+    display: inline-block
+}
+
+
+
+/* 리스트 병렬 처리 */
+.kyoboStyleBanner li {
+    float: left;
+    margin: 7px;
+}
+
+.kyoboStyleBanner li a {
+    display: block;
+}
+
+@media (max-width:768px) {
+    .kyoboStyleBanner li {
+        margin: 3px;
+    }
+}
+
+li a {
+    display: block;
+}
+
+
+/* 교보 리스트 가운데 정렬 */
+/* nav {
+    text-align: center;
+} */
+
+/* 교보 리스트 이미지 사이즈 조절 */
+nav img {
+    width: 120px;
+}
+
+/* 교보 리스트 커서 시 밑줄 */
+nav li:hover {
+    text-decoration: underline;
+}
+
+.kyoboStyleBanner li {
+    font-size: .9em;
+}
+
+.kyoboStyleBanner img:hover {
+    transition: .5s ease-out;
+    transform: scale(1.2);
+}
+
+
+/*----------------------------------메인배너--------------------------------------*/
+
+
+
+/* 메인 배너 스타일 */
+#mainSize {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+    /* background-color: rgb(214, 143, 155); */
+    border-top: .5em solid white;
+    border-bottom: .5em solid white;
+    text-align: left;
+}
+
+@media (max-width:768px) {
+    #mainSize {
+        width: 50%;
+    }
+}
+
+
+.bannersList {
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .bannersList {
+        flex-direction: column;
+    }
+}
+
+
+
+/* 이번 주 최고 인기 배너 사이즈 확인*/
+.sectionWeekend {
+    /* display: flex; */
+    width: 100%;
+    /* display: inline-block; */
+    /* border: 4px solid rgb(155, 218, 40); */
+    /* align-items: center; */
+
+}
+
+/* 이번 주 최고 인기 문구 조절 */
+.thisWeekendPopular {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+
+
+
+/* 이번 주 최고 인기 텍스트 조절 */
+.thisWeekendPopular>span {
+    font-size: 27.2px;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+/* .bannersList {
+    border: 4px solid blue;
+} */
+
+
+
+/* 최고 인기 상품 사이즈 및 간격 조절 */
+.weekendProduct {
+    /* display: inline-block; */
+    margin: 4px;
+    width: 32%;
+}
+
+.weekendProduct div:nth-child(3) {
+    margin-top: 5%;
+}
+
+.weekendProduct a {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.bannerTitle {
+    margin-bottom: 5%;
+}
+
+.bannerTitle span {
+    font-size: 1.4em;
+}
+
+.mainBanner2 {
+    margin-top: 5%;
+}
+
+@media (max-width:768px) {
+    .weekendProduct {
+        width: 100%;
+    }
+}
+
+/* 최고 인기 상품 이미지 사이즈 조절*/
+.weekendProduct img {
+    width: 100%;
+}
+
+/* 슬라이드 배너와 상하 간격 조절*/
+section {
+    margin-bottom: 100px;
+}
+
+/* 쇼핑하기 글자 사이즈 */
+.weekendProduct a {
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* 커서 올릴 시 언더라인*/
+.weekendProduct:hover a {
+    text-decoration: underline;
+}
+
+
+
+
+
+/*---------------------------------상품 슬라이드 배너-------------------------------------*/
+
+.slideButton {
+    position: relative;
+}
+
+article {
+    margin-bottom: 10%;
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+    border: 5px solid orange;
+    margin-bottom: 5%;
+}
+
+/* .buttons {
+    position: absolute;
+    top: 50%;
+    left: -8%;
+} */
+
+.backButton {
+
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+
+.frontButton {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+
+.backButton:hover,
+.frontButton:hover {
+    opacity: .4;
+    transition: .3S;
+}
+
+.backButton button {
+    width: 40px;
+    height: 60px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    background-image: url(./image/leftButton3.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.frontButton button {
+    width: 40px;
+    height: 60px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    background-image: url(./image/rightButton2.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:768px) {
+    article {
+        width: 90%;
+    }
+}
+
+.please {
+    width: 80%;
+    display: flex;
+    /* flex-wrap: nowrap;  */
+    transition: transform 0.9s;
+    /* position: relative; */
+    /* margin-left: 12%; */
+    /* margin: auto; */
+    margin-bottom: 3%;
+}
+
+@media (max-width:768px) {
+    .please {
+        width: 250%;
+    }
+}
+
+/* .con2 {
+    position: relative;
+    left: 100%;
+}
+
+.con3 {
+    position: relative;
+    left: 400%;
+}
+
+.con4 {
+    position: relative;
+    left: 800%;
+} */
+
+/* 전환 효과 */
+.container {
+    /* width: 100%; */
+    /* transform: translate(-100vw); */
+    /* transition: transform 0.5s; */
+    /* width: 90%; */
+    display: flex;
+    /* margin: auto; */
+    margin-top: 9%;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    width: 125%;
+    /* justify-content: space-around; */
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 125%;
+        margin-top: 3%;
+    }
+}
+
+
+.slideSectionName {
+    font-size: 2em;
+    text-align: left;
+}
+
+
+.firstBox {
+    /* background-color: white; */
+}
+
+.mainBox {
+    box-sizing: border-box;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    /* display: inline-block; */
+    border: 1.5px solid rgb(202, 202, 202);
+    text-align: center;
+    /* margin: 1%; */
+}
+
+@media (max-width:768px) {
+    .mainBox {
+        width: 8%;
+        display: flex;
+        flex-direction: column;
+        /* display: inline-block; */
+        border: 1px solid rgb(202, 202, 202);
+        text-align: center;
+        /* margin: 1%; */
+    }
+}
+
+.firstBox img {
+    width: 90%;
+    /* object-fit: contain; */
+    /* background-color: white; */
+}
+
+.firstBox a {
+    display: inline-block;
+    /* background-color: white; */
+}
+
+
+
+
+.secondBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    background-color: #bfd4d0;
+    position: relative;
+    align-items: center;
+}
+
+.secondBox a {
+    text-align: left;
+    /* display: inline-block; */
+    width: 100%;
+    height: 3vh;
+    color: white;
+    margin-top: 7%;
+    margin-left: 6%;
+}
+
+@media (max-width:768px) {
+    .secondBox a {
+        font-size: .8em;
+    }
+}
+
+.secondBox span {
+    /* display: block; */
+    height: 3vh;
+    color: white;
+    margin-right: 60%;
+}
+
+@media (max-width:768px) {
+    .secondBox span {
+        margin-right: 30%;
+    }
+
+}
+
+
+.secondBox button {
+    width: 90%;
+    height: 50px;
+    background-color: rgb(255, 212, 0);
+    border: 0px;
+    margin-bottom: 5%;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .secondBox button {
+        width: 90%;
+        height: 50px;
+        background-color: rgb(255, 212, 0);
+        border: 0px;
+        margin-bottom: 5%;
+        border-radius: 10px;
+        font-size: .9em;
+        cursor: pointer;
+    }
+
+}
+
+/* header button:hover {
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 212, 0);
+    background-color: #A2BAB5;
+
+} */
+
+/* 주요 세트 이미지 호버 시 확대 */
+.firstBox:hover {
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.5s;
+}
+
+/* 주요 세트 이미지 호버 해제 애니메이션 */
+.firstBox {
+    transition-duration: 0.3s;
+}
+
+.buttons .bt1,
+.buttons .bt2,
+.buttons .bt3,
+.buttons .bt4 {
+    font-size: 1.4em;
+    font-weight: bolder;
+    width: 6%;
+    border-radius: 10px;
+    background-color: white;
+    border: 0;
+}
+
+.bt1:hover,
+.bt2:hover,
+.bt3:hover,
+.bt4:hover {
+    cursor: pointer;
+
+}
+
+/* .buttons img {} */
+
+.secondBox button:hover {
+    border: 2px solid rgb(255, 212, 0);
+    background-color: rgb(191, 212, 208);
+    color: black;
+}
+
+/*============================================================================*/
+
+/* 메인 배너 스타일 */
+#mainSize2 {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+    background-color: rgb(48, 12, 84);
+    /* border-top: .5em solid white; */
+    /* border-bottom: .5em solid white; */
+}
+
+/* 이번 주 최고 인기 배너 사이즈 확인*/
+.sectionWeekend2 {
+
+    width: 90%;
+    display: inline-block;
+    /* border: 4px solid rgb(155, 218, 40); */
+
+}
+
+/* 이번 주 최고 인기 문구 조절 */
+.thisWeekendPopular2 span {
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* 이번 주 최고 인기 텍스트 조절 */
+.thisWeekendPopular2>span {
+    margin: 10px;
+    display: block;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+@media (max-width:768px) {
+    .thisWeekendPopular2>span {
+        margin: 20px;
+        font-size: 1.7em;
+        text-align: center;
+    }
+}
+
+.textTitle h3,
+.text span {
+    color: white;
+    margin-bottom: 5%;
+}
+
+.textTitle {
+    margin-bottom: 5%;
+}
+
+.shoppingButton2 {
+    margin-top: 5%;
+}
+
+/* .text h3,
+.text div span {
+    color: white;
+    font-weight: 200;
+} */
+
+@media (max-width:768px) {
+    .text p span {
+        color: white;
+        font-weight: 100;
+        font-size: .9em;
+    }
+}
+
+@media (max-width:768px) {
+    .text p {
+        margin-top: 20px;
+    }
+}
+
+/* .bannersList {
+    border: 4px solid blue;
+} */
+
+
+
+/* 최고 인기 상품 사이즈 및 간격 조절 */
+.weekendProduct2 {
+    display: inline-block;
+    margin: 4px;
+    width: 32%;
+    /* border: 1px solid black; */
+    text-align: left;
+}
+
+
+@media (max-width:768px) {
+    .weekendProduct2 {
+        margin: 0;
+        width: 60%;
+    }
+}
+
+.text h3 {
+    color: white;
+}
+
+/* 최고 인기 상품 이미지 사이즈 조절*/
+.weekendProduct2 img {
+    width: 100%;
+}
+
+/* 슬라이드 배너와 상하 간격 조절*/
+/* .section {
+    margin-bottom: 100px;
+} */
+
+/* 쇼핑하기 글자 사이즈 */
+.weekendProduct2 a {
+    font-size: larger;
+    font-weight: lighter;
+    color: white;
+}
+
+/* 커서 올릴 시 언더라인*/
+.weekendProduct2:hover a {
+    text-decoration: underline;
+}
+
+.coolBanner img {
+    width: 90%;
+}
+
+
+/*===============================궁금했던 이야기====================================*/
+
+@media (max-width:768px) {
+    .curios {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+/* 궁금한 이야기 전체 크기 */
+.curiosTab {
+    margin: auto;
+    /* border: 1px solid blue; */
+    width: 87%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+
+
+
+/* 궁금했던 이야기 글자 크기 */
+.curiosTab>div>span {
+    font-size: 1.7em;
+}
+
+/* 4개를 싸고 있는 박스 및 정렬 */
+.curiosThing {
+    /* border: 1px solid rgb(98, 0, 255); */
+    text-align: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.curiosThing a {
+    display: inline-block;
+}
+
+@media (max-width:768px) {
+    .curiosThing {
+        flex-direction: column;
+    }
+}
+
+/* a태그에 밑줄 삭제 */
+.curiosThing .tab1 {
+    /* background-color: black; */
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+}
+
+/* 탭 하나 세로 정렬 */
+.tab1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    /* border: 1px solid red; */
+
+}
+
+
+
+/* 이미지가 들어있는 박스 크기 */
+.curiTabImage {
+    /* border: 1px solid red; */
+    /* width: 100%; */
+    margin: auto;
+}
+
+
+/* 이미지의 사이즈 */
+.tab1 img {
+    /* object-fit: contain; */
+    width: 95%;
+}
+
+/* 사진 아래 문자 박스 크기 및 색상 없애기 */
+.wordWidth {
+    /* border: 1px solid red; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: initial;
+}
+
+
+
+/* 글자 자동 개행 */
+.wordWidth,
+.curiSpan1 {
+    white-space: pre-wrap;
+    word-break: break-all;
+    font-size: 1em;
+}
+
+/* 탭에 호버시 더보기에 밑줄*/
+.curiosThing a:hover span:nth-child(3) {
+    text-decoration: underline;
+}
+
+.curiosTitle {
+    margin-bottom: 5%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.curiH3,
+.curiSpan1 {
+    margin-bottom: 5%;
+}
+
+
+/*==============================마지막 문구=========================================*/
+
+.finalText {
+    text-align: center;
+    background-color: rgb(242, 242, 242);
+    width: 70%;
+    font-size: 1em;
+    padding: 10px;
+    margin: auto;
+    white-space: pre-wrap;
+    /* margin-top: 10%; */
+    margin-bottom: 1%;
+}
+
+@media (max-width:768px) {
+    .finalText {
+        text-align: center;
+        width: 94%;
+        font-size: .9em;
+        padding: 20px;
+        white-space: wrap;
+    }
+
+}

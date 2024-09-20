@@ -1,0 +1,704 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    color: black;
+    list-style: none;
+}
+
+
+
+.headers {
+    display: inline-block;
+    text-align: center;
+}
+
+.remember {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 35%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.remember h1 {
+    margin-bottom: 1%;
+}
+
+.remember p {
+    margin-bottom: 1%;
+}
+
+.middle {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.final {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.ElDorado {
+    position: relative;
+    border: 1px solid #999;
+    margin: 0 auto;
+    width: 40em;
+    height: 25em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+.ElDorado .fort {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+.ElDorado .fort img {
+    width: 13em;
+    height: 13em;
+}
+
+.ElDorado .right {
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.ElDorado .right span {
+    display: block;
+}
+
+.ElDorado .star {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ElDorado .star img {
+    width: 8%;
+    height: 8%;
+}
+
+.ElDorado .price {
+    font-weight: bolder;
+}
+
+.ElDorado .shoppingCart button {
+    width: 90%;
+    height: 80px;
+    background-color: rgb(235, 113, 20);
+    font-size: 1.1em;
+    border: none;
+    border-radius: 1em;
+}
+
+.ElDorado .shoppingCart button:hover {
+    cursor: pointer;
+}
+
+.ElDorado .icon {
+    /* margin-top: 5%; */
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    right: -50%;
+
+    /* flex-direction: row; */
+    /* align-items: center; */
+}
+
+.ElDorado .icon span {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ElDorado .icon div {
+    width: 80px;
+    height: 8em;
+    border: 1px solid #999;
+    display: flex;
+    align-items: center;
+}
+
+.ElDorado .icon img {
+    margin-top: 10%;
+    display: flex;
+    width: 40px;
+}
+
+
+
+.ElDorado .age,
+.ElDorado .pices,
+.ElDorado .figure,
+.ElDorado .size {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.theme {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 60%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.theme h1 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.theme p {
+    margin-bottom: 1%;
+}
+
+.chivalry {
+    position: relative;
+    display: inline-block;
+}
+
+.chivalry img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.chivalry .chivalry1-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moon {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 60%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.moon h1 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.moon p {
+    margin-bottom: 1%;
+}
+
+.travel {
+    position: relative;
+    display: inline-block;
+}
+
+.travel img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.travel .spaceset {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.spaceship1 {
+    position: relative;
+    display: inline-block;
+}
+
+.spaceship1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.spaceship2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.spaceship p {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 60%;
+    /* margin-top: 3em; */
+    margin-bottom: 3em;
+}
+
+.explorer {
+    position: relative;
+    border: 1px solid #999;
+    margin: 0 auto;
+    width: 40em;
+    height: 25em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+.explorer .explorer_left {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+.explorer .explorer_left img {
+    width: 13em;
+    height: 13em;
+}
+
+.explorer .explorer_right {
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.explorer .explorer_right span {
+    display: block;
+}
+
+.explorer .star_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.explorer .star_2 img {
+    width: 20%;
+    height: 20%;
+}
+
+.explorer .price_2 {
+    font-weight: bolder;
+}
+
+.explorer .sold_out_2 button {
+    width: 90%;
+    height: 80px;
+    background-color: rgb(235, 113, 20);
+    font-size: 1.1em;
+    border: none;
+    border-radius: 30px;
+}
+
+.explorer .sold_out_2 button:hover {
+    cursor: pointer;
+}
+
+.explorer .icon_1 {
+    /* margin-top: 5%; */
+    display: flex;
+    position: absolute;
+    bottom: 8%;
+    /* flex-direction: row; */
+    /* align-items: center; */
+}
+
+.explorer .icon_1 span {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.explorer .icon_1 div {
+    width: 80px;
+    height: 8em;
+    border: 1px solid #999;
+    display: flex;
+    align-items: center;
+}
+
+.explorer .icon_1 img {
+    margin-top: 10%;
+    display: flex;
+    width: 40px;
+}
+
+.explorer .age_3,
+.explorer .pices {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.word {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 60%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.castle {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 60%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.castle h1 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.castle p {
+    margin-bottom: 1%;
+}
+
+.castle_1 {
+    position: relative;
+    display: inline-block;
+}
+
+.castle_1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.castle_1 .shield {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.castle_2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+.castle_2 p {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 60%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.castle_3 {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 60%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.castle_3 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.castle_3 .kingCastle {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.castle_3 p {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+/* ==================================================== */
+
+.castle_of_lion_knight {
+    position: relative;
+    border: 1px solid #999;
+    margin: 0 auto;
+    width: 40em;
+    height: 25em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+.castle_of_lion_knight .castleimage {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+.castle_of_lion_knight .castleimage img {
+    width: 13em;
+    height: 13em;
+}
+
+.castle_of_lion_knight .right_2 {
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.castle_of_lion_knight .right_2 span {
+    display: block;
+}
+
+.castle_of_lion_knight .star_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.castle_of_lion_knight .star_3 img {
+    width: 20%;
+    height: 10%;
+}
+
+.castle_of_lion_knight .price_3 {
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.castle_of_lion_knight .sold_out_3 button {
+    width: 90%;
+    height: 80px;
+    background-color: rgb(235, 113, 20);
+    font-size: 1.1em;
+    border: none;
+    border-radius: 30px;
+}
+
+.castle_of_lion_knight .sold_out_3 button:hover {
+    cursor: pointer;
+}
+
+.castle_of_lion_knight .icon_1 {
+    /* margin-top: 5%; */
+    display: flex;
+    position: absolute;
+    right: -50%;
+    bottom: 8%;
+    /* flex-direction: row; */
+    /* align-items: center; */
+}
+
+.castle_of_lion_knight .icon_1 span {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.castle_of_lion_knight .icon_1 div {
+    width: 80px;
+    height: 8em;
+    border: 1px solid #999;
+    display: flex;
+    align-items: center;
+}
+
+.castle_of_lion_knight .icon_1 img {
+    margin-top: 10%;
+    display: flex;
+    width: 40px;
+}
+
+.castle_of_lion_knight .age_2,
+.castle_of_lion_knight .pices_2,
+.castle_of_lion_knight .figure_2,
+.castle_of_lion_knight .size_2 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.monkey {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 60%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.monkey h1 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.monkey img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.monkey .pirate {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.monkey p {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.pirate_3 {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.pirate_3 p {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.pirate_4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.pirate_5 {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.pirate_5 p {
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.pirate_6 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.final {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 11%;
+}
+
+.final .banner {
+    width: 70%;
+    height: auto;
+}
+
+.final div {
+    position: absolute;
+    left: 20%;
+    text-align: center;
+}

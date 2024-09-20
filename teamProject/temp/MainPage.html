@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./MainPage.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="header_logo">
+            <a href="#">
+                <img src="./image/lego-icon.svg" alt="lego">
+            </a>
+        </div>
+
+        <div class="header_menu">
+            <ul>
+                <li><a href="./category.html">레고 제품 쇼핑</a></li>
+                <li><a href="#">레고 브랜드 소개</a></li>
+                <li><a href="#">고객 지원</a></li>
+            </ul>
+        </div>
+
+        <div class="header_search">
+            <input type="text" placeholder="search" class="search_input">
+            <button type="submit" class="search_button">
+                <img src="./headerImg/search.png" alt="search">
+            </button>
+        </div>
+
+        <div class="header_login">
+            <ul>
+                <li><a href="#">로그인</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="modal_bg" id="modalBg"></div>
+
+    <div class="modal_box" id="modalWrap">
+        <div class="content">
+            <h2>레고 &reg 계정으로 로그인하기</h2>
+            <a href="./mainlogin.html">로그인</a>
+            <a href="./accountcreate.html">회원가입</a>
+            <button class="close_btn" id="closeModalBtn">나가기</button>
+        </div>
+    </div>
+
+    <script>
+        const headerLoginLink = document.querySelector('.header_login a');
+        const modalWrap = document.getElementById('modalWrap');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const modalBg = document.getElementById('modalBg');
+    
+        // 모달 열기 함수
+        function openModal() {
+            modalWrap.style.display = 'block';
+            modalBg.style.display = 'block';
+            setTimeout(() => {
+                modalWrap.style.opacity = '1';
+                modalBg.style.opacity = '0.7';
+            }, 10);
+        }
+    
+        // 모달 닫기 함수
+        function closeModal() {
+            modalWrap.style.opacity = '0';
+            modalBg.style.opacity = '0';
+            setTimeout(() => {
+                modalWrap.style.display = 'none';
+                modalBg.style.display = 'none';
+            }, 300);
+        }
+    
+        headerLoginLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            openModal();
+        });
+    
+        closeModalBtn.addEventListener('click', function() {
+            closeModal();
+        });
+    
+        modalBg.addEventListener('click', function() {
+            closeModal();
+        });
+    </script>
+
+
+    <main>
+
+        <div class="mainAd">
+            <img src="./image/mainAd.png" alt="" class="gogogo">
+
+            <div class="movingAd">
+                <div class="goShopping">
+                    <span>
+                        사랑을 꽃피워요
+                    </span>
+                </div>
+                
+                <div class="buyButton">
+                    <div>
+                        <a href="" class="goText">쇼핑하기 <b>></b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <nav>
+            <div>
+                <div class="kyoboStyleBannerSize">
+                    <ul class="kyoboStyleBanner">
+                        <li class="batmanIcon">
+                            <a href="#"><img src="./image/batman4.png" alt="" class="batbat"></a>
+                            배트맨
+                        </li>
+                        <li>
+                            <a href="#"><img src="./image/marble.webp" alt=""></a>
+                            마블
+                        </li>
+                        <li>
+                            <a href="#"><img src="./image/diseney.png" alt=""></a>
+                            디즈니
+                        </li>
+                        <li>
+                            <a href="#"><img src="./image/harry.webp" alt=""></a>
+                            해리포터&trade;
+                        </li>
+                        <li>
+                            <a href="#"><img src="./image/starWars.png" alt=""></a>
+                            스타워즈&trade;
+                        </li>
+                        <li>
+                            <a href="#"><img src="./image/animal.webp" alt=""></a>
+                            동물의숲
+                        </li>
+                        <li>
+                            <a href="#"><img src="./image/superMario.png" alt=""></a>
+                            레고&reg; 슈퍼 마리오
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <section id="mainSize">
+
+            <div class="sectionWeekend">
+                <div class="mainBanner">
+                    <div class="thisWeekendPopular">
+                        <span>
+                            이번 주 최고 인기
+                        </span>
+                    </div>
+
+                    <div class="bannersList">
+
+                        <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                            <div>
+                                <img src="./image/mainFirstBannerPic1.webp" alt="마법 같은 바닷속 궁전">
+                            </div>
+
+                            <div>
+                                <h3>마법 같은 바닷속 궁전</h3>
+                                <p>
+                                    <span>신제품 레고&reg; | 디즈니 프린세스 미니 디즈니 에리얼 궁전 세트를멋지게 완성해 보세요.</span>
+                                </p>
+                            </div>
+
+                            <a class="shoppingButton" href="#">
+                                쇼핑하기
+                            </a>
+                        </div>
+
+                        <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                            <div>
+                                <img src="./image/mainFirstBannerPic2.webp" alt="손끝에서 탄생하는 지구">
+                            </div>
+
+                            <div>
+                                <h3>손끝에서 탄생하는 지구</h3>
+                                <p>
+                                    <span>레고&reg; 아이디어 지구본으로 세계 여행을 향한 열정을 일깨워 보세요.</span>
+                                </p>
+                            </div>
+
+                            <a class="shoppingButton" href="#">
+                                쇼핑하기
+                            </a>
+                        </div>
+
+                        <div class="weekendProduct" onclick="location.href='#'" style="cursor:pointer;">
+                            <div>
+                                <img src="./image/mainFirstBannerPic3.webp" alt="레고 아이디어 BTS Dynamite">
+                            </div>
+
+                            <div>
+                                <h3>레고&reg;아이디어 BTS Dynamite</h3>
+                            </div>
+
+                            <div>
+                                <p>
+                                    <span>전 세계적으로 선풍적인 인기를 끈 뮤직비디오를 집에서 재현할 수 있는 특별한 레고 세트랍니다.</span>
+                                </p>
+                            </div>
+
+                            <a class="shoppingButton" href="#">
+                                쇼핑하기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <article>
+            <h2>주요 세트</h2>
+
+            <div class="please">
+                <div class="container con1">
+
+                    <!-- <div class="slideSectionName">신제품</div> -->
+
+                    <div class="mainBox box1">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/agraba.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">공전하는 지구와 달</a>
+
+                            <span>114,900 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainBox box1">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/cherryBlossoms.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">벚꽃</a>
+
+                            <span>20,900 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainBox box1">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/arialCastle.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">미니 디즈니 에리얼 궁전</a>
+
+                            <span>55,900 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainBox box1">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/japanPost.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">일본 엽서</a>
+
+                            <span>129,000 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="container con2">
+
+                    <!-- <div class="slideSectionName">신제품</div> -->
+
+                    <div class="mainBox box2">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/agraba.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">공전하는 지구와 달</a>
+
+                            <span>114,900 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainBox box2">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/cherryBlossoms.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">벚꽃</a>
+
+                            <span>20,900 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainBox box2">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/arialCastle.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">미니 디즈니 에리얼 궁전</a>
+
+                            <span>55,900 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainBox box2">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/japanPost.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">일본 엽서</a>
+
+                            <span>129,000 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container con3">
+
+                    <!-- <div class="slideSectionName">신제품</div> -->
+
+                    <div class="mainBox box3">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/agraba.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">공전하는 지구와 달</a>
+
+                            <span>114,900 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainBox box3">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/cherryBlossoms.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">벚꽃</a>
+
+                            <span>20,900 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainBox box3">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/arialCastle.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">미니 디즈니 에리얼 궁전</a>
+
+                            <span>55,900 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainBox box3">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/japanPost.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">일본 엽서</a>
+
+                            <span>129,000 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container con4">
+
+                    <!-- <div class="slideSectionName">신제품</div> -->
+
+                    <div class="mainBox box4">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/agraba.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">공전하는 지구와 달</a>
+
+                            <span>114,900 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainBox box4">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/cherryBlossoms.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">벚꽃</a>
+
+                            <span>20,900 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainBox box4">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/arialCastle.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">미니 디즈니 에리얼 궁전</a>
+
+                            <span>55,900 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mainBox box4">
+                        <div class="firstBox">
+                            <a href="#"><img src="./slideImage/japanPost.png" alt=""></a>
+                        </div>
+
+                        <div class="secondBox">
+
+                            <a href="#">일본 엽서</a>
+
+                            <span>129,000 원</span>
+
+                            <button onclick="location.href='#';">
+                                장바구니 담기
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            </div>
+            <div class="buttons">
+                <button class="bt1">ㅡ</button>
+                <button class="bt2">ㅡ</button>
+                <button class="bt3">ㅡ</button>
+                <button class="bt4">ㅡ</button>
+            </div>
+
+
+            <script>
+
+                document.querySelector('.bt2').addEventListener('click', function () {
+                    document.querySelector('.please').style.transform = 'translate(-125%)';
+                });
+
+                document.querySelector('.bt3').addEventListener('click', function () {
+                    document.querySelector('.please').style.transform = 'translate(-250%)';
+                });
+
+                document.querySelector('.bt4').addEventListener('click', function () {
+                    document.querySelector('.please').style.transform = 'translate(-375%)';
+                });
+
+                document.querySelector('.bt1').addEventListener('click', function () {
+                    document.querySelector('.please').style.transform = 'translate(0%)';
+                });
+
+            </script>
+        </article>
+
+        <section id="mainSize2">
+
+            <div class="sectionWeekend2">
+                <div class="mainBanner2">
+                    <div class="thisWeekendPopular2">
+                        <span>
+                            마음껏 놀 수 있는 다양한 방법!
+                        </span>
+                    </div>
+
+                    <div class="bannersList2">
+
+                        <div class="weekendProduct2" onclick="location.href='#'" style="cursor:pointer;">
+                            <div>
+                                <img src="./image/banner2-1.jpeg" alt="마법 같은 바닷속 궁전">
+                            </div>
+
+                            <div class="text">
+                                <h3>마법 같은 바닷속 궁전</h3>
+                                <p>
+                                    <span>신제품 레고&reg; | 디즈니 프린세스 미니 디즈니 에리얼 궁전 세트를멋지게 완성해 보세요.</span>
+                                </p>
+                            </div>
+
+                            <a class="shoppingButton2" href="#">
+                                쇼핑하기
+                            </a>
+                        </div>
+
+                        <div class="weekendProduct2" onclick="location.href='#'" style="cursor:pointer;">
+                            <div>
+                                <img src="./image/banner2-2.jpeg" alt="손끝에서 탄생하는 지구">
+                            </div>
+
+                            <div class="text">
+                                <h3>손끝에서 탄생하는 지구</h3>
+                                <p>
+                                    <span>레고&reg; 아이디어 지구본으로 세계 여행을 향한 열정을 일깨워 보세요.</span>
+                                </p>
+                            </div>
+
+                            <a class="shoppingButton2" href="#">
+                                쇼핑하기
+                            </a>
+                        </div>
+
+                        <div class="weekendProduct2" onclick="location.href='#'" style="cursor:pointer;">
+                            <div>
+                                <img src="./image/banner2-3.jpeg" alt="레고 아이디어 BTS Dynamite">
+                            </div>
+
+                            <div class="text">
+                                <h3>레고&reg;아이디어 BTS Dynamite</h3>
+                            
+                                <p>
+                                    <span>전 세계적으로 선풍적인 인기를 끈 뮤직비디오를 집에서 재현할 수 있는 특별한 레고 세트랍니다.</span>
+                                </p>
+                            </div>
+
+                            <a class="shoppingButton2" href="#">
+                                쇼핑하기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coolBanner">
+                <img src="./image/banner2BottomImg.jpeg" alt="">
+            </div>
+        </section>
+
+        <div class="curios">
+            <div class="curiosTab">
+                <div>
+                    <span>궁금했던 이야기</span>
+                </div>
+
+                <div class="curiosThing">
+
+                    <a href="#" class="tab1">
+                        <div class="curiTabImage">
+                            <img src="./image/curious1.jpeg" alt="curios1" class="curiImg">
+                        </div>
+                        <div class="wordWidth">
+                            <h3 class="curiH3">나만의 패밀리 트리를 만드는 방법</h3>
+                            <span class="curiSpan1">최신 레고&reg; 아이디어 세트로 우리 가족만의 패밀리 트리를 만드는 방법에 대한 단계별 가이드</span>
+                            <span class="curiSpan2">더보기 ></span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="tab1">
+                        <div class="curiTabImage">
+                            <img src="./image/curious2.jpeg" alt="curios1" class="curiImg">
+                        </div>
+                        <div class="wordWidth">
+                            <h3 class="curiH3">협력식 놀이를 통해 아이들의 협동심을 키우는 방법</h3>
+                            <span class="curiSpan1">협력식 놀이의 중요성과 협동 기술이 향후 아이들의 삶에 도움이 될 수 있는 방법을 알아봅니다.</span>
+                            <span class="curiSpan2">더보기 ></span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="tab1">
+                        <div class="curiTabImage">
+                            <img src="./image/curious3.jpeg" alt="curios1" class="curiImg">
+                        </div>
+                        <div class="wordWidth">
+                            <h3 class="curiH3">멋진 레고&reg; 부활절 바구니 아이디어</h3>
+                            <span class="curiSpan1">일년 내내 즐거움을 안겨줄 레고&reg; 선물로 소중한 사람들의 부활절 바구니를 채워보세요.</span>
+                            <span class="curiSpan2">더보기 ></span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="tab1">
+                        <div class="curiTabImage">
+                            <img src="./image/curious4.jpeg" alt="curios1" class="curiImg">
+                        </div>
+                        <div class="wordWidth">
+                            <h3 class="curiH3">최고의 성인 사용자용 2024 신상품 레고&reg; 세트 11가지</h3>
+                            <span class="curiSpan1">성인 사용자용 2024 신상품 레고&reg; 세트 필수템! 무얼 기대하든 마음에 드는 것이 틀림없이
+                                있을거예요!</span>
+                            <span class="curiSpan2">더보기 ></span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="finalText">
+            <span>공식 레고&reg; 쇼핑몰을 찾아주신 여러분, 환영합니다! 이곳에서 아이들과 성인들을 위한 레고 조립 세트, 선물을 비롯한 여러 제품을 모두 만나보세요. 생일, 발렌타인데이,
+                어버이날처럼 특별한 날을 위한 선물을 준비하세요. 유아부터 청소년 그리고 성인까지, 모두를 기쁘게 할 만한 선물을 골라보세요. 상상력을 발휘해 무한한 놀이를 즐길 수 있는 장난감을
+                골라보세요. 성인들을 위한 레고 세트 역시 자동차, 꽃, 게임 등 다양한 관심사에 꼭 맞게 엄선해 두었답니다!</span>
+        </div>
+
+
+
+
+    </main>
+    <footer>
+        <div>
+            <img src="./headerImg/lego.png" alt="lego" class="footerimg">
+        </div>
+        <div class="footer">
+            <ul>
+                <li>회사소개
+                    <ul>
+                        <li>레고 그룹 소개</li>
+                        <li>레고 뉴스</li>
+                    </ul>
+                </li>
+                <li>지원
+                    <ul>
+                        <li>연락처</li>
+                        <li>조립설명서 찾기</li>
+                    </ul>
+                </li>
+                <li>명소
+                    <ul>
+                        <li>레고 하우스</li>
+                        <li>레고랜드 파크</li>
+                    </ul>
+                </li>
+                <li>기타 정보
+                    <ul>
+                        <li>레고 라이프</li>
+                        <li>레고 에듀케이션</li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#"><img src="./footerImg/facebook.png" alt=""></a>
+            <a href="#"><img src="./footerImg/x.avif" alt=""></a>
+            <a href="#"><img src="./footerImg/instagram.png" alt=""></a>
+            <a href="#"><img src="./footerImg/youtube.avif" alt=""></a>
+            <p>LEGO System A/S, DK-7190 Billund, Denmark. 만 18세 이상부터 온라인 구매가 가능합니다. 레고, 레고 로고, 미니피겨, 듀플로, 프렌즈 로고, 미니피겨
+                로고, 드림즈, 닌자고, 비디요 및 마인드스톰은 레고 그룹의 상표입니다. ©2024 The LEGO Group. All rights reserved. 이 사이트를 이용하면 이용약관에
+                동의하는 것으로 간주됩니다. 레고코리아㈜ 대표이사 : 에릭폴모젱, 정희영 | 주소 : 서울특별시 강남구 강남대로 298, 16층 (역삼동) 우편번호 06253
+                사업자등록번호:126-81-25525 | 통신판매업신고 제 2010-서울강남-00549호 사업자등록확인고객센터 무료전화 : 080-880-0166 | 팩스 : 02-511-6412 |
+                업무시간 : 월요일-금요일 오전9시-오후6시</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

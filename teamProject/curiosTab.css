@@ -1,0 +1,70 @@
+main {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    /* background-color: rgb(241, 193, 202); */
+    /* width: calc(1024px * .8); */
+}
+
+
+/* 궁금한 이야기 전체 크기 */
+.curiosTab {
+    margin: auto;
+    /* border: 1px solid blue; */
+    width: 50%;
+}
+
+/* 궁금했던 이야기 글자 크기 */
+.curiosTab>div>span {
+    font-size: 1.7em;
+}
+
+/* 4개를 싸고 있는 박스 및 정렬 */
+.curiosThing {
+    /* border: 1px solid rgb(98, 0, 255); */
+    text-align: center;
+    display: flex;
+}
+
+/* a태그에 밑줄 삭제 */
+.curiosThing a {
+    text-decoration: none;
+}
+
+/* 탭 하나 세로 정렬 */
+.tab1 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 이미지가 들어있는 박스 크기 */
+.curiTabImage {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+}
+
+/* 이미지의 사이즈 */
+.tab1 img {
+    width: 100%;
+}
+
+/* 사진 아래 문자 박스 크기 및 색상 없애기 */
+.wordWidth {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+    color: initial;
+}
+
+/* 글자 자동 개행 */
+.wordWidth .curiSpan1 {
+    /* white-space: pre-wrap; */
+    /* word-break: break-all; */
+    font-size: 0.8em;
+}
+
+/* 탭에 호버시 더보기에 밑줄*/
+.curiosThing a:hover span:nth-child(3) {
+    text-decoration: underline;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./category2.css">
+</head>
+
+<body>
+    <div class="bigMenu">
+        <img src="./lego-icon.svg" alt="">
+        <ul class="bigMenuList">
+            <li><button>레고 제품 쇼핑</button></li>
+            <li><button>레고 브랜드 소개</button></li>
+            <li><button>고객 지원</button></li>
+        </ul>
+    </div>
+
+    <div class="smallMenu">
+
+        <ul class="smallMenuList">
+            <li><button onclick='btnClick()'>시리즈별 세트</button></li>
+            <li><button>신상품</button></li>
+            <li><button>베스트 셀러</button></li>
+            <li><button>추억의 레고</button></li>
+            <li><button>할인 및 행사</button></li>
+        </ul>
+
+    </div>
+
+
+
+    <div id="seriesSet">
+        <ul>
+            <li id="starWars">스타워즈™
+
+                <div class="starstar">
+                    <img src="./img/star_wars.jpg" alt="starWars">
+                </div>
+            </li>
+            <li>슈퍼 마리오™</li>
+            <li>디즈니™</li>
+            <li>마블™</li>
+            <li>해리포터™</li>
+        </ul>
+    </div>
+
+    <div id="pastSeries">
+        <ul>
+            <li><a href="#">1970~1980</a>
+                <img src="./categoryImg/1979_lego.jpeg" alt="1980">
+            </li>
+            <li><a href="#">1981~1990</a>
+                <img src="./categoryImg/1984_lego.jpeg" alt="1990">
+            </li>
+            <li><a href="#">1991~2000</a>
+                <img src="./categoryImg/1992_lego.jpg" alt="2000">
+            </li>
+            <li><a href="#">2000~2010</a>
+                <img src="./categoryImg/2004_lego.jpeg" alt="2010">
+            </li>
+            <li><a href="#">2011~2020</a>
+                <img src="./categoryImg/2017_lego.jpeg" alt="2020">
+            </li>
+        </ul>
+    </div>
+
+    <script>
+
+        function btnClick() {
+            const seriesSet = document.getElementById('seriesSet')
+
+            if (seriesSet.style.display === 'none') {
+                seriesSet.style.display = 'block';
+            } else {
+                seriesSet.style.display = 'none';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,410 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    word-break: keep-all;
+    /* text-align: center; */
+}
+
+header,
+footer {
+    /* width: 1024px */
+}
+
+/* 메인 크기 조절 및 가운데 정렬 */
+main {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    /* background-color: pink; */
+    /* width: calc(1024px * .8); */
+}
+
+main ul li:hover {
+    text-decoration: none;
+}
+
+/* ========================================================================================= */
+/* 전제 적용 */
+
+/* body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+ul li {
+    display: inline-block;
+    white-space: pre-line;
+}
+
+/* ========================================================================================= */
+/* 상단바 */
+.top_ul {
+    background-color: ghostwhite;
+    padding: .125rem;
+    font-size: .875rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 5rem;
+
+}
+
+/* 상단바 너비 조절 */
+.top_ul li {
+    margin-right: 50px;
+    height: 5rem;
+}
+
+/* ================================================================================== */
+/* About us 페이지 */
+
+
+/* .container {
+    display: flex;
+} */
+
+/* About Us 메인탭 */
+.abImg1,
+.abImg2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    padding: 12rem;
+}
+
+/* About Us 백그라운드 이미지 1 */
+.abImg1::after {
+    background: url(../welcome/only-the-best-is-good-enough.jpg) no-repeat center/cover;
+}
+
+
+/* About US 백그라운드 이미지 2 */
+.abImg2 {
+    background: url(../welcome/inspire-and-develop-the-builders-of-tomorrow.jpg) no-repeat center/cover;
+}
+
+/* 백그라운드 클래스 공통 */
+.abImg1::after,
+.abImg2::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    position: absolute;
+    z-index: -1;
+}
+
+/* 이미지 2 글자 색상 변경 */
+.abImg2 *,
+.abImg2 a {
+    color: white;
+}
+
+/* 이미지 제목 글자 크기 조정 */
+.ab_h1 {
+    font-size: 3.75rem;
+}
+
+/* 문장간 너비 조정 */
+.ab_h1,
+.container p {
+    margin-bottom: 5%;
+}
+
+/* 링크 연결 호버 */
+.container a:hover {
+    color: gray;
+    border-bottom: solid 1px;
+}
+
+/* 글자 크기  */
+.about,
+.about h1 {
+    padding: 5%;
+    font-size: 2.875rem;
+}
+
+/* 이미지 가운데 정렬 및 크기 조정 */
+.ab li {
+    flex: 25%;
+    padding-bottom: 8%;
+}
+
+.ab li img {
+    width: 75%;
+}
+
+/* ================================================================================== */
+/* lego Group Histoy 페이지 */
+
+/* 히스토리 이미지 1 플렉스 적용 */
+.history {
+    display: flex;
+}
+
+.history div {
+    display: flex;
+    width: 100%;
+}
+
+/* 이미지 1 크기 조정 및 정렬 */
+.history img {
+    flex: 1;
+    width: 50%;
+}
+
+/* 문장 배경 적용 및 정렬 */
+.history div:nth-of-type(2) {
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* 문장 글자 색상 및 정렬 */
+.history p {
+    color: black;
+    font-size: 1.25rem;
+    text-align: justify;
+    padding: 3%;
+}
+
+.history div div:nth-last-child(1) {
+    height: 20%;
+}
+
+/* 버튼 색상 적용 및 호버 */
+.history button {
+    background-color: black;
+    color: white;
+    border: solid 1px black;
+    font-size: 1rem;
+    width: 40%;
+    height: 3rem;
+    border-radius: 5%;
+}
+
+/* 히스토리 이미지 2 간격 조정 */
+.hsImg2 {
+    padding: 3%;
+}
+
+/* lego Group History 페이지 <p> 텍스트 클래스 */
+.hs_p {
+    width: 85%;
+    white-space: pre-line;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+/* lego Group History 페이지 두번째 h1 백그라운드 컬러 */
+.hs_bground {
+    background-color: darkkhaki;
+    font-size: 3rem;
+    padding: 3%;
+}
+
+.timeLineImg:hover {
+    cursor: zoom-in;
+}
+
+/* ================================================================================== */
+/* lego Brand 페이지 */
+
+.br li:hover {
+    cursor: default;
+}
+
+/* ================================================================================== */
+/* 모든 페이지 동일 적용 클래스 */
+
+.h2_text {
+    font-size: 1.85rem;
+    /* white-space: pre-line; */
+    padding: 5%;
+}
+
+.p_text {
+    font-size: 1.2rem;
+    white-space: normal;
+    margin-left: 5%;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* ============================================================================ */
+
+/* 대표 이미지 공통 적용 클래스 */
+
+.group div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ====================================================================================== */
+/* ul li 적용 클래스 */
+
+/* 섹션 정렬 -  flex 사용 */
+.br ul,
+.ab ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* 각 섹션 정렬 */
+.br li {
+    flex: 50%;
+}
+
+/* 섹션 이미지 크기 조정 */
+.br li img {
+    width: 80%;
+}
+
+/* 텍스트 가운데 정렬 및 너비 조정 */
+.br li p {
+    width: 85%;
+    margin: auto;
+    white-space: normal;
+}
+
+/* 웹사이트 연결 섹션 호버 시 오퍼시티 낮게 */
+.hv li:hover {
+    opacity: .7;
+}
+
+/* 웹사이트 연결 텍스트 호버 시 밑줄 */
+.hv li p:nth-of-type(2):hover,
+.hv li:nth-of-type(3) p:hover {
+    text-decoration: underline;
+}
+
+/* 메인 맨 아래쪽 여백 */
+.mBottom {
+    margin-bottom: 10%;
+}
+
+
+/* ============================================================================ */
+/* transition */
+
+/* 제목 텍스트 */
+.text {
+    line-height: 3em;
+    font-size: 1.5rem;
+    transition: font-size .5s;
+}
+
+/* 상단바 호버 시 글자 크게 */
+.top_ul li:hover {
+    font-size: 1rem;
+    transition: font-size .3s;
+}
+
+/* 링크 연결 이미지 선택 시 이미지 너비 크게 */
+.hv li:hover img {
+    width: 85%;
+    transition: width .5s;
+}
+
+/* 히스토리 */
+.history button:hover {
+    opacity: .6;
+    width: 45%;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    transition: opacity .5s width .5s height .5s font-size .5s;
+}
+
+/* =========================================================================== */
+/* 모바일 */
+
+@media (max-width: 768px) {
+
+    main {
+        width: 100%;
+    }
+
+    .top_ul li {
+        margin-right: 10px;
+    }
+
+    /* ============================================================== */
+    /* About Us 페이지 */
+
+    .ab_h1 {
+        font-size: 2.65rem;
+    }
+
+    .p_text {
+        font-size: 1rem;
+    }
+
+    .about h1 {
+        font-size: 1.85rem;
+    }
+
+    /* ============================================================= */
+    /* history 페이지 */
+
+    .history p {
+        font-size: 1rem;
+    }
+
+    .history button {
+        font-size: .895rem;
+        width: 15rem;
+        height: 2.5rem;
+        border-radius: 5%;
+    }
+
+    .history button:hover {
+        width: 16rem;
+        height: 3rem;
+        font-size: .975rem;
+
+        transition: width .5s height .5s font-size .5s;
+    }
+
+    .hsImg2 {
+        width: 80%;
+        padding-bottom: 0;
+    }
+
+    .hs_bground {
+        font-size: 2rem;
+    }
+
+    .timeLineImg {
+        width: 80%;
+    }
+
+    /* ============================================================= */
+    /* about us, history 제외하고 공통 적용 */
+    .text {
+        /* font-size: 1rem; */
+    }
+
+    .h2_text {
+        font-size: 1.5rem;
+    }
+
+    /* 모바일 대응 - flex 사용 */
+    .br ul {
+        flex-flow: column wrap;
+    }
+
+}

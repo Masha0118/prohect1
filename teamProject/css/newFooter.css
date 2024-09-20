@@ -1,0 +1,163 @@
+* {
+    /* width: 100%; */
+}
+
+/* 푸터 백그라운드 색상 */
+.footer {
+    background-color: rgb(32, 29, 72);
+}
+
+/* 푸터 로고아래 여백 */
+.logoLine {
+    /* background-color: rgb(32, 29, 72); */
+    margin-bottom: 3%;
+}
+/* 로고 있는 라인 너비 설정*/
+.logoLine div {
+    margin: auto;
+    width: 70%;
+}
+
+.logoLine img {
+    width: 13%;
+
+}
+
+
+.pageLine {
+    /* background-color: rgb(32, 29, 72); */
+}
+
+
+/* 푸터 레고 블럭 이미지들 조정 */
+.allBlock button {
+    /* border: 0; */
+    border: 3px solid black;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgb(228, 0, 3);
+    cursor: pointer;
+    color: rgb(238, 235, 235);
+    font-weight: 700;
+    width: 70%;
+}
+
+/* 개별 블럭들에 대한 사이즈 조절 */
+.blockPage1,
+.blockPage2,
+.blockPage3,
+.blockPage4 {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 170px;
+    margin-left: 1%;
+    margin-right: 1%;
+
+}
+
+
+.allBlock {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+
+
+/* 각 div에 배경이미지 및 포지션 */
+
+.blockPage1 {
+    background-image: url(../image/block1.png);
+    background-size: cover;
+    position: relative;
+    align-items: center;
+}
+
+.blockPage2 {
+    background-image: url(../image/block2.png);
+    background-size: cover;
+    position: relative;
+    align-items: center;
+}
+
+.blockPage3 {
+    background-image: url(../image/block3.png);
+    background-size: cover;
+    position: relative;
+    align-items: center;
+}
+
+.blockPage4 {
+    background-image: url(../image/block4.png);
+    background-size: cover;
+    position: relative;
+    align-items: center;
+}
+
+
+/* 각 버튼의 첫번째 버튼 위치 조절*/
+
+.blockPage1 button:nth-child(1),
+.blockPage2 button:nth-child(1),
+.blockPage3 button:nth-child(1),
+.blockPage4 button:nth-child(1) {
+    position: absolute;
+    top: 27%;
+}
+
+/* 각 버튼의 두번째 버튼 위치 조절 */
+
+.blockPage1 button:nth-child(2),
+.blockPage2 button:nth-child(2),
+.blockPage3 button:nth-child(2),
+.blockPage4 button:nth-child(2) {
+    position: absolute;
+    top: 60%;
+}
+
+.allBlock button {
+    font-size: 1.5em;
+}
+
+@media (max-width:768px) {
+    .allBlock button {
+        font-size: 1.3em;
+    }
+}
+
+
+.iconLogo {
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(32, 29, 72); */
+}
+
+.iconLogo a {
+    display: block;
+    margin: 1% 1%;
+}
+
+.iconLogo a img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.lastInfo {
+    margin: auto;
+    width: 70%;
+    text-align: justify;
+    word-break: break-all;
+}
+
+.lastInfo p {
+    color: white;
+}
+
+.iconLogo a:hover img {
+    transform: scale(1.1);
+}

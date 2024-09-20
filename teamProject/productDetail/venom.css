@@ -1,0 +1,746 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width:768px) {
+    .header_logo {
+        width: 100%;
+    }
+}
+
+/* 상단배너 */
+.marvelbanner {
+    margin: 0 auto;
+    width: 60%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-top: 5%;
+}
+
+/* 상단배너 모바일대응 */
+@media (max-width:768px) {
+    .marvelbanner {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+}
+
+
+/* 상단배너 버튼 */
+.marvelbanner button {
+    width: 10%;
+    height: 50%;
+    background-color: rgb(165, 163, 163);
+    font-size: 1.1em;
+    border: none;
+    border-radius: 30px;
+    margin-left: 3%;
+}
+
+/* 상단배너 버튼 모바일대응 */
+@media (max-width:768px) {
+    .marvelbanner button {
+        width: 20%;
+    }
+}
+
+
+
+
+/* 상단배너 커서포인트 */
+.marvelbanner button:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+/* 쿠파메인 */
+.cupaMain {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    /* flex-direction: row; */
+    box-sizing: border-box;
+}
+
+/* 쿠파메인 모바일대응 */
+@media (max-width:768px) {
+    .cupaMain {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        width: 100%
+    }
+}
+
+/* 컨테이너 */
+.container {
+    display: flex;
+}
+
+/* 컨테이너 모바일대응 */
+@media (max-width:768px) {
+    .container {
+        flex-direction: column;
+        border: 1px solid rgb(235, 225, 225);
+    }
+}
+
+
+/* 메인이미지구역 */
+.bigImg {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(235, 225, 225);
+    margin-top: 7%;
+}
+
+/* 메인이미지구역 모바일대응 */
+@media (max-width:768px) {
+    .bigImg {
+        border: none;
+    }
+}
+
+/* 메인이미지 */
+.mainImg {
+    margin: auto;
+
+    overflow: hidden;
+}
+
+.imgBox {
+    display: flex;
+    position: relative;
+    transition: all ease-in-out .5s;
+}
+
+.leftButton,
+.rightButton {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .3;
+}
+
+.leftButton {
+    left: 20%;
+    margin-left: 1%;
+}
+
+.rightButton {
+    right: 53%;
+    margin-right: 1%;
+}
+
+/* 버튼 호버시 커서, 투명도, 트랜지션 */
+.leftButton:hover,
+.rightButton:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+
+/* 메인이미지 이미지 */
+.mainImg img {
+    width: 100%;
+    /* height: auto; */
+    border-bottom: 1px solid rgb(235, 225, 225);
+}
+
+@media (max-width:768px) {
+    .mainImg img {
+        width: 200%;
+        border-bottom: 0px;
+        /* border: none; */
+        /* align-items: center; */
+        margin: auto;
+    }
+}
+
+
+
+.productInfo .menu1 img {
+    width: 65%;
+}
+
+.buyGift span {
+    color: white;
+}
+
+/*======================================================================*/
+/* 아이콘 */
+.icon {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* 아이콘 모바일대응 */
+@media (max-width:768px) {
+    .icon {
+        display: none;
+    }
+}
+
+
+.age,
+.pices,
+.legoPoint,
+.legoNumber {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 10%;
+    align-items: center;
+}
+
+.age,
+.pices,
+.legoPoint,
+.legoNumber span:nth-child(3) {
+    font-size: 0.9em;
+}
+
+/* .age,
+.pices,
+.legoPoint {
+    border-right: 1px solid rgb(235, 226, 226);
+}
+
+ */
+
+
+/* 오더 */
+.order {
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(235, 226, 226);
+    border-right: 1px solid rgb(235, 226, 226);
+    border-bottom: 1px solid rgb(235, 226, 226);
+    margin-top: 7%;
+}
+
+/* 오더 모바일대응 */
+@media (max-width:768px) {
+    .order {
+        width: 98%;
+    }
+}
+
+.titleLogo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.titleLogo span {
+    width: 50%;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 타이틀 모바일대응 */
+@media (max-width:768px) {
+    .titleLogo span {
+        width: 100%;
+        font-size: 2em;
+    }
+}
+
+.order img {
+    width: 40%;
+    max-width: 20%;
+}
+
+.price {
+    display: flex;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-left: 9%;
+}
+
+/* price 모바일대응 */
+@media (max-width:768px) {
+    .price {
+        justify-content: center;
+        font-size: 1.8em;
+        width: 100%;
+        margin-left: -35%;
+    }
+}
+
+.backOrder {
+    display: flex;
+    font-size: 1.3em;
+    color: green;
+}
+
+.iconBox {
+    width: 25%;
+}
+
+
+
+/* 백오더 모바일대응 */
+@media (max-width:768px) {
+    .backOrder {
+        font-size: 1.7em;
+    }
+}
+
+.buyGift {
+    background-color: rgb(0, 46, 65);
+    color: white;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 구매 시 선물 증정 모바일대응 */
+@media (max-width:768px) {
+    .buyGift {
+        font-size: 2.8em;
+    }
+}
+
+.shoppingCart button {
+    width: 60%;
+    height: 180%;
+    background-color: rgb(255, 111, 0);
+    font-size: 1.1em;
+    border: none;
+    border-radius: 30px;
+}
+
+.shoppingCart button:hover {
+    cursor: pointer;
+    background-color: rgb(189, 189, 4);
+}
+
+/* 장바구니 담기 모바일대응 */
+@media (max-width:768px) {
+    .shoppingCart button {
+        font-size: 2.8em;
+        width: 100%;
+    }
+}
+
+
+
+
+.warning {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    height: 10%;
+}
+
+.warning span {
+    font-size: 1.3em;
+}
+
+/* 경고 문구 모바일 대응 */
+@media (max-width:768px) {
+    .warning span {
+        font-size: 1.5em;
+    }
+}
+
+.warningdetail {
+    width: 50%;
+}
+
+.warningicon {
+    width: 5%;
+    height: 5%;
+}
+
+.deliveryAndManual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deliveryAndManual button:nth-child(1) {
+    width: 80%;
+    height: 4em;
+    border: none;
+    background-color: white;
+    border-top: 1px solid rgb(240, 224, 224);
+    border-bottom: 1px solid rgb(240, 224, 224);
+    font-size: 1.1em;
+}
+
+
+.deliveryAndManual button:nth-child(2) {
+    width: 80%;
+    height: 4em;
+    border: none;
+    background-color: white;
+    font-size: 1.1em;
+}
+
+.deliveryAndManual button:hover,
+.shoppingCart button:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/* ==================================================================================== */
+/* 제품정보 */
+
+.productInfo {
+    width: 100%;
+}
+
+.productInfodetail {
+    width: 100%;
+}
+
+/* 메뉴1 */
+.menu1 {
+    width: 161%;
+    position: relative;
+}
+
+.menu1 img {
+    width: 100%;
+}
+
+/* 메뉴1 1번째*/
+.menu1 div {
+    position: absolute;
+    width: 30%;
+    top: 25%;
+    right: 35%;
+    text-align: left;
+}
+
+/*메뉴1 1번쨰 모바일대응  */
+@media (max-width:768px) {
+    .menu1 div {
+        font-size: .9em;
+    }
+}
+
+/*메뉴1 2번째 */
+.menu1sub {
+    /* border: 1px solid; */
+    width: 105%;
+    position: relative;
+}
+
+.menu1sub div {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.menu1sub div h1,
+.menu1 div h1 {
+    margin-bottom: 5%;
+}
+
+
+.menu1sub img {
+    width: 100%;
+}
+
+/* 메뉴2 */
+.menu2 {
+    width: 105%;
+    position: relative;
+}
+
+.menu2 img {
+    width: 100%;
+    /* height: auto; */
+
+}
+
+.menu2 div {
+    position: absolute;
+    /* padding: 33%; */
+    width: 40%;
+    top: 10%;
+    right: 10%;
+}
+
+/* 메뉴2,메뉴3 모바일대응 */
+@media (max-width:768px) {
+
+    .menu2 div,
+    .menu3 div {
+        font-size: .9em;
+        top: 5%;
+    }
+}
+
+.menu2 button {
+    padding: 0.625rem 1.125rem;
+    border: solid 1px;
+    border-radius: 5%;
+    display: flex;
+    margin-top: 5%;
+}
+
+.menu2 div:nth-of-type(2) button,
+.menu2 div:nth-of-type(1) button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.menu2 div:nth-of-type(2) button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* 메뉴3 */
+.menu3 {
+    width: 105%;
+    position: relative;
+}
+
+.menu3 img {
+    width: 100%;
+}
+
+.menu3 div {
+    position: absolute;
+    width: 50%;
+    top: 15%;
+    left: 5%;
+}
+
+.menu3 div h1,
+.menu2 div h1 {
+    margin-bottom: 5%;
+}
+
+.menu3 a {
+    display: block;
+}
+
+.menu3:hover a {
+    text-decoration: underline;
+}
+
+.clickMenu1 {
+    font-size: 1.5em;
+    background-color: rgb(248, 248, 248);
+    padding: 3%;
+    border-bottom: 0.5px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+}
+
+/* =========================================== */
+
+/* 제품상세정보 */
+
+.productInfo {
+    width: 94.4%;
+    text-align: initial;
+}
+
+
+
+#check-btn:checked~.menu {
+    display: block;
+    overflow-y: auto;
+}
+
+#check-btn {
+    display: none;
+}
+
+.menu {
+    display: none;
+    text-align: justify;
+    word-break: break-all;
+}
+
+.menu img {
+    float: right;
+    margin-left: 5%;
+    width: 200%;
+    height: auto;
+}
+
+.clickMenu {
+    font-size: 1.5em;
+    background-color: rgb(248, 248, 248);
+    padding: 3%;
+    border-bottom: 0.5px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+}
+
+.clickMenu span img {
+    width: 10%;
+}
+
+/* 제품상세정보 애니메이션 */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* .menu에 애니메이션 적용 */
+.menu {
+    animation: slideIn 3s ease forwards;
+    /* 1초 동안 slideIn 애니메이션을 적용 */
+}
+
+/* .clickMenu에 애니메이션 적용 */
+.clickMenu {
+    animation: slideIn 3s ease forwards;
+    /* 1초 동안 slideIn 애니메이션을 적용 */
+}
+
+ul li {
+    margin-bottom: 4%;
+}
+
+/* ============================= */
+
+
+
+
+
+/* 메인 배너 스타일 */
+#mainSize {
+    width: 108%;
+    margin: auto;
+    margin-bottom: 10%;
+    /* background-color: rgb(214, 143, 155); */
+    border-top: .5em solid white;
+    border-bottom: .5em solid white;
+}
+
+.mainBanner {
+    width: 130%;
+}
+
+.bannersList {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+/* 배너 리스트 모바일대응 */
+@media (max-width:768px) {
+    .bannersList {
+        display: flex;
+        flex-direction: column;
+        /* width: 130%; */
+    }
+}
+
+.prince {
+    text-align: justify;
+    word-break: break-all;
+}
+
+/* 이번 주 최고 인기 배너 사이즈 확인*/
+.sectionWeekend {
+
+    width: 100%;
+    /* display: inline-block; */
+    /* border: 4px solid rgb(155, 218, 40); */
+
+}
+
+/* 이번 주 최고 인기 문구 조절 */
+.thisWeekendPopular {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+/* 이번 주 최고 인기 텍스트 조절 */
+.thisWeekendPopular>span {
+    margin: 10px;
+    display: block;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+/* 최고 인기 상품 사이즈 및 간격 조절 */
+.weekendProduct {
+    display: inline-block;
+    margin: 4px;
+    width: 32%;
+    /* border: 1px solid black; */
+}
+
+/* 최고 인기 상품 모바일 대응 */
+@media (max-width:768px) {
+    .weekendProduct {
+        width: 100%;
+    }
+}
+
+/* 최고 인기 상품 이미지 사이즈 조절*/
+.weekendProduct img {
+    width: 100%;
+}
+
+/* 슬라이드 배너와 상하 간격 조절*/
+/* section {
+    margin-bottom: 100px;
+} */
+
+/* 쇼핑하기 글자 사이즈 */
+.weekendProduct a {
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* 커서 올릴 시 언더라인*/
+.weekendProduct:hover a {
+    text-decoration: underline;
+}
+
+
+
+.menu img {
+    width: 50%;
+}

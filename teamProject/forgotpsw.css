@@ -1,0 +1,143 @@
+body {
+    width: 40vw;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #e1e8ec;
+}
+
+/* 뒤로가기 이미지 크기 */
+.backarrow {
+    width: 30px;
+    height: 30px;
+}
+
+/* 뒤로가기 이미지 색 호버 */
+.backarrow:hover {
+    background-color: gray;
+}
+
+.legoimg:hover,
+.backarrow:hover,
+.submitBtn:hover,
+.footerbtn:hover {
+    cursor: pointer;
+}
+
+/* 레고 이미지 크기 */
+.legoimg {
+    width: 45px;
+    height: 45px;
+    transition: .8s;
+}
+
+.legoimg:hover {
+    transform: rotate(45deg);
+
+}
+
+/* 레고 탐정 크기 */
+.legoDetectiveimg {
+    width: 300px;
+    height: 300px;
+}
+
+/* 글자 중앙 정렬 */
+.legoimgCenter,
+main,
+footer {
+    text-align: center;
+}
+
+/* ---------------------------------
+메인 */
+.cardContainer {
+    margin-bottom: -10px;
+}
+
+/* 뒤로가기 버튼 테두리 지움 */
+.backarrowBtn {
+    border: none;
+    background: transparent;
+}
+
+/* 아이디 박스 컨테이너 */
+.idBox {
+    background-color: white;
+    text-align: left;
+    height: 150px;
+    padding: 24px;
+    border-bottom: black 5px;
+}
+
+/* input 사이즈 */
+#userid {
+    width: 97%;
+    height: 25px;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+/* 전송버튼 가운데 정렬 */
+.submitBtnCenter {
+    text-align: center;
+    margin: 1%;
+    height: 100px;
+}
+
+/* 전송버튼 꾸미기 */
+.submitBtn {
+    background-color: steelblue;
+    width: 40%;
+    height: 50%;
+    margin-top: 4%;
+    border-radius: 99px;
+    font-size: 50px;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+/* 전송버튼 색 호버 */
+.submitBtn:hover {
+    background-color: #006cb6;
+}
+
+/* ===================================================== */
+/* 푸터 공간 */
+.footersize {
+    height: 10vh;
+    margin-top: 23%;
+}
+
+/* 개인정보 취급방침 | 쿠키 색 주기  */
+footer button {
+    border: none;
+    background: transparent;
+    color: #006cb6;
+}
+
+/* 개인정보 취급방침 | 쿠키 호버 언더라인 */
+footer button:hover {
+    text-decoration: underline;
+}
+
+/* ======================반응형===================== */
+@media screen and (max-width:768px) {
+
+    /* 탐정 이미지 작게 */
+    .legoDetectiveimg {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* 전송버튼 글자사이즈 */
+    .submitBtn {
+        font-size: 1em;
+    }
+
+    /* 폼 컨테이너 크게 */
+    form {
+        width: 130%;
+        margin-left: -14%;
+    }
+}

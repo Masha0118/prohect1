@@ -1,0 +1,283 @@
+    * {
+        list-style: none;
+        box-sizing: border-box;
+
+
+    }
+
+
+
+    .pageTopBanner {
+        text-align: center;
+        background-color: black;
+        width: 70%;
+        height: 4em;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+
+    .pageTopBanner div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .pageTopBanner div a {
+        color: white;
+        border: 2px solid white;
+        padding: 4px;
+        border-radius: 13px;
+    }
+
+    .pageTopBanner div a:hover {
+        color: black;
+        background-color: white;
+    }
+
+    .footer {
+        margin-top: 5%;
+    }
+
+    .listPage {
+        width: 70%;
+        /* display: flex; */
+        /* display: inline-block; */
+        /* flex-wrap: wrap; */
+        /* position: relative; */
+        margin-top: 5%;
+        /* justify-content: center; */
+        position: sticky;
+        margin: auto;
+    }
+
+    @media (max-width:768px) {
+        .listPage {
+            width: 120%;
+        }
+    }
+
+    .productLeftList {
+        display: inline-block;
+        width: 15%;
+        border-right: 1px solid rgb(212, 208, 208);
+        border-top: 1px solid rgb(212, 208, 208);
+        margin-right: 2%;
+        margin-left: 3%;
+        position: sticky;
+        top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .productLeftList div li {
+        font-size: 1.1em;
+    }
+
+
+    .leftCate {
+        margin-bottom: 4%;
+    }
+
+    .chch {
+        border: 1px solid rgb(212, 208, 208);
+        width: 1.3em;
+        height: 1.3em;
+    }
+
+    .infoBox span:first-child {
+        font-weight: bold;
+    }
+
+    /* 리스트 왼쪽 여백 삭제*/
+    .productLeftList div div ul {
+        padding: 0;
+        margin: 0;
+    }
+
+
+    /* 대분류 아래 여백 */
+
+    .firstCol h3,
+    .secondCol h3,
+    .thirdCol h3,
+    .fourthCol h3 {
+        margin-bottom: 10%;
+    }
+
+    /* 리스트 아래 여백*/
+    .firstCol li,
+    .secondCol li,
+    .thirdCol li,
+    .fourthCol li {
+        margin-bottom: 15px;
+    }
+
+    /* 필터칸 구분선*/
+    .firstCol {
+        margin-top: 10%;
+        /* border-top: 1px solid rgb(212, 208, 208); */
+    }
+
+    .firstCol,
+    .secondCol,
+    .thirdCol,
+    .fourthCol {
+        border-bottom: 1px solid rgb(212, 208, 208);
+
+    }
+
+
+    /*===============오른쪽 이미지들==================*/
+
+    .frame {
+        /* border: 1px solid red; */
+        display: inline-block;
+        vertical-align: top;
+        width: 75%;
+        /* width: 70vw; */
+        margin-bottom: 10%;
+    }
+
+    /* 오른쪽 제품 칸 사이즈 및 비율 */
+    .productImgList {
+        width: 100%;
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 0.33fr 0.33fr 0.33fr;
+        /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+        gap: 1%;
+    }
+
+    @media (max-width:900px) {
+        .productImgList {
+            grid-template: 1fr 1fr / 0.33fr 0.33fr;
+        }
+    }
+
+    /* @media (max-width:820px) {
+        .productImgList {
+            grid-template: 1fr / 0.33fr;
+    }
+} */
+
+    .listBox {
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    /* 이미지 박스 슬라이드 맨 위 창*/
+    .hiddenBox {
+        overflow: hidden;
+        /* border: 2px solid yellow; */
+        height: 90%;
+        border-bottom: 1px solid rgb(212, 208, 208);
+    }
+    
+    .imgSizeBox {
+        display: flex;
+        /* border: 2px solid blue; */
+    }
+    
+    /* 이미지 박스 슬라이드 */
+    .imgBox {
+        display: flex;
+        transition: all ease-in-out .5s;
+        /* border: 2px solid pink; */
+
+
+    }
+
+
+    .infoBox {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        /* justify-content: space-between; */
+        /* border: 1px solid red; */
+        height: 35%;
+    }
+
+
+    .box {
+        /* background-color: antiquewhite; */
+        border: 1px solid rgb(212, 208, 208);
+        /* display: flex; */
+        position: relative;
+    }
+
+
+
+
+    .imgBox img {
+        width: 100%;
+        height: 90%;
+        margin: auto;
+        margin-left: 8%;
+        
+    }
+
+    /* 왼쪽 버튼 간격 */
+    .leftButton {
+        margin-left: 1%;
+    }
+
+    /* 오른쪽 버튼 위치 및 간격 */
+    .rightButton {
+        top: 35%;
+        right: 0;
+        margin-right: 1%;
+    }
+
+    /* 버튼 앱솔루트 가운데정렬, 크기, 투명도 */
+    .leftButton,
+    .rightButton {
+        position: absolute;
+        top: 35%;
+        width: 30px;
+        opacity: .4;
+    }
+
+    /* 버튼 호버시 커서, 투명도, 트랜지션 */
+    .leftButton:hover,
+    .rightButton:hover {
+        opacity: 1;
+        cursor: pointer;
+        transition: all ease-in-out .3s;
+    }
+
+
+
+
+
+    .box a {
+        display: inline-block;
+    }
+
+
+
+
+    .infoBox span:nth-child(1) {
+        font-size: 1.2em;
+    }
+
+    .infoBox span:nth-child(2) {
+        font-size: 1.1em;
+    }
+
+    .infoBox div button {
+        background-color: orange;
+        font-size: 1.3em;
+        border-radius: 20px;
+        width: 100%;
+        height: 40px;
+    }
+
+    .infoBox div button:hover {
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+    .infoBox div {
+        text-align: center;
+    }

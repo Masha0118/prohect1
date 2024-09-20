@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pastSeries</title>
+    <link rel="stylesheet" href="pastSeries.css">
+    <link rel="stylesheet" href="./css/headers.css">
+    <link rel="stylesheet" href="./css/caregory.css">
+    <link rel="stylesheet" href="./css/modalCategory.css">
+    <link rel="stylesheet" href="./css/modalCategory2.css">
+    <link rel="stylesheet" href="./css/newFooter.css">
+
+    <script defer src="./css/scripts.js"></script>
+</head>
+
+<body>
+
+    <div class="headerBackground">
+        <header class="header">
+
+            <div class="header_logo">
+                <button id="show2" class="img-button"><img src="./headerImg/lego.png" alt="legoLogo"
+                        onclick="location.href='../index.html'"></button>
+            </div>
+
+            <div class="header_menu">
+                <button class="shopping_button" id="show">레고 제품 쇼핑</button>
+                <ul>
+                    <li><a href="./aboutUs.html">레고 브랜드 소개</a></li>
+                    <li><a href="#">고객 지원</a></li>
+                </ul>
+            </div>
+
+            <div class="background">
+                <div class="window">
+                    <div class="popup">
+
+                        <h2 class="section_title"></h2>
+
+                        <div class="menu_lego">
+                            <a href="#">
+                                <img src="./image/lego-icon.svg" alt="lego">
+                            </a>
+                        </div>
+
+                        <div class="menu_list">
+                            <ul class="menu_list_1">
+                                <li><button>레고 제품 쇼핑</button></li>
+                                <li><button onclick="location.href='./aboutUs.html'">레고 브랜드 소개</button></li>
+                                <li><button>고객 지원</button></li>
+                            </ul>
+                        </div>
+
+                        <div class="close">
+                            <button class="close_button" id="close">
+                                <img src="./image/close.png" alt="close">
+                            </button>
+                        </div>
+
+                        <div class="menu_list2">
+                            <ul class="menu_list2_1">
+                                <li><button onclick='btnClick()'>시리즈별 세트</button></li>
+                                <li><button onclick="location.href='./teamProject/productList.html'">신상품</button></li>
+                                <li><button onclick="location.href='./teamProject/productList.html'">베스트 셀러</button></li>
+                                <li><button onclick="location.href='./pastSeries.html'">추억의 레고</button></li>
+                                <li><button onclick="location.href='./teamProject/productList.html'">할인 및 행사</button></li>
+                            </ul>
+                        </div>
+
+                        <div id="seriesSet">
+                            <ul>
+                                <li id="star_wars">스타워즈™
+                                    <div class="starWars">
+                                        <img src="./categoryImg/starWars_logo_black_stroke_300w_2.png"
+                                            alt="starwars">
+                                    </div>
+                                </li>
+                                <li id="super_mario">레고 슈퍼 마리오
+                                    <div class="superMario">
+                                        <img src="./categoryImg/SuperMario-logo-pos_300w.png"
+                                            alt="supermario">
+                                    </div>
+                                </li>
+                                <li id="disney_">디즈니
+                                    <div class="disNey">
+                                        <img src="./categoryImg/disney_logo_pos_300w_2.png" alt="disney">
+                                    </div>
+                                </li>
+                                <li id="marvel_">마블
+                                    <div class="marvel">
+                                        <img src="./categoryImg/Marvel2.png" alt="marvel">
+                                    </div>
+                                </li>
+                                <li id="marble_">해리포터™
+                                    <div class="harryPotter">
+                                        <img src="./categoryImg/harrypotter_logo_gold_divider-600w2_2.png"
+                                            alt="harry">
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <div class="catecate">
+                            <button id="close" class="closeButton">
+                                <img src="./categoryImg/x-mark.svg" alt="">
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="legoland">
+                        <img src="./image/bricks.png" alt="legoland">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header_search">
+                <button type="submit" class="search_button" id="show3">
+                    <img src="./headerImg/search.png" alt="search">
+                </button>
+            </div>
+
+            <div class="modal_bg" id="modalBg"></div>
+
+            <div class="modal_box" id="modalWrap">
+                <div class="content">
+                    <h2>레고 &reg; 계정으로 로그인하기</h2>
+                    <input type="text" placeholder="id" class="modal_input">
+                    <input type="password" placeholder="password" class="modal_input">
+                    <a href="./mainlogin.html">로그인</a>
+                    <a href="./accountcreate.html">회원가입</a>
+                    <button class="close_btn" id="closeModalBtn">나가기</button>
+                </div>
+            </div>
+
+            <div class="background2">
+                <div class="window2">
+                    <div class="popup2">
+
+                        <input type="text" class="searchBox">
+                        <button class="closeX">X</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_login">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#"><img src="../img/shopping.png" alt="shopping"
+                                onclick="location.href='./marketbox.html'"></a></li>
+                </ul>
+            </div>
+
+        </header>
+    </div>
+
+    <main>
+        <div class="headers">
+            <div class="welcome">
+                <img src="https://www.lego.com/cdn/cs/set/assets/blt1158a7a848079676/Logo.png?format=png&height=60&dpr=1"
+                    alt="">
+            </div>
+
+            <div class="main">
+                <img src="./image/mainbig.webp" alt="">
+            </div>
+
+            <div class="remember">
+                <h1>어릴 때 보았던 이 레고® 세트들을 기억하시나요?</h1><br>
+                <p>어릴 때 레고® 세트를 갖고 놀아본 적이 있다면 잘 알 거예요. 예전에 좋아했던 물건들에 얽힌 추억이
+                    얼마나 아름다운지… 그런데 말이죠. 즐거움을 불러일으키는 게 우리의 전문분야
+                    아니겠어요? 그래서 지나간 레고 세트를 되살리기를 그렇게 좋아하는 것이랍니다.
+                </p><br>
+                <p>올해 출시되는 레고 아이콘 엘도라도 요새도 바로 그런 세트예요. 1980년대의 오리지널 레고 해적 테마를 그대로 계승하고 있잖아요. 너무나도 특별한 테마였죠. 그야말로
+                    수많은
+                    아이들에게 새로운 세계를 향한 탈출구를 열어주었다는 점에서요. 거실에서 전투를 벌이고, 보물을 찾고, 요새를 방어하고, 대양으로 나가 모험을 펼치고… 그야말로 온 세상이 다 나의
+                    것이었죠.</p><br>
+                <p>자, 어떤가요? 이 멋진 세트의 귀환에 즈음하여 지난날의 빈티지 테마 몇 가지를 돌아보는 것도 재미있을 것 같은데요.</p><br>
+                <p>경고: 만일 80~90년대에 성장기를 보냈다면 극심한 향수병에 대비하세요!</p>
+            </div>
+
+            <div class="middle">
+                <div class="ElDorado">
+                    <div class="fort">
+                        <img src="https://www.lego.com/cdn/cs/set/assets/bltde348ae9bd9b3de2/10320.png?fit=bounds&format=webply&quality=80&width=800&height=800&dpr=1"
+                            alt="">
+                    </div>
+
+                    <div class="right">
+                        <h2>엘도라도 요새</h2>
+                        <div class="star">
+                            <img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                                alt="">
+                            <img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                                alt="">
+                            <img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                                alt="">
+                            <img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                                alt="">
+                            <img src="https://www.lego.com/_next/static/images/halfStar-9b6a3da7ddc2090ed53e3a4c39cfa182.svg"
+                                alt="">
+                        </div>
+
+                        <div class="price">
+                            <h2>289,900 원</h2>
+                        </div>
+
+                        <div class="shoppingCart">
+                            <button onclick="location.href='#';">장바구니 담기</button>
+                        </div>
+
+                        <div class="icon">
+                            <div class="age">
+                                <img src="/teamProject/svgImg/SVG/age.svg" alt="ageIcon">
+                                <span>18+</span>
+                                <span>연령</span>
+                            </div>
+                            <div class="pices">
+                                <img src="/teamProject/svgImg/SVG/picies.svg" alt="picies">
+                                <span>2509</span>
+                                <span>부품수</span>
+                            </div>
+                            <div class="figure">
+                                <img src="/teamProject/image/figure.svg" alt="figure">
+                                <span>8</span>
+                                <span>미니피겨</span>
+                            </div>
+                            <div class="size">
+                                <img src="/teamProject/image/size.svg" alt="size">
+                                <span>H: 27cm</span>
+                                <span>W: 70cm</span>
+                                <span>D: 24cm</span>
+                                <span>크기</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theme">
+                    <h1>테마의 시작</h1><br>
+                    <p>
+                        1978년은 레고 그룹에게 참으로 특별한 해였어요. 이른바 “테마”라는 새로운 아이디어가 이때 창안되었거든요. 테마란 쉽게 말해 특정한 세계를 중심으로 구성된 세트의 모음을
+                        의미해요.
+                    </p><br>
+                    <p>
+                        그 전까지만 해도 모든 레고 세트는 따로따로 출시되었으며 서로 연관성이 없었어요. 그런 점에서 테마는 실로 참신한 아이디어였죠. 누구나 자신만의 조립 세상을 하나하나 키워갈
+                        수 있는 길이 열린 것이잖아요.
+                    </p><br>
+                    <p>
+                        다만 최초의 테마는 단 세 가지 뿐이었는데, 바로 우주, 성, 그리고 타운이었어요.
+                    </p><br>
+
+                    <br>
+                    <div class="chivalry">
+                        <img src="https://www.lego.com/cdn/cs/set/assets/blt18550389ed2f0223/230414_Design_brief_Reboot_article_9_Article_Image.jpg?format=jpg&quality=80&width=700&dpr=1?format=webply&fit=crop&quality=75&width=700&dpr=1"
+                            alt="">
+                        <div class="chivalry1-1">레고 캐슬 테마의 중세 기사, 1993</div>
+                    </div>
+                </div>
+
+                <div class="moon"><br>
+                    <h1>달까지의 왕복 여행</h1><br>
+                    <div class="travel">
+                        <img src="https://www.lego.com/cdn/cs/set/assets/blt36d52c442f002a14/230414_Design_brief_Reboot_article_8_Article_Image.jpg?format=jpg&quality=80&width=700&dpr=1?format=webply&fit=crop&quality=75&width=700&dpr=1"
+                            alt="">
+                        <div class="spaceset">1979년의 레고 우주 세트</div>
+                    </div>
+
+                    <br>
+                    <p>1960~70년대 당시 온 세계의 시선은 우주에 맞춰져 있었어요. 인류 최초의 우주 여행부터 인류 최초의 달 착륙에 이르기까지 일련의 엄청난 사건들이 연이어 벌어지던
+                        때였거든요.</p><br>
+                    <p>그리고 그 분위기에 편승하여 레고 우주 테마가 출시되었죠.</p><br>
+                    <p>처음에는 현실 세계의 기술이 주된 영감의 원천이었어요. 이를테면 우주선, 달 기지, 로켓, 월면차 등등… 하지만 곧 그 범위가 공상과학 영역으로까지 확장되었고, M-트론,
+                        블랙트론, 우주 경찰 등의 새로운 캐릭터들이 속속 출현하기 시작했죠.</p>
+                </div><br>
+
+
+                <div class="spaceship">
+                    <div class="spaceship1">
+                        <img src="https://www.lego.com/cdn/cs/set/assets/bltcc498d9eb12d6761/230414_Design_brief_Reboot_article_2_Article_Image.jpg?format=jpg&quality=80&width=700&dpr=1?format=webply&fit=crop&quality=75&width=700&dpr=1"
+                            alt="">
+                        <div class="spaceship2">1979년에 전 세계적으로 출시된 레고 은하계 탐험가 세트</div>
+                    </div>
+
+                    <p>
+                        혹시 1979년에 출시되었던 클래식 레고 은하계 탐험가 세트를 기억하시나요? 바로 그 세트가 2022년에 특별한 한정 기념판 세트로 다시 출시되었어요. 세트의 부품 수는
+                        1,246개이고, 네 명의 우주비행사, 로봇 도우미, 그리고 월면차가 등장하는 데다가 완성된 조립 모델의 모습도 대단하답니다. 여닫이식 조종석, 모든 우주비행사를 태울 수
+                        있는 좌석, 침대가 갖춰진 숙소, 컴퓨터, 화물칸까지 갖춰져 있잖아요.
+                    </p><br>
+                </div>
+
+                <div class="explorer">
+                    <div class="explorer_left">
+                        <img src="https://www.lego.com/cdn/cs/set/assets/bltb357374dc682597e/10497.png?fit=bounds&format=webply&quality=80&width=800&height=800&dpr=1"
+                            alt="">
+                    </div>
+
+                    <div class="explorer_right">
+                        <h2>은하계 탐험가</h2>
+                        <div class="star_2">
+                            <img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                                alt="">
+                            <img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                                alt="">
+                            <img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                                alt="">
+                            <img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                                alt="">
+                            <img src="https://www.lego.com/_next/static/images/halfStar-9b6a3da7ddc2090ed53e3a4c39cfa182.svg"
+                                alt="">
+                        </div>
+
+                        <div class="price_2">
+                            <h2>139,900 원</h2>
+                        </div>
+
+                        <div class="sold_out_2">
+                            <button onclick="location.href='#';">장바구니 담기</button>
+                        </div>
+
+                        <div class="icon_1">
+                            <div class="age_3">
+                                <img src="/teamProject/svgImg/SVG/age.svg" alt="ageIcon">
+                                <span>18+</span>
+                                <span>연령</span>
+                            </div>
+                            <div class="pices">
+                                <img src="/teamProject/svgImg/SVG/picies.svg" alt="picies">
+                                <span>2509</span>
+                                <span>부품수</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="word">
+                    오리지널 세트의 조립 체감을 다시 맛보고 싶거나 공상과학 이야기를 좋아한다면 이 세트가 틀림없이 마음에 들 걸요.
+                </p><br>
+
+                <div class="castle">
+                    <h1>검, 방패, 마법</h1><br>
+                    <div class="castle_1">
+                        <img src="https://www.lego.com/cdn/cs/set/assets/blt0a6bf13f25bb462e/230414_Design_brief_Reboot_article_1_Article_Image.jpg?format=jpg&quality=80&width=700&dpr=1?format=webply&fit=crop&quality=75&width=700&dpr=1"
+                            alt="">
+                        <div class="shield">최고의 레고 캐슬 세트</div>
+                    </div>
+                    <p>
+                        레고 캐슬 테마는 원래 하나의 세트로부터 시작되었어요. 노란색 성, 한 무리의 기사, 두어 마리의 브릭 조립식 말, 그리고 다양한 방패 문양이 등장하는 세트였죠.
+                    </p><br>
+                    <p>
+                        그런데 얼마 후 그게 확장되기 시작하면서 심지어 파벌까지 생겨났지 뭐예요. 블랙 팔콘, 포레스트맨, 울프 팩, 드래곤 마스터 등등… 그리고 당연히 캐릭터와 스토리라인이
+                        다채로워지기 시작했고요.
+                    </p><br>
+                </div>
+
+
+                <div class="castle_2">
+                    <img src="https://www.lego.com/cdn/cs/set/assets/blt70a24a6ea2d4abd9/230414_Design_brief_Reboot_article_5_Article_Image.jpg?format=jpg&quality=80&width=700&dpr=1?format=webply&fit=crop&quality=75&width=700&dpr=1"
+                        alt="">
+                    <p>
+                        요는, 빈티지 레고 캐슬 테마가 꼭 과거의 일만은 아니라는 거예요. 애초부터 미래를 바라보고 새로운 지평을 열어갈 계획이 있었다는 거죠. 예를 들어, 최초로 인간이 아닌
+                        미니피겨(레고 고스트 미니피겨)를 만들었고 개별적으로 이름이 붙은 미니피겨(파란색 마법사 매지스토)를 처음 출시했던 것이 다 그런 계획의 일환이었다는 거 아니겠어요.
+                    </p>
+                </div>
+
+                <div class="castle_3">
+                    <img src="https://www.lego.com/cdn/cs/set/assets/bltfc0ab83b350f561d/230414_Design_brief_Reboot_article_4_Article_Image.jpg?format=jpg&quality=80&width=700&dpr=1?format=webply&fit=crop&quality=75&width=700&dpr=1"
+                        alt="">
+                    <div class="kingCastle">1980년대의 Kings Castle</div>
+                    <p>
+                        얼마 전에 출시된 레고 사자 기사의 성은 이 사랑스러운 테마의 미래상을 예고하는 대표적인 세트예요. 4,500개를 살짝 넘어서는 부품 수, 여왕, 기사, 궁수, 마법사,
+                        숲속 사람들을 비롯한 22개의 미니피겨, 숨겨진 통로, 움직이는 벽, 비밀 은신처 등의 다채로운 구성을 자랑하는 이 세트는 그야말로 수천 가지의 이야기가 담겨 있는 무한한
+                        놀이의 보고라 할 만해요.
+                    </p><br>
+                </div>
+
+                <div class="castle_of_lion_knight">
+                    <div class="castleimage">
+                        <img src="https://www.lego.com/cdn/cs/set/assets/blt0254ea3dce736ea0/10305.png?fit=bounds&format=webply&quality=80&width=800&height=800&dpr=1"
+                            alt="">
+                    </div>
+
+                    <div class="right_2">
+                        <h2>사자 기사의 성</h2>
+                        <div class="star_3">
+                            <img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                                alt="">
+                            <img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                                alt="">
+                            <img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                                alt="">
+                            <img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                                alt="">
+                            <img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                                alt="">
+                        </div>
+
+                        <div class="price_3">
+                            <span>519,900 원</span>
+                        </div>
+
+                        <div class="sold_out_3">
+                            <button onclick="location.href='#';">장바구니 담기</button>
+                        </div>
+
+                        <div class="icon_1">
+                            <div class="age_2">
+                                <img src="/teamProject/svgImg/SVG/age.svg" alt="ageIcon">
+                                <span>18+</span>
+                                <span>연령</span>
+                            </div>
+                            <div class="pices_2">
+                                <img src="/teamProject/svgImg/SVG/picies.svg" alt="picies">
+                                <span>4514</span>
+                                <span>부품수</span>
+                            </div>
+                            <div class="figure_2">
+                                <img src="/teamProject/image/figure.svg" alt="point">
+                                <span>22</span>
+                                <span>미니피겨</span>
+                            </div>
+                            <div class="size_2">
+                                <img src="/teamProject/image/size.svg" alt="number">
+                                <span>H: 27cm</span>
+                                <span>W: 70cm</span>
+                                <span>D: 24cm</span>
+                                <span>크기</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <div class="monkey">
+                    <h1>원숭이, 상어, 해골</h1><br>
+                    <div class="shark">
+                        <img src="https://www.lego.com/cdn/cs/set/assets/blt53785f4afb66619c/230414_Design_brief_Reboot_article_6_Article_Image.jpg?format=jpg&quality=80&width=700&dpr=1?format=webply&fit=crop&quality=75&width=700&dpr=1"
+                            alt="">
+                    </div>
+                    <div class="pirate">레고 해적, 1989</div>
+                    <p>
+                        1989년에 처음 등장한 레고 해적 테마는 운명적으로 흥미진진할 수밖에 없었어요. 해골 깃발을 휘날리는 범선, 머나먼 섬에 보물을 파묻고 있는 해적 무리, 소란스러운 해적들
+                        사이에서 끊임없이 벌어지는 싸움, 멋진 제복을 입은 제국의 군대… 이야기거리가 어디 하나둘인가요?
+                    </p>
+                    <p>
+                        아니나 다를까, 브로드사이드 주지사와 외다리, 외팔, 외눈의 레드비어드 선장 사이에서 최초의 전투가 벌어졌고, 뒤이어 여러 해에 걸쳐 수많은 캐릭터와 세트가 줄을 이었죠.
+                    </p>
+                    <p>
+                        우리가 이번에 새로운 해적 세트를 출시하게 된 것도 해적 테마가 이렇게 멋지기 때문 아니겠어요! 레고 아이콘 엘도라도 요새는 1989년의 엘도라도 요새 세트를 기반으로
+                        디자인되었어요. 멋진 포탑과 경계를 서고 있는 제국군 소대의 병사들까지, 바로 느낌 오시죠?
+                    </p>
+
+                    <div class="pirate_3">
+                        <img src="https://www.lego.com/cdn/cs/set/assets/blt4c2507201fcd217c/230414_Design_brief_Reboot_article_11_Article_Image.jpg?format=jpg&quality=80&width=700&dpr=1?format=webply&fit=crop&quality=75&width=700&dpr=1"
+                            alt="">
+                        <div class="pirate_4">1989년의 오리지널 엘도라도 요새 세트</div>
+                    </div>
+                    <p>
+                        물론 해적들도 안에 숨겨진 황금을 약탈하려면 고생을 좀 해야 할 거예요. 하지만 꾀많은 해적들은 늘 방법을 찾아내잖아요.
+                    </p>
+
+                    <div class="pirate_5">
+                        <img src="https://www.lego.com/cdn/cs/set/assets/blt7337528aa58e7278/230414_Design_brief_Reboot_article_12_Article_Image.jpg?format=jpg&quality=80&width=700&dpr=1?format=webply&fit=crop&quality=75&width=700&dpr=1"
+                            alt="">
+                        <div class="pirate_6">2023년에 새로 나온 엘도라도 요새 세트예요. 심지어 포장까지도 오리지널의 모양과 느낌을 그대로 계승하고 있죠?</div>
+                        <p>
+                            자, 그럼 다음 번 조립 모험을 찾아 또 항해를 시작해볼까요? 새로 나온 레고 해적 세트를 향하여!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="final">
+            <img class="banner"
+                src="https://www.lego.com/cdn/cs/set/assets/bltddbbfcad7bd892c7/240111_Design_brief_Article_Adult_Welcome_banner_Hero_Standard_Desktop.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=1"
+                alt="쿠파이미지">
+            <div>
+                <h1>좀 더 알아보고 싶은가요?</h1><br>
+                <span>
+                    성인 환영 홈 페이지에 들러 성인을 위한 다양한 세트와 기사를 찾아보세요.
+                </span>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="logoLine">
+                <div>
+                    <img src="./image/LEGO_logo.svg.png" alt="">
+                </div>
+            </div>
+
+            <div class="pageLine">
+
+                <div class="allBlock">
+                    <div class="blockPage1">
+                        <button>레고 그룹 소개</button>
+                        <button>레고 뉴스</button>
+                    </div>
+
+                    <div class="blockPage2">
+                        <button>연락처</button>
+                        <button>조립설명서 찾기</button>
+                    </div>
+
+                    <div class="blockPage3">
+                        <button>레고 하우스</button>
+                        <button>레고랜드 파크</button>
+                    </div>
+
+                    <div class="blockPage4">
+                        <button>레고 라이프</button>
+                        <button>레고 에듀케이션</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="iconLogo">
+                <a href="#"><img src="./footerImg/facebook.png" alt=""></a>
+                <a href="#"><img src="./footerImg/x.avif" alt=""></a>
+                <a href="#"><img src="./footerImg/instagram.png" alt=""></a>
+                <a href="#"><img src="./footerImg/youtube.avif" alt=""></a>
+
+            </div>
+
+            <div class="lastInfo">
+                <p>LEGO System A/S, DK-7190 Billund, Denmark. 만 18세 이상부터 온라인 구매가 가능합니다. 레고, 레고 로고, 미니피겨, 듀플로, 프렌즈 로고,
+                    미니피겨
+                    로고, 드림즈, 닌자고, 비디요 및 마인드스톰은 레고 그룹의 상표입니다. ©2024 The LEGO Group. All rights reserved. 이 사이트를 이용하면
+                    이용약관에
+                    동의하는 것으로 간주됩니다. 레고코리아㈜ 대표이사 : 에릭폴모젱, 정희영 | 주소 : 서울특별시 강남구 강남대로 298, 16층 (역삼동) 우편번호 06253
+                    사업자등록번호:126-81-25525 | 통신판매업신고 제 2010-서울강남-00549호 사업자등록확인고객센터 무료전화 : 080-880-0166 | 팩스 : 02-511-6412
+                    |
+                    업무시간 : 월요일-금요일 오전9시-오후6시</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

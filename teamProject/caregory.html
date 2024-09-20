@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertical-align</title>
+    <link rel="stylesheet" href="./caregory.css">
+</head>
+
+<body class="categoryBody">
+
+    <div class="menu_lego">
+        <a href="#">
+            <img src="/lego-icon.svg" alt="lego">
+        </a>
+    </div>
+
+    <div class="menu_list">
+        <ul class="menu_list_1">
+            <li><button>레고 제품 쇼핑</button></li>
+            <li><button>레고 브랜드 소개</button></li>
+            <li><button>고객 지원</button></li>
+        </ul>
+    </div>
+
+    <div class="menu_list2">
+        <ul class="menu_list2_1">
+            <li><button onclick='btnClick()'>시리즈별 세트</button></li>
+            <li><button>신상품</button></li>
+            <li><button>베스트 셀러</button></li>
+            <li><button onclick="btnClick2()">추억의 레고</button></li>
+            <li><button>할인 및 행사</button></li>
+        </ul>
+    </div>
+
+    <div id="seriesSet">
+        <ul>
+            <li id="star_wars">스타워즈™
+                <div class="starWars">
+                    <img src="/img/starWars_logo_black_stroke_300w_2.png" alt="starwars">
+                </div>
+            </li>
+            <li id="super_mario">레고 슈퍼 마리오™
+                <div class="superMario">
+                    <img src="/img/SuperMario-logo-pos_300w.png" alt="supermario">
+                </div>
+            </li>
+            <li id="disney_">디즈니
+                <div class="disNey">
+                    <img src="/img/disney_logo_pos_300w_2.png" alt="disney">
+                </div>
+            </li>
+            <li id="marvel_">마블
+                <div class="marvel">
+                    <img src="/img/Marvel2.png" alt="marvel">
+                </div>
+            </li>
+            <li id="marble_">해리포터™
+                <div class="harryPotter">
+                    <img src="/img/harrypotter_logo_gold_divider-600w2_2.png" alt="harry">
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- <div id="pastSeries">
+
+        <ul>
+            <li id="past_1971">1970~1980
+                <div class="1971">
+                    <img src="/img/1979_lego_2.jpg" alt="1971">
+                </div>
+            </li>
+            <li id="past_1981">1981~1990
+                <div class="1981">
+                    <img src="/img/1984_lego_3.jpg" alt="1981">
+                </div>
+            </li>
+            <li id="past_1991">1991~2000
+                <div class="1991">
+                    <img src="/img/1993_lego_3.png" alt="1991">
+                </div>
+            </li>
+            <li id="past_2001">2001~2010
+                <div class="2001">
+                    <img src="/img/2004_lego_2.jpg" alt="2001">
+                </div>
+            </li>
+            <li id="past_2011">2011~2020
+                <div class="2011">
+                    <img src="/img/2017_lego_2.jpg" alt="2011">
+                </div>
+            </li>
+
+        </ul>
+
+    </div> -->
+
+    <script>
+
+        function btnClick() {
+            const seriesSet = document.getElementById('seriesSet')
+
+            if (seriesSet.classList.contains('show')) {
+                seriesSet.classList.remove('show'); // show 클래스를 삭제하여 사라지도록 함
+            } else {
+                seriesSet.classList.add('show'); // show 클래스를 추가하여 나타나도록 함
+            }
+        }
+
+        function btnClick2() {
+            const pastSeries = document.getElementById('pastSeries')
+
+            if (pastSeries.style.display === 'none') {
+                pastSeries.style.display = 'block';
+
+            } else {
+                pastSeries.style.display = 'none';
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

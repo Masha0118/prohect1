@@ -1,0 +1,520 @@
+/* main {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+} */
+
+.cupacupa {
+    margin: auto;
+    list-style: none;
+}
+
+@media (max-width:768px) {
+    main {
+        width: 100%;
+    }
+}
+
+.container {
+    /* display: inline-block; */
+    display: flex;
+    /* border: 1px solid red; */
+    /* height: 50vh; */
+
+    /* justify-content: space-between; */
+    /* align-items: stretch; */
+    /* margin-right: 5%; */
+}
+
+@media (max-width:768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.bigImg {
+    /* border: 1px solid red; */
+    width: 45%;
+    height: 100%;
+    /* object-fit: cover; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* flex: 0 0 55%; */
+    border: 1px solid rgb(235, 225, 225);
+    /* margin-left: 5%; */
+}
+
+@media (max-width:768px) {
+    .bigImg {
+        width: 100%;
+    }
+}
+
+
+
+/* div:nth-child(1) img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgb(235, 225, 225);
+} */
+
+/* div:nth-child(2) img {
+    width: 65%;
+} */
+
+
+/*======================================================================*/
+
+.icon {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+@media (max-width:768px) {
+    .icon {
+        display: none;
+    }
+}
+
+.age,
+.pices,
+.legoPoint,
+.legoNumber {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 10%;
+    align-items: center;
+}
+
+.age,
+.pices,
+.legoPoint,
+.legoNumber span:nth-child(3) {
+    font-size: 0.9em;
+}
+
+.age,
+.pices,
+.legoPoint {
+    border-right: 1px solid rgb(235, 226, 226);
+}
+
+
+.order {
+    /* border: 1px solid red; */
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(235, 226, 226);
+    border-right: 1px solid rgb(235, 226, 226);
+    border-bottom: 1px solid rgb(235, 226, 226);
+}
+
+@media (max-width:768px) {
+    .order {
+        width: 100%;
+    }
+}
+
+.titleLogo {
+    /* border: 1px solid rgb(77, 12, 255); */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.titleLogo span {
+    /* border: 1px solid red; */
+    width: 50%;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 20px;
+    /* box-sizing: inherit; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .titleLogo img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.order img {
+    /* border: 1px solid red; */
+    width: 40%;
+    max-width: 20%;
+
+}
+
+.price {
+    /* border: 1px solid blue; */
+    display: flex;
+
+    font-size: 1.6em;
+    font-weight: bold;
+    /* position: relative; */
+}
+
+
+/*==================================================*/
+
+.buyGift {
+    background-color: rgb(0, 46, 65);
+    color: white;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shoppingCart {
+    /* width: 100%; */
+}
+
+.shoppingCart button {
+    width: 60%;
+    height: 180%;
+    background-color: rgb(235, 113, 20);
+    font-size: 1.1em;
+    border: none;
+    border-radius: 30px;
+}
+
+
+.warning {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    height: 10%;
+}
+
+.warning span {
+    font-size: 0.9em;
+}
+
+.warningdetail {
+    width: 50%;
+}
+
+.warningicon {
+    width: 5%;
+    height: 5%;
+}
+
+.deliveryAndManual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deliveryAndManual button:nth-child(1) {
+    width: 80%;
+    height: 4em;
+    border: none;
+    background-color: white;
+    border-top: 1px solid rgb(240, 224, 224);
+    border-bottom: 1px solid rgb(240, 224, 224);
+    font-size: 1.1em;
+}
+
+.deliveryAndManual button:nth-child(2) {
+    width: 80%;
+    height: 4em;
+    border: none;
+    background-color: white;
+    font-size: 1.1em;
+}
+
+.deliveryAndManual button:hover,
+.shoppingCart button:hover {
+    cursor: pointer;
+}
+
+
+
+/* 제품정보 */
+
+.productInfodetail {
+    width: 100%;
+    text-align: initial;
+}
+
+
+
+#check-btn1 {
+    display: none;
+}
+
+.menu1 {
+    /* display: none; */
+    display: flex;
+    /* justify-content: start; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    width: 150%;
+    /* margin-left: 5%; */
+
+}
+
+@media (max-width: 768px) {
+    .menu1 div {
+        width: 25%;
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu1 h1 {
+        font-size: 1.3em;
+        position: absolute;
+        top: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu1 span {
+        font-size: .8em;
+        position: absolute;
+        top: 500%;
+    }
+}
+
+.menu1 img {
+    width: 100%;
+    height: auto;
+}
+
+.menu1 div {
+    position: absolute;
+    padding: 1%;
+
+}
+
+.menu2 {
+    /* display: none; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    width: 150%;
+    margin-left: 5%;
+}
+
+.menu2 img {
+    width: 100%;
+    height: auto;
+}
+
+.menu2 div {
+    position: absolute;
+    padding: 33%;
+}
+
+.menu3 {
+    /* display: none; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    width: 150%;
+    margin-left: 5%;
+}
+
+.menu3 img {
+    width: 100%;
+    height: auto;
+}
+
+.menu3 div {
+    position: absolute;
+    padding: 5%;
+}
+
+.menu3 a {
+    display: block;
+}
+
+.clickMenu1 {
+    font-size: 1.5em;
+    background-color: rgb(248, 248, 248);
+    padding: 3%;
+    border-bottom: 0.5px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* =========================================== */
+
+/* 제품상세정보 */
+
+.productInfo {
+    width: 94.4%;
+    text-align: initial;
+}
+
+#check-btn:checked~.menu {
+    display: block;
+    overflow-y: auto;
+}
+
+#check-btn {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.menu img {
+    float: right;
+    margin-left: 5%;
+    width: 200%;
+    height: auto;
+
+}
+
+.clickMenu {
+    /* width: 100%; */
+    font-size: 1.5em;
+    background-color: rgb(248, 248, 248);
+    padding: 3%;
+    border-bottom: 0.5px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.clickMenu span img {
+    width: 10%;
+}
+
+ul li {
+    margin-bottom: 4%;
+}
+
+/* ============================= */
+
+
+
+/* 메인 배너 스타일 */
+#mainSize {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+    /* background-color: rgb(214, 143, 155); */
+    border-top: .5em solid white;
+    border-bottom: .5em solid white;
+}
+
+.mainBanner {
+    width: 130%;
+}
+
+.prince {
+    text-align: justify;
+    word-break: break-all;
+}
+
+
+.weekendProduct {
+    width: 50%;
+}
+
+
+
+/* 이번 주 최고 인기 배너 사이즈 확인*/
+.sectionWeekend {
+
+    width: 90%;
+    display: inline-block;
+    /* border: 4px solid rgb(155, 218, 40); */
+
+}
+
+/* 이번 주 최고 인기 문구 조절 */
+.thisWeekendPopular {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+/* 이번 주 최고 인기 텍스트 조절 */
+.thisWeekendPopular>span {
+    margin: 10px;
+    display: block;
+    font-size: 26px;
+    text-align: left;
+
+}
+
+.bannersList {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .bannersList {
+        flex-direction: column;
+    }
+}
+
+
+
+/* 최고 인기 상품 사이즈 및 간격 조절 */
+.weekendProduct {
+    display: inline-block;
+    margin: 4px;
+    width: 32%;
+    /* border: 1px solid black; */
+}
+
+@media (max-width: 768px) {
+    .weekendProduct {
+        width: 100%;
+    }
+}
+
+
+/* 최고 인기 상품 이미지 사이즈 조절*/
+.weekendProduct img {
+    width: 100%;
+}
+
+/* 슬라이드 배너와 상하 간격 조절*/
+/* section {
+    margin-bottom: 100px;
+} */
+
+/* 쇼핑하기 글자 사이즈 */
+.weekendProduct a {
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* 커서 올릴 시 언더라인*/
+.weekendProduct:hover a {
+    text-decoration: underline;
+}
+
+.santa,
+.woodhouse {
+    width: 706px;
+}

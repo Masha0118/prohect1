@@ -1,0 +1,276 @@
+.categoryBody {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.legoland img {
+
+    width: 70%;
+    height: 50%;
+    position: absolute;
+
+    bottom: 1%;
+    opacity: .8;
+
+}
+
+menu_list,
+menu_list2,
+button {
+
+    border: 0;
+    background: transparent;
+
+}
+
+.close {
+    position: absolute;
+    right: 5%;
+    top: 2.5%;
+}
+
+.close img:hover {
+    cursor: pointer;
+}
+
+
+.menu_list button,
+.menu_list2 button {
+    margin: 1em 0;
+}
+
+
+/* =========================================================================== */
+/* 로고 */
+
+
+.menu_lego img {
+
+    position: absolute;
+    display: block;
+    /* align-content: center; */
+    width: 7%;
+    height: 8%;
+    margin-top: .8%;
+    margin-left: 3.5%;
+    /* float: left; */
+}
+
+
+/* =========================================================================== */
+/* 첫번 째 메뉴( 레고 제품, 브랜드, 고객 지원 ) */
+
+
+/* 첫번 째 메뉴 나열 및 수정 */
+
+
+.menu_list_1 {
+    display: flex;
+    width: 60%;
+
+    position: absolute;
+    top: 1%;
+    left: 9%;
+    justify-content: space-around;
+}
+
+.menu_list_1 button {
+
+    font-size: 1.5em;
+}
+
+
+/* 첫번 째 메뉴 폰트 설정 */
+
+
+/* 첫번 째 메뉴 클릭 시 두번 째 메뉴 생성 작업(중단) */
+.menu_link:active {
+    outline: none;
+    opacity: 1;
+}
+
+/* ======================================================================== */
+/* 두번 째 메뉴 ( 시리즈별 세트, 신상품, 베스트 셀러 등 ) */
+
+
+/* 두번 째 메뉴 폰트 설정 */
+
+.menu_list2_1 button {
+    font-size: 1.3em;
+}
+
+.menu_list2_1 {
+
+    margin-left: 13%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* 두번 째 메뉴 위치 변경(왼쪽 정렬) */
+.menu_list2 {
+
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    padding: 0;
+    list-style: none;
+}
+
+.menu_list2 button:hover {
+
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ul>li:hover {
+
+    cursor: pointer;
+
+}
+
+
+#seriesSet {
+
+    position: absolute;
+    left: 30%;
+    top: 16.5%;
+    height: 120px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.7s;
+
+}
+
+#seriesSet li:hover {
+
+    font-weight: bold;
+
+}
+
+
+#seriesSet.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+#seriesSet ul {
+
+    font-size: 1em;
+
+    width: 100%;
+    /* height: 200%;
+    line-height: 200%; */
+
+    display: flex;
+
+}
+
+
+
+#pastSeries {
+    position: absolute;
+    left: 20%;
+    bottom: 47%;
+    height: 120px;
+}
+
+#pastSeries ul {
+    font-size: 1.2em;
+    width: 100%;
+    display: flex;
+
+}
+
+
+
+#pastSeries ul li {
+    width: 10em;
+    /* margin-right: 3%;
+    margin-left: 18%; */
+}
+
+#seriesSet img {
+    /* width: 90%; */
+    height: 20%;
+    /* flex-basis: auto; */
+    margin-right: 200%;
+    margin-top: 10%;
+
+    display: none;
+}
+
+
+#pastSeries img {
+    height: 20%;
+    margin-right: 200%;
+    margin-top: 10%;
+    display: none;
+}
+
+
+
+#seriesSet li:hover img {
+
+    display: inline-block;
+    margin-top: 20%;
+}
+
+
+#pastSeries li:hover img {
+
+    display: inline-block;
+    /* margin-top: 10%; */
+}
+
+
+#seriesSet ul li {
+    display: inline-block;
+    width: 10em;
+
+}
+
+
+/* 메뉴에 마우스 올리면 색상 변경 */
+
+
+.menu_list button:hover {
+
+    cursor: pointer;
+    border-bottom: 3px solid red;
+
+    /* text-decoration: underline; */
+
+}
+
+
+.menu_list2 button:hover {
+    color: black;
+}
+
+/* ================================================================= */
+/* 모바일 반응 작업 */
+
+@media (max-width: 768px) {
+
+    .menu_list_1 {
+        display: flex;
+        font-size: .5em;
+    }
+
+    .menu_list2_1 {
+        display: block;
+        font-size: .5em;
+    }
+
+    .menu_lego img {
+        display: block;
+        width: 10%;
+        height: 5%;
+    }
+
+}

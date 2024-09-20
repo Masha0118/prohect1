@@ -1,0 +1,62 @@
+body * {
+    /* border: 1px solid red;
+    padding: 4px;
+    border-radius: 10px; */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+header,
+footer {
+    /* width: 1024px */
+}
+
+/* 메인 크기 조절 및 가운데 정렬 */
+main {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    /* background-color: pink; */
+    /* width: calc(1024px * .8); */
+}
+
+/* ====================================================== */
+
+
+h3,
+h4 {
+    font-weight: normal;
+}
+
+div:nth-of-type(2) * {
+    display: inline-block;
+    background-color: ghostwhite;
+}
+
+.cart_title {
+    font-size: 1.5rem;
+}
+
+.c_text {
+    width: 100%;
+    padding: 0.9375rem 1.25rem;
+}
+
+img[src="../image/21347.png"] {
+    width: 30%;
+    float: left;
+}
+
+button {
+    background-color: chocolate;
+    width: 50%;
+    margin: 20px;
+    border-radius: 25%;
+}
+

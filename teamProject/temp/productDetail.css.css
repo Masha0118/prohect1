@@ -1,0 +1,233 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+}
+
+/* 메인 크기 조절 및 가운데 정렬 */
+main {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    /* background-color: pink; */
+    /* width: calc(1024px * .8); */    
+}
+
+/* 메인 상세 박스 크기*/
+main>div {
+    /* border: 4px solid rgb(151, 21, 168); */
+    display: inline-block;
+    width: 100%;
+    height: 511px;
+}
+
+
+
+
+
+
+/*====================사이드=========================*/
+
+/* 사이드 크기 */
+ul {
+    /* display: inline-block; */
+    /* border: 1px solid rgb(0, 0, 0); */
+    width: 8%;
+    /* height: 0%; */
+    background-color: rgb(202, 198, 198);
+    float: left;
+}
+
+
+/* 사이드 li*/
+li {
+        /* border: 1px solid rgb(0, 0, 0); */
+    display: inline-block;
+    background-color: white;
+    margin: 3%;
+    }
+
+/* 사이드 이미지 */
+li img {
+        width: 80%;
+}
+
+
+/*====================메인이미지=========================*/
+/* 메인 이미지 조절*/
+.mainPic {
+    border: 1px solid rgb(2, 0, 0);
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    /* float: left;  */
+}
+
+.mainPic img {
+    width: 75%;
+    
+}
+
+/*=====================구매칸=========================*/
+
+
+.buySection {
+    border: 1px solid red;
+    width: 40%;
+    /* display: inline-block; */
+    float: right;
+}
+
+
+
+.productInfo{
+    border: 1px solid red;
+    height: 5%;
+}
+
+.namePrice {
+    border: 1px solid red;
+    height: 30%;
+
+}
+
+.name span {
+    font-size: 30px;
+    margin-right: 15%;
+}
+
+.price span{
+    /* border: 1px solid black; */
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 67%;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+
+
+.inventoryAndBuy {
+    /* border: 1px solid rgb(0, 252, 63); */
+    /* height: 15%; */
+}
+
+.buttonGroup {
+    /* display: inline-block; */
+    border: 2px solid rgb(107, 6, 6);
+    width: 40%;
+    height: 5vh;
+    border-radius: 0%;
+    margin: 5%;
+    float: left;
+}
+
+.minusButton {
+    font-size: 3em;
+    width: 30%;
+    height: 90%;
+    background-color: white;
+    border-right: 1px solid black;
+    border: 0;
+}
+
+.inventoryAndBuy span {
+    display: inline-block;
+    /* border: 1px solid black; */
+    width: 25%;
+    height: 90%;
+}
+
+.plusButton {
+    font-size: 3em;
+    width: 30%;
+    height: 90%;
+    background-color: white;
+    border: 0;
+}
+
+.inventoryAndBuy div:nth-child(2) span {
+    border: 1px solid black;
+    display: inline-block;
+    /* float: right; */
+}
+
+.shoppingCart button {
+    width: 350px;
+    height: 52px;
+    background-color: rgb(255, 94, 0);
+    border: 0;
+    border-radius: 80px;
+}
+
+.heartButton {
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 0;
+}
+
+.warning{
+    border: 1px solid red;
+
+    height: 5%;
+}
+
+.delivery {
+    border: 1px solid red;
+    height: 30%;
+}
+
+/*================정보 요약======================*/
+
+.information {
+    border: 2px solid ;
+    /* display: inline-block; */
+    width: 52%;
+    height: 12%;
+    float: left;
+    margin: 400px auto;
+    position: relative;
+    top: -400px;
+    }
+
+.age ,.legoPiece, .legoPoint, .legoNumber {
+    border: 1px solid;
+    width: 10%;
+    float: left;
+    /* margin-left: 10%; */
+    margin-left: 10%;
+}
+
+.productdetail {
+    border: 1px solid;
+    padding: 10px;
+    margin: 20px;
+    width: calc(100%-40px);
+    height: 50px;
+    background-color: skyblue;
+    text-align: left;
+    }
+
+    .productdetail p {
+        text-align: justify;
+            }
+
+    .productdetail li {
+        text-align: justify;
+    }
+
+    .productdetail img {
+        float: right;
+        width: 20%;
+    }
+
+
+
+
+
+

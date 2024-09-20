@@ -1,0 +1,355 @@
+/*-----------------------헤더-----------------------------*/
+
+/* 헤더 레고 아이콘 크기 및 정렬 */
+
+.headerBackground {
+    background-color: #ffcf00;
+}
+
+.header {
+    margin: auto;
+    width: 70%;
+}
+
+.header_logo img {
+    /* width: 150px; */
+    height: 85px;
+    float: left;
+}
+
+.img-button {
+    border: none;
+    background: transparent;
+}
+
+.header_logo {
+    padding-left: 1%;
+}
+
+
+/* 서치 아이콘 크기 */
+.search_button img {
+    width: 35px;
+    height: 20px;
+}
+
+/* 헤더 영역 색상 지정과 영역 크기 지정 */
+.header {
+    height: 6em;
+    /* background-color: #ffcf00; */
+    /* border-bottom: 1px solid black; */
+    letter-spacing: 0.1em;
+    padding-top: 0.5em;
+}
+
+/* 검색창과 검색 로고 위치 헤더의 정렬 */
+.header_menu {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -7.5rem;
+    margin-left: 9.25rem;
+}
+
+/* 헤더 카테고리 글 위치 조정 */
+.header_menu ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 카테고리 글 가로 정렬 */
+.header_menu ul li {
+    display: inline-block;
+}
+
+
+.shopping_button {
+    font: bold 14px 'arial';
+    margin: 0em 1em;
+    letter-spacing: 1px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.shopping_button:hover {
+    color: #007bff;
+}
+
+/* 헤더 카테고리 글 가로 정렬 */
+/* .header_menu ul li {
+    display: inline-block;
+} */
+
+/* 메뉴 글꼴 조정 */
+.header_menu ul li a {
+    display: block;
+    font: bold 14px 'arial';
+    margin: 0px 16px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.header_menu ul li a:hover {
+    color: #007bff;
+}
+
+/* 검색창 오른쪽 정렬 */
+.header_search {
+    float: right;
+    margin-right: 2em;
+    margin-top: -3.65em;
+}
+
+/* 검색 버튼 디자인 */
+.search_button {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    padding: 0.3em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* 보류 */
+/* .search_button img {
+    width: 35px;
+    height: 20px;
+} */
+
+/* 검색 버튼 호버하면 색상 변경 */
+.search_button:hover {
+    background-color: red;
+}
+
+
+/* 검색창 크기와 디자인 조정 */
+.search_input {
+    padding: 0.7em 0.8em;
+    border-radius: 20px;
+    border: 2px solid red;
+    width: 16em;
+    outline: none;
+}
+
+
+/* 검색 이미지 크기 조정 */
+.search_button img {
+    width: 2em;
+    height: 1.4em;
+    border-radius: 2em;
+    margin-top: 0.2em;
+}
+
+
+/* 검색창 크기와 디자인 조정 */
+.search_input:focus {
+    border-radius: rgba(111, 13, 13, 0.998);
+}
+
+.header_login {
+    text-align: right;
+    margin-right: 6rem;
+    margin-top: -4.6em;
+}
+
+.header_login ul {
+    padding: 0;
+}
+
+.header_login ul li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.header_login ul li:first-child {
+    margin-left: 0;
+}
+
+.header_login ul li a {
+    font: bold 14px 'arial';
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header_login ul li a:hover {
+    color: #007bff;
+}
+
+.header_login ul li a img {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -0.4em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    border-radius: 20%;
+}
+
+
+.header_login ul li a img:hover {
+    transform: rotate(360deg);
+}
+
+/* 헤더 로고에 커서 시 손가락 모양 */
+.header_logo button:hover {
+    cursor: pointer;
+}
+
+
+/* 모달 백그라운드 스타일 */
+.modal_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* 모달 박스 스타일 */
+.modal_box {
+    width: 50%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+/* 모달 닫기 버튼 스타일 */
+.close_btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 2%;
+}
+
+.close_btn:hover {
+    background-color: #d32f2f;
+}
+
+.content a {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.content a:hover {
+    background-color: #0056b3;
+}
+
+.content input {
+    width: 95.5%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.content input::placeholder {
+    text-transform: uppercase;
+}
+
+/* ========================================================================================================== */
+
+@media (max-width:901px) {
+    .header_login {
+        text-align: right;
+        margin-right: 20.5em;
+        margin-top: -2.5em;
+    }
+
+    /* 로그인 위치 조정 /
+    .header_login ul {
+        padding: 25px;
+    }
+
+    / 로그인 위치 조정 /
+    .header_login ul li {
+        display: inline-block;
+        margin-left: 1em;
+    }
+
+    / 로그인 위치 조정 */
+    .header_login ul li:first-child {
+        margin-left: 0;
+    }
+
+    .header_search {
+        float: right;
+        margin-right: 2em;
+        margin-top: 3em;
+    }
+}
+
+/* =========================================================================================================== */
+
+@media (max-width: 768px) {
+
+    .header_logo {
+        padding: 0;
+    }
+
+    .header_menu {
+        margin-left: 7.5rem;
+    }
+
+    .header_search input {
+        display: none;
+    }
+
+    .header_search button {
+        margin-bottom: 30%;
+    }
+
+    .header_login {
+        margin-right: -3.25rem;
+        margin-top: -4.95em;
+    }
+
+    .header_login li:first-of-type {
+        position: absolute;
+        right: 90px;
+    }
+
+    .header_search {
+        margin-top: -4.15rem;
+        margin-right: -100px;
+    }
+
+}
